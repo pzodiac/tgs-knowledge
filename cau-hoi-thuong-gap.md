@@ -1,35 +1,58 @@
-# Câu hỏi thường gặp (FAQ)
+# Hướng dẫn định dạng tài liệu để Dify (open-source) đọc dễ dàng
 
-> **Danh mục:** FAQ sản phẩm / dịch vụ
+> **Danh mục:** Hướng dẫn kỹ thuật
 > **Cập nhật lần cuối:** 2026-08-13
-> **Người phụ trách:** Phòng CSKH
-> **Từ khóa:** faq, câu hỏi thường gặp, hỗ trợ khách hàng
+> **Người phụ trách:** Phòng kỹ thuật
+> **Từ khóa:** dify, knowledge base, định dạng markdown, chunking
 
 ## Tổng quan
 
-Tài liệu này tổng hợp các câu hỏi thường gặp (FAQ) từ khách hàng, dùng làm nguồn dữ liệu cho chatbot Dify để trả lời tự động. Mỗi câu hỏi và câu trả lời được viết độc lập, đầy đủ ngữ cảnh để hệ thống có thể truy xuất và trả lời chính xác.
+Tài liệu này hướng dẫn cách viết file Markdown để Dify (bản open-source) có thể nạp (import) vào Knowledge Base và truy xuất (retrieval) chính xác, hiệu quả.
 
-## Câu hỏi thường gặp
+## Vì sao cần định dạng đúng?
 
-**Hỏi: Làm thế nào để đăng ký sử dụng dịch vụ?**
-Trả lời: Bạn có thể đăng ký trực tiếp trên website bằng cách chọn "Đăng ký", điền thông tin cá nhân và xác nhận qua email. Sau khi xác nhận, tài khoản sẽ được kích hoạt trong vòng 24 giờ.
+Dify chia tài liệu thành các đoạn nhỏ (chunk) — thường theo heading hoặc theo độ dài ký tự — rồi lưu từng chunk thành vector để tìm kiếm ngữ nghĩa. Nếu tài liệu viết không rõ cấu trúc, chunk bị cắt sai chỗ sẽ làm mất ngữ cảnh, khiến bot trả lời sai hoặc thiếu thông tin.
 
-**Hỏi: Thời gian phản hồi hỗ trợ khách hàng là bao lâu?**
-Trả lời: Bộ phận hỗ trợ khách hàng phản hồi trong giờ hành chính (8h00 - 17h30, từ Thứ Hai đến Thứ Sáu) với thời gian phản hồi trung bình từ 15-30 phút.
+## Nguyên tắc định dạng
 
-**Hỏi: Tôi có thể thanh toán bằng những phương thức nào?**
-Trả lời: Hệ thống hỗ trợ thanh toán qua chuyển khoản ngân hàng, thẻ tín dụng/ghi nợ (Visa, Mastercard) và các ví điện tử phổ biến như MoMo, ZaloPay.
+### 1. Dùng heading rõ ràng, phân cấp hợp lý
 
-**Hỏi: Làm sao để đổi mật khẩu tài khoản?**
-Trả lời: Vào mục "Cài đặt tài khoản" > "Đổi mật khẩu", nhập mật khẩu cũ và mật khẩu mới, sau đó xác nhận. Nếu quên mật khẩu, chọn "Quên mật khẩu" tại trang đăng nhập để nhận email đặt lại mật khẩu.
+- Mỗi `##`/`###` nên bắt đầu một ý/chủ đề mới, độc lập.
+- Tránh nhồi nhiều chủ đề không liên quan vào cùng một heading.
 
-**Hỏi: Chính sách hoàn tiền/đổi trả như thế nào?**
-Trả lời: Khách hàng được hoàn tiền 100% trong vòng 7 ngày kể từ ngày mua nếu chưa sử dụng dịch vụ. Sau 7 ngày, việc hoàn tiền sẽ được xét theo từng trường hợp cụ thể.
+### 2. Mỗi đoạn phải tự đủ nghĩa
 
-**Hỏi: Tôi có thể liên hệ hỗ trợ qua kênh nào?**
-Trả lời: Bạn có thể liên hệ qua hotline, email hỗ trợ, hoặc chat trực tiếp trên website. Thông tin liên hệ chi tiết được cập nhật tại trang "Liên hệ".
+- Không dùng đại từ mơ hồ ("nó", "cái đó") tham chiếu về đoạn trước — vì khi bị chunk riêng, đoạn đó sẽ mất ngữ cảnh.
+- Nhắc lại chủ thể/tên riêng nếu cần, dù có vẻ lặp từ.
 
-## Tài liệu / liên kết liên quan
+### 3. Ưu tiên đoạn ngắn, súc tích
 
-- [Chính sách bảo mật](đường-dẫn-hoặc-URL)
-- [Hướng dẫn sử dụng dịch vụ](đường-dẫn-hoặc-URL)
+- Mỗi chunk lý tưởng khoảng 200–500 từ (tuỳ cấu hình chunk size trong Dify).
+- Dùng danh sách gạch đầu dòng cho các ý rời rạc, dễ trích xuất từng câu.
+
+### 4. Định dạng Hỏi/Đáp cho nội dung FAQ
+
+```
+**Hỏi: [câu hỏi đầy đủ]?**
+Trả lời: [câu trả lời đầy đủ, không phụ thuộc câu hỏi/đáp khác]
+```
+
+Định dạng này giúp Dify trả lời chính xác vì mỗi cặp Hỏi/Đáp có thể tách thành một chunk độc lập, mang đủ ngữ cảnh.
+
+### 5. Thêm metadata ở đầu file (tuỳ chọn)
+
+Ghi chú danh mục, từ khóa, ngày cập nhật ở đầu file giúp lọc và gắn tag dữ liệu khi quản lý nhiều tài liệu trong Knowledge Base, dù Dify không bắt buộc phần này.
+
+### 6. Tránh các lỗi thường gặp
+
+- Không để bảng biểu (table) quá phức tạp — Dify có thể đọc nhưng khó chunk chính xác.
+- Không nhúng ảnh/base64 trực tiếp vào file Markdown dùng cho Knowledge Base.
+- Không viết một đoạn văn quá dài không có heading — nên chia nhỏ.
+
+## Quy trình nạp tài liệu vào Dify
+
+1. Vào **Knowledge** > **Create Knowledge** trên Dify.
+2. Chọn **Import from file**, upload file `.md`.
+3. Chọn chế độ chia đoạn: **Automatic** (Dify tự chunk theo heading) hoặc **Custom** (tự đặt chunk size/overlap).
+4. Xem trước các chunk được tạo ra, kiểm tra xem có bị cắt sai ngữ cảnh không.
+5. Xác nhận và lưu vào Knowledge Base để dùng cho ứng dụng/chatbot.
