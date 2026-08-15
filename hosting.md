@@ -18,7 +18,8 @@ Trả lời: Hosting là dịch vụ cho thuê không gian lưu trữ trên máy
 Trả lời: Công ty cung cấp nhiều gói hosting phù hợp với từng nhu cầu: gói Cá nhân (website nhỏ, blog), gói Doanh nghiệp (website công ty, bán hàng vừa và nhỏ), và gói Cao cấp (website có lượng truy cập lớn, thương mại điện tử). Mỗi gói khác nhau về dung lượng lưu trữ, băng thông và số lượng website/email đi kèm.
 
 **Hỏi: Làm sao để đăng ký hosting?**
-Trả lời: Khách hàng có thể đăng ký trực tiếp trên website công ty bằng cách chọn gói hosting phù hợp, điền thông tin thanh toán, hoặc liên hệ hotline/nhân viên kinh doanh để được tư vấn và hỗ trợ đăng ký.
+Trả lời: Khách hàng có thể đăng ký trực tiếp trên website công ty https://tgs.com.vn/premium-hosting bằng cách chọn gói hosting phù hợp, điền thông tin thanh toán, hoặc liên hệ hotline 0919 768 789  để được tư vấn và hỗ trợ đăng ký.
+![TheGioSo](https://cms.tgs.com.vn/wp-content/uploads/2026/07/LOGO-THE-GIOI-SO-2024_CAM.png)
 
 **Hỏi: Tôi có thể nâng cấp hoặc hạ cấp gói hosting đang dùng không?**
 Trả lời: Có. Khách hàng có thể yêu cầu nâng cấp hoặc hạ cấp gói hosting bất kỳ lúc nào thông qua trang quản lý dịch vụ hoặc liên hệ hỗ trợ kỹ thuật. Chênh lệch chi phí sẽ được tính theo thời gian còn lại của gói hiện tại.
