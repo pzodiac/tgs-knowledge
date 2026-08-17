@@ -39,8 +39,7 @@ Trả lời: Gói WordPress Star có giá 100.000đ/tháng, phù hợp cho websi
 - Alias/Park Domains: 15
 - MySQL Database: 02
 - Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
-
-Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
+- Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Silver có thông số và giá như thế nào?**
 Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
@@ -52,8 +51,7 @@ Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được 
 - Alias/Park Domains: 25
 - MySQL Database: 05
 - Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
-
-Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
+- Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Gold có thông số và giá như thế nào?**
 Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho website doanh nghiệp có lượng truy cập vừa. Thông số kỹ thuật:
@@ -65,8 +63,7 @@ Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho websi
 - Alias/Park Domains: 40
 - MySQL Database: 10
 - Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
-
-Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
+- Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Diamond có thông số và giá như thế nào?**
 Trả lời: Gói WordPress Diamond có giá 500.000đ/tháng, phù hợp cho website có lượng truy cập lớn hoặc cần nhiều tài nguyên. Thông số kỹ thuật:
@@ -78,8 +75,7 @@ Trả lời: Gói WordPress Diamond có giá 500.000đ/tháng, phù hợp cho we
 - Alias/Park Domains: 60
 - MySQL Database: 15
 - Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
-
-Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
+- Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Các gói hosting WordPress khác nhau như thế nào?**
 Trả lời: Cả 4 gói WordPress Star, Silver, Gold, Diamond đều dùng chung nền tảng Litespeed Webserver, Cloud Linux, Full Managed, Backup Daily, VeamBackup, Free SSL và Imunify. Điểm khác biệt chính là dung lượng SSD NVMe, băng thông, số lượng địa chỉ IPv4, Addon Domain, Sub Domain, Alias/Park Domains và MySQL Database tăng dần theo giá, từ gói Star (100.000đ/tháng, nhỏ nhất) đến gói Diamond (500.000đ/tháng, băng thông không giới hạn).
