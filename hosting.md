@@ -30,16 +30,48 @@ Trả lời: Tên miền và hosting là hai dịch vụ riêng biệt. Một s�
 ## Bảng giá các gói hosting WordPress
 
 **Hỏi: Gói hosting WordPress Star có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Star có giá 100.000đ/tháng, phù hợp cho website nhỏ hoặc blog cá nhân. Thông số gồm: 2 GB SSD NVMe, Bandwidth 50 GB, 01 địa chỉ IPv4, Addon Domain 02, Sub Domain 15, Alias/Park Domains 15, MySQL Database 02. Đi kèm các tính năng: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify.
+Trả lời: Gói WordPress Star có giá 100.000đ/tháng, phù hợp cho website nhỏ hoặc blog cá nhân. Thông số kỹ thuật:
+- Dung lượng: 2 GB SSD NVMe
+- Bandwidth: 50 GB
+- IPv4: 01 địa chỉ
+- Addon Domain: 02
+- Sub Domain: 15
+- Alias/Park Domains: 15
+- MySQL Database: 02
+- Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
 
 **Hỏi: Gói hosting WordPress Silver có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số gồm: 4 GB SSD NVMe, Bandwidth 100 GB, 01 địa chỉ IPv4, Addon Domain 04, Sub Domain 25, Alias/Park Domains 25, MySQL Database 05. Đi kèm các tính năng: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify.
+Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+- Dung lượng: 4 GB SSD NVMe
+- Bandwidth: 100 GB
+- IPv4: 01 địa chỉ
+- Addon Domain: 04
+- Sub Domain: 25
+- Alias/Park Domains: 25
+- MySQL Database: 05
+- Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
 
 **Hỏi: Gói hosting WordPress Gold có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho website doanh nghiệp có lượng truy cập vừa. Thông số gồm: 6 GB SSD NVMe, Bandwidth 150 GB, 02 địa chỉ IPv4, Addon Domain 06, Sub Domain 40, Alias/Park Domains 40, MySQL Database 10. Đi kèm các tính năng: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify.
+Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho website doanh nghiệp có lượng truy cập vừa. Thông số kỹ thuật:
+- Dung lượng: 6 GB SSD NVMe
+- Bandwidth: 150 GB
+- IPv4: 02 địa chỉ
+- Addon Domain: 06
+- Sub Domain: 40
+- Alias/Park Domains: 40
+- MySQL Database: 10
+- Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
 
 **Hỏi: Gói hosting WordPress Diamond có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Diamond có giá 500.000đ/tháng, phù hợp cho website có lượng truy cập lớn hoặc cần nhiều tài nguyên. Thông số gồm: 10 GB SSD NVMe, Bandwidth không giới hạn (Unlimited), 02 địa chỉ IPv4, Addon Domain 08, Sub Domain 60, Alias/Park Domains 60, MySQL Database 15. Đi kèm các tính năng: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify.
+Trả lời: Gói WordPress Diamond có giá 500.000đ/tháng, phù hợp cho website có lượng truy cập lớn hoặc cần nhiều tài nguyên. Thông số kỹ thuật:
+- Dung lượng: 10 GB SSD NVMe
+- Bandwidth: Unlimited (không giới hạn)
+- IPv4: 02 địa chỉ
+- Addon Domain: 08
+- Sub Domain: 60
+- Alias/Park Domains: 60
+- MySQL Database: 15
+- Tính năng đi kèm: Full Managed, Litespeed Webserver, Backup Daily, VeamBackup, Free SSL, Cloud Linux, Imunify
 
 **Hỏi: Các gói hosting WordPress khác nhau như thế nào?**
 Trả lời: Cả 4 gói WordPress Star, Silver, Gold, Diamond đều dùng chung nền tảng Litespeed Webserver, Cloud Linux, Full Managed, Backup Daily, VeamBackup, Free SSL và Imunify. Điểm khác biệt chính là dung lượng SSD NVMe, băng thông, số lượng địa chỉ IPv4, Addon Domain, Sub Domain, Alias/Park Domains và MySQL Database tăng dần theo giá, từ gói Star (100.000đ/tháng, nhỏ nhất) đến gói Diamond (500.000đ/tháng, băng thông không giới hạn).
