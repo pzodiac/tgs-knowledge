@@ -1,7 +1,7 @@
 # Câu hỏi thường gặp về Domain (Tên miền)
 
 > **Danh mục:** Dịch vụ Domain
-> **Cập nhật lần cuối:** 2026-08-17
+> **Cập nhật lần cuối:** 2026-08-20
 > **Người phụ trách:** Phòng kỹ thuật
 > **Từ khóa:** domain, tên miền, đăng ký tên miền, DNS, gia hạn tên miền
 
@@ -25,6 +25,41 @@ Trả lời: Có. Tên miền .vn yêu cầu khách hàng cung cấp đầy đ�
 
 **Hỏi: Tôi có thể đăng ký nhiều tên miền cùng lúc không?**
 Trả lời: Có. Khách hàng có thể đăng ký cùng lúc nhiều tên miền với các đuôi khác nhau trong một đơn hàng để bảo vệ thương hiệu và tránh bị đối thủ đăng ký trước.
+
+## Bảng giá đăng ký tên miền
+
+**Hỏi: Giá đăng ký tên miền .com là bao nhiêu?**
+Trả lời: Tên miền quốc tế .com hiện có giá khuyến mãi 320.000đ cho năm đăng ký đầu tiên (giá gốc 369.000đ). Đây là lựa chọn tên miền hot nhất, phổ biến cho hầu hết các loại website.
+
+**Hỏi: Giá đăng ký tên miền .vn là bao nhiêu?**
+Trả lời: Tên miền quốc gia .vn hiện có giá khuyến mãi 450.000đ cho năm đăng ký đầu tiên (giá gốc 650.000đ).
+
+**Hỏi: Giá đăng ký tên miền .id.vn là bao nhiêu?**
+Trả lời: Tên miền quốc gia .id.vn hiện có giá khuyến mãi 60.000đ cho năm đăng ký đầu tiên (giá gốc 80.000đ).
+
+**Hỏi: Giá đăng ký tên miền .net là bao nhiêu?**
+Trả lời: Tên miền quốc tế .net hiện có giá khuyến mãi 165.000đ cho năm đăng ký đầu tiên (giá gốc 379.000đ).
+
+**Hỏi: Giá đăng ký tên miền .org là bao nhiêu?**
+Trả lời: Tên miền quốc tế .org hiện có giá khuyến mãi 175.000đ cho năm đăng ký đầu tiên (giá gốc 389.000đ).
+
+**Hỏi: Giá đăng ký tên miền .info là bao nhiêu?**
+Trả lời: Tên miền quốc tế .info hiện có giá khuyến mãi 55.000đ cho năm đăng ký đầu tiên (giá gốc 349.000đ).
+
+**Hỏi: Giá đăng ký tên miền .store là bao nhiêu?**
+Trả lời: Tên miền quốc tế .store hiện có giá khuyến mãi 89.000đ cho năm đăng ký đầu tiên (giá gốc 899.000đ). Phù hợp cho các website bán hàng, thương mại điện tử.
+
+**Hỏi: Giá đăng ký tên miền .online là bao nhiêu?**
+Trả lời: Tên miền quốc tế .online hiện có giá khuyến mãi 69.000đ cho năm đăng ký đầu tiên (giá gốc 999.000đ).
+
+**Hỏi: Giá đăng ký tên miền .site là bao nhiêu?**
+Trả lời: Tên miền quốc tế .site hiện có giá khuyến mãi 49.000đ cho năm đăng ký đầu tiên (giá gốc 809.000đ).
+
+**Hỏi: Giá đăng ký tên miền .xyz là bao nhiêu?**
+Trả lời: Tên miền quốc tế .xyz hiện có giá khuyến mãi 65.000đ cho năm đăng ký đầu tiên (giá gốc 379.000đ).
+
+**Hỏi: Tên miền nào đang có giá khuyến mãi tốt nhất?**
+Trả lời: Công ty đang áp dụng giá khuyến mãi cho năm đăng ký đầu tiên trên nhiều đuôi tên miền, trong đó .com là lựa chọn hot nhất với giá 320.000đ. Các đuôi giá rẻ đáng chú ý khác gồm .site (49.000đ), .info (55.000đ), .id.vn (60.000đ), .xyz (65.000đ) và .online (69.000đ). Mức giá cụ thể có thể thay đổi theo thời điểm, khách hàng nên kiểm tra giá mới nhất trên website công ty trước khi đăng ký.
 
 ## Kỹ thuật và cấu hình DNS
 
