@@ -1,9 +1,9 @@
-# Câu hỏi thường gặp về Cloud VPS
+# Câu hỏi thường gặp về Cloud VPS và Cloud Server
 
-> **Danh mục:** Dịch vụ Cloud VPS
+> **Danh mục:** Dịch vụ Cloud VPS / Cloud Server
 > **Cập nhật lần cuối:** 2026-08-20
 > **Người phụ trách:** Phòng kỹ thuật
-> **Từ khóa:** cloud vps, vps, máy chủ ảo, cpu platinum, plesk panel
+> **Từ khóa:** cloud vps, cloud server, vps, máy chủ ảo, máy chủ, cpu platinum, plesk panel, true san
 
 ## Tổng quan
 
@@ -110,6 +110,68 @@ Trả lời: Chưa. Bảng giá các gói Cloud VPS (Star, Silver, Gold, Diamond
 
 **Hỏi: Cloud VPS được khởi tạo trong bao lâu?**
 Trả lời: Cloud VPS được khởi tạo tự động chỉ trong khoảng 60 giây sau khi đăng ký và thanh toán thành công.
+
+## Bảng giá các gói Cloud Server
+
+Dịch vụ Cloud Server của chúng tôi sử dụng CPU Intel Xeon Platinum, hệ thống lưu trữ True SAN, băng thông 100 Mb/s và network uplink 40 Gbp/s. Bảng giá bên dưới chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
+
+**Hỏi: Gói Cloud Server Star có thông số và giá như thế nào?**
+Trả lời: Gói Cloud Server Star có giá 1.885.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU Platinum: 6 Core
+- RAM: 14 GB
+- SSD: 150 GB
+- Băng thông: 100 Mb/s
+- Network Uplink: 40 Gbp/s
+- Lưu lượng: Không giới hạn
+- Backup dữ liệu hàng ngày
+- Miễn phí Plesk Panel
+- Miễn phí 01 IPv4
+- Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
+
+**Hỏi: Gói Cloud Server Silver có thông số và giá như thế nào?**
+Trả lời: Gói Cloud Server Silver có giá 2.480.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU Platinum: 8 Core
+- RAM: 18 GB
+- SSD: 200 GB
+- Băng thông: 100 Mb/s
+- Network Uplink: 40 Gbp/s
+- Lưu lượng: Không giới hạn
+- Backup dữ liệu hàng ngày
+- Miễn phí Plesk Panel
+- Miễn phí 01 IPv4
+- Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
+
+**Hỏi: Gói Cloud Server Gold có thông số và giá như thế nào?**
+Trả lời: Gói Cloud Server Gold có giá 3.075.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+- CPU Platinum: 10 Core
+- RAM: 22 GB
+- SSD: 250 GB
+- Băng thông: 100 Mb/s
+- Network Uplink: 40 Gbp/s
+- Lưu lượng: Không giới hạn
+- Backup dữ liệu hàng ngày
+- Miễn phí Plesk Panel
+- Miễn phí 01 IPv4
+- Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
+
+**Hỏi: Gói Cloud Server Diamond có thông số và giá như thế nào?**
+Trả lời: Gói Cloud Server Diamond có giá 3.375.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU Platinum: 12 Core
+- RAM: 24 GB
+- SSD: 300 GB
+- Băng thông: 100 Mb/s
+- Network Uplink: 40 Gbp/s
+- Lưu lượng: Không giới hạn
+- Backup dữ liệu hàng ngày
+- Miễn phí Plesk Panel
+- Miễn phí 01 IPv4
+- Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
+
+**Hỏi: Các gói Cloud Server khác nhau như thế nào?**
+Trả lời: Cả 4 gói Cloud Server Star, Silver, Gold, Diamond đều dùng chung nền tảng CPU Intel Xeon Platinum, hệ thống lưu trữ True SAN, băng thông 100 Mb/s, network uplink 40 Gbp/s, lưu lượng không giới hạn, backup dữ liệu hàng ngày, Plesk Panel miễn phí và 01 IPv4 miễn phí. Điểm khác biệt chính là số Core CPU, dung lượng RAM và SSD tăng dần theo giá, từ gói Star (1.885.000đ/tháng, 6 Core, 14 GB RAM, 150 GB SSD) đến gói Diamond (3.375.000đ/tháng, 12 Core, 24 GB RAM, 300 GB SSD).
+
+**Hỏi: Cloud Server khác gì so với Cloud VPS?**
+Trả lời: Cloud Server là dòng máy chủ cao cấp hơn Cloud VPS, dùng hệ thống lưu trữ True SAN và network uplink 40 Gbp/s (so với 10 Gbp/s của Cloud VPS), cấu hình CPU/RAM/SSD cũng lớn hơn nhiều (Cloud Server từ 6 Core/14 GB RAM trở lên, trong khi Cloud VPS từ 1 Core/1 GB RAM). Cloud Server phù hợp cho hệ thống có lượng truy cập lớn hoặc cần hiệu năng xử lý mạnh, trong khi Cloud VPS phù hợp cho website/ứng dụng vừa và nhỏ cần chủ động quản trị máy chủ ở mức chi phí thấp hơn.
 
 ## Tổng quan và so sánh
 
