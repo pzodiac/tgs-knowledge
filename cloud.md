@@ -7,50 +7,7 @@
 
 ## Tổng quan
 
-Dịch vụ Cloud VPS của chúng tôi sử dụng CPU Intel Xeon Platinum, ổ cứng SSD tốc độ cao, băng thông 100 Mb/s và network uplinks 10 Gbp/s, giúp khởi tạo máy chủ chỉ trong 60 giây. Các gói Cloud VPS có lưu lượng không giới hạn, backup dữ liệu hàng ngày, miễn phí Plesk Panel và miễn phí 01 IPv4. Bảng giá bên dưới chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
-
-Các gói Cloud VPS hiện có:
-
-- Cloud VPS Star: Giá 228.000đ/tháng (chưa bao gồm 10% VAT). Thông số:
-  - CPU Platinum: 1 Core
-  - RAM: 1 GB
-  - SSD: 20 GB
-  - Băng thông: 100 Mb/s
-  - Network Uplinks: 10 Gbp/s
-  - Lưu lượng: Không giới hạn
-  - Backup dữ liệu hàng ngày
-  - Miễn phí Plesk Panel
-  - Miễn phí 01 IPv4
-- Cloud VPS Silver: Giá 635.000đ/tháng (chưa bao gồm 10% VAT). Thông số:
-  - CPU Platinum: 2 Core
-  - RAM: 4 GB
-  - SSD: 60 GB
-  - Băng thông: 100 Mb/s
-  - Network Uplinks: 10 Gbp/s
-  - Lưu lượng: Không giới hạn
-  - Backup dữ liệu hàng ngày
-  - Miễn phí Plesk Panel
-  - Miễn phí 01 IPv4
-- Cloud VPS Gold: Giá 920.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số:
-  - CPU Platinum: 3 Core
-  - RAM: 6 GB
-  - SSD: 80 GB
-  - Băng thông: 100 Mb/s
-  - Network Uplinks: 10 Gbp/s
-  - Lưu lượng: Không giới hạn
-  - Backup dữ liệu hàng ngày
-  - Miễn phí Plesk Panel
-  - Miễn phí 01 IPv4
-- Cloud VPS Diamond: Giá 1.200.000đ/tháng (chưa bao gồm 10% VAT). Thông số:
-  - CPU Platinum: 4 Core
-  - RAM: 8 GB
-  - SSD: 100 GB
-  - Băng thông: 100 Mb/s
-  - Network Uplinks: 10 Gbp/s
-  - Lưu lượng: Không giới hạn
-  - Backup dữ liệu hàng ngày
-  - Miễn phí Plesk Panel
-  - Miễn phí 01 IPv4
+Dịch vụ Cloud VPS của chúng tôi sử dụng CPU Intel Xeon Platinum, ổ cứng SSD tốc độ cao, băng thông 100 Mb/s và network uplinks 10 Gbp/s, giúp khởi tạo máy chủ chỉ trong 60 giây. Các gói Cloud VPS (Star, Silver, Gold, Diamond) có lưu lượng không giới hạn, backup dữ liệu hàng ngày, miễn phí Plesk Panel và miễn phí 01 IPv4. Bảng giá chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn — chi tiết từng gói xem ở mục bên dưới.
 
 ## Bảng giá các gói Cloud VPS
 
