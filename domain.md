@@ -20,8 +20,14 @@ Trả lời: Công ty hỗ trợ đăng ký đa dạng các đuôi tên miền q
 **Hỏi: Làm sao để đăng ký tên miền?**
 Trả lời: Khách hàng có thể tra cứu và đăng ký tên miền trực tiếp trên website công ty bằng cách kiểm tra tên miền còn trống, chọn đuôi phù hợp, điền thông tin chủ thể và thanh toán, hoặc liên hệ hotline/nhân viên kinh doanh để được tư vấn và hỗ trợ đăng ký.
 
+**Hỏi: Đăng ký tên miền tại Thế Giới Số mất bao lâu?**
+Trả lời: Sau khi hoàn tất thanh toán, tên miền sẽ được khởi tạo và hoạt động trong vòng vài phút đến tối đa 24 giờ đối với các đuôi .vn cần xác thực hồ sơ.
+
 **Hỏi: Đăng ký tên miền .vn có khác gì so với tên miền quốc tế không?**
 Trả lời: Có. Tên miền .vn yêu cầu khách hàng cung cấp đầy đủ thông tin chủ thể hợp lệ (CMND/CCCD với cá nhân, giấy phép kinh doanh với tổ chức) theo quy định của Trung tâm Internet Việt Nam (VNNIC), thời gian xét duyệt có thể mất từ vài giờ đến 1 ngày làm việc. Tên miền quốc tế thường được kích hoạt ngay sau khi thanh toán thành công.
+
+**Hỏi: Tôi cần chuẩn bị giấy tờ gì khi đăng ký tên miền .vn?**
+Trả lời: Cá nhân cần CMND/CCCD, doanh nghiệp cần giấy phép đăng ký kinh doanh. Thế Giới Số sẽ hỗ trợ hoàn thiện hồ sơ theo quy định của VNNIC.
 
 **Hỏi: Tôi có thể đăng ký nhiều tên miền cùng lúc không?**
 Trả lời: Có. Khách hàng có thể đăng ký cùng lúc nhiều tên miền với các đuôi khác nhau trong một đơn hàng để bảo vệ thương hiệu và tránh bị đối thủ đăng ký trước.
@@ -80,6 +86,9 @@ Trả lời: Whois là công cụ tra cứu thông tin đăng ký của một t�
 **Hỏi: Tôi đang có tên miền ở nhà cung cấp khác, có thể chuyển về công ty quản lý không?**
 Trả lời: Có. Công ty hỗ trợ chuyển tên miền (domain transfer) từ nhà cung cấp khác về quản lý tại công ty. Khách hàng cần mở khóa tên miền, lấy mã EPP/Auth code từ nhà cung cấp cũ và cung cấp cho bộ phận kỹ thuật để tiến hành chuyển đổi.
 
+**Hỏi: Có thể chuyển tên miền từ nhà cung cấp khác về Thế Giới Số không?**
+Trả lời: Có. Thế Giới Số hỗ trợ chuyển đổi nhà cung cấp miễn phí, nhanh chóng và không làm gián đoạn website đang hoạt động của bạn.
+
 **Hỏi: Chuyển tên miền mất bao lâu và có ảnh hưởng đến website đang chạy không?**
 Trả lời: Quá trình chuyển tên miền quốc tế thường mất khoảng 5-7 ngày để hoàn tất, tên miền .vn có thể nhanh hơn. Trong thời gian chuyển đổi, website và email vẫn hoạt động bình thường nếu không thay đổi cấu hình DNS.
 
@@ -102,6 +111,9 @@ Trả lời: Có. Khách hàng có thể bật tính năng gia hạn tự độn
 
 **Hỏi: Phí đăng ký năm đầu và phí gia hạn các năm sau có giống nhau không?**
 Trả lời: Không nhất thiết. Một số đuôi tên miền có chương trình khuyến mãi giá đăng ký năm đầu thấp hơn giá gia hạn các năm tiếp theo. Khách hàng nên kiểm tra bảng giá chi tiết của từng đuôi tên miền trước khi đăng ký.
+
+**Hỏi: Giá tên miền có tăng khi gia hạn năm tiếp theo không?**
+Trả lời: Mức giá ưu đãi thường áp dụng cho năm đầu đăng ký. Từ năm thứ hai, tên miền sẽ được gia hạn theo bảng giá niêm yết, được thông báo rõ ràng trước khi gia hạn.
 
 ## Tài liệu / liên kết liên quan
 

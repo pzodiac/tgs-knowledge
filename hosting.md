@@ -85,6 +85,12 @@ Trả lời: Cả 4 gói WordPress Star, Silver, Gold, Diamond đều dùng chun
 **Hỏi: Hosting hỗ trợ những hệ quản trị nội dung (CMS) nào?**
 Trả lời: Hosting của công ty hỗ trợ cài đặt các CMS phổ biến như WordPress, Joomla, Magento thông qua công cụ cài đặt tự động (Softaculous) có sẵn trong bảng điều khiển (cPanel/DirectAdmin), giúp khách hàng dựng website nhanh chóng mà không cần thao tác thủ công.
 
+**Hỏi: Hosting WordPress khác gì so với hosting thông thường?**
+Trả lời: Hosting WordPress được tối ưu riêng cho mã nguồn WordPress với giải pháp SOS (Super Optimized & Secured), 1-Click Installation, cập nhật core tự động và cấu hình máy chủ, cache chuyên biệt giúp website WordPress chạy nhanh và ổn định hơn hosting dùng chung thông thường.
+
+**Hỏi: Tôi có thể cài WordPress như thế nào?**
+Trả lời: Chỉ cần 1-Click WordPress Installation ngay trong bảng điều khiển, hệ thống sẽ tự động khởi tạo và cấu hình WordPress cho website của bạn trong vài phút.
+
 **Hỏi: Tôi có được cấp bảng điều khiển quản lý hosting không?**
 Trả lời: Có. Mỗi gói hosting đều được cấp tài khoản quản trị (cPanel hoặc DirectAdmin tùy gói) để khách hàng tự quản lý file, cơ sở dữ liệu, email, sao lưu và các thiết lập kỹ thuật khác.
 
@@ -97,6 +103,9 @@ Trả lời: Có, mỗi gói hosting có giới hạn dung lượng lưu trữ v
 **Hỏi: Dữ liệu website có được sao lưu (backup) không?**
 Trả lời: Có. Hệ thống tự động sao lưu dữ liệu định kỳ hàng ngày hoặc hàng tuần tùy gói dịch vụ. Khách hàng cũng có thể tự tạo bản sao lưu thủ công qua bảng điều khiển bất cứ lúc nào.
 
+**Hỏi: Dữ liệu website của tôi có được backup thường xuyên không?**
+Trả lời: Có. Hosting WordPress tự động backup dữ liệu hàng ngày với VeamBackup, bạn có thể khôi phục lại toàn bộ website chỉ bằng 1 Click khi cần.
+
 **Hỏi: Tôi có thể tự cài đặt phần mềm hoặc mã nguồn riêng lên hosting không?**
 Trả lời: Có, khách hàng có toàn quyền upload mã nguồn, cài đặt ứng dụng thông qua FTP hoặc File Manager trong bảng điều khiển, miễn là phù hợp với tài nguyên và điều khoản sử dụng của gói hosting.
 
@@ -104,6 +113,9 @@ Trả lời: Có, khách hàng có toàn quyền upload mã nguồn, cài đặt
 
 **Hỏi: Tôi đang dùng hosting của nhà cung cấp khác, có thể chuyển sang hosting công ty không?**
 Trả lời: Có. Công ty hỗ trợ chuyển dữ liệu (migration) miễn phí từ nhà cung cấp khác sang hosting của công ty, bao gồm mã nguồn, cơ sở dữ liệu và email. Khách hàng liên hệ bộ phận kỹ thuật để được hỗ trợ chuyển đổi mà không làm gián đoạn website đang chạy.
+
+**Hỏi: Tôi muốn chuyển website WordPress về Thế Giới Số thì phải làm gì?**
+Trả lời: Bạn chỉ cần cung cấp thông tin nhà cung cấp cũ qua email hoặc hotline 028.7309.7379, đội ngũ kỹ thuật Thế Giới Số sẽ kiểm tra, phân tích và chuyển dữ liệu sang hệ thống mới hoàn toàn miễn phí.
 
 **Hỏi: Chuyển hosting có làm website bị gián đoạn không?**
 Trả lời: Quá trình chuyển hosting được thực hiện song song, website cũ vẫn hoạt động bình thường cho đến khi dữ liệu mới được xác nhận hoạt động tốt trên hosting mới, sau đó mới trỏ tên miền sang. Vì vậy thời gian gián đoạn (nếu có) thường rất ngắn, chủ yếu do thời gian cập nhật DNS.
