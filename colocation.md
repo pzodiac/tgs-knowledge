@@ -12,6 +12,9 @@ Trả lời: Đây là dịch vụ cho thuê chỗ đặt máy chủ dành cho d
 
 ## Bảng giá các gói thuê chỗ đặt máy chủ
 
+**Hỏi: Tôi muốn thuê chỗ đặt máy chủ (thuê máy chủ), giá bao nhiêu?**
+Trả lời: Thế Giới Số hiện có 3 gói thuê chỗ đặt máy chủ (colocation): gói **Viettel IDC** giá 1.600.000đ/tháng, gói **VNPT IDC** giá 1.700.000đ/tháng, và gói **FPT IDC** giá 1.700.000đ/tháng. Cả 3 gói đều gồm Rack 1U, băng thông nội địa 100 Mbps, lưu lượng không giới hạn, IPv4 miễn phí, IP KVM miễn phí, Reboot miễn phí, điện dự phòng và điều hòa nhiệt độ. Xem chi tiết thông số từng gói bên dưới, hoặc liên hệ hotline 0919 768 789 để được tư vấn.
+
 **Hỏi: Gói thuê chỗ đặt máy chủ Viettel IDC có thông số và giá như thế nào?**
 Trả lời: Gói **Viettel IDC** có giá 1.600.000đ/tháng. Thông số kỹ thuật:
 - Rack: 1U
