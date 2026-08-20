@@ -80,6 +80,67 @@ Trả lời: Gói **WordPress Diamond** có giá 500.000đ/tháng, phù hợp ch
 **Hỏi: Các gói hosting WordPress khác nhau như thế nào?**
 Trả lời: Cả 4 gói WordPress Star, Silver, Gold, Diamond đều dùng chung nền tảng Litespeed Webserver, Cloud Linux, Full Managed, Backup Daily, VeamBackup, Free SSL và Imunify. Điểm khác biệt chính là dung lượng SSD NVMe, băng thông, số lượng địa chỉ IPv4, Addon Domain, Sub Domain, Alias/Park Domains và MySQL Database tăng dần theo giá, từ gói Star (100.000đ/tháng, nhỏ nhất) đến gói Diamond (500.000đ/tháng, băng thông không giới hạn).
 
+## Bảng giá các gói Premium Hosting
+
+**Hỏi: Premium Hosting là gì?**
+Trả lời: Premium Hosting tại Thế Giới Số là dịch vụ Web Hosting cao cấp, sử dụng 100% ổ cứng SSD chuẩn giao thức NVMe — tốc độ đọc/ghi dữ liệu nhanh hơn đến 25 lần so với ổ cứng thông thường, giúp website tải nhanh, giảm tỷ lệ thoát trang và cải thiện trải nghiệm người dùng lẫn thứ hạng SEO. Các đặc điểm nổi bật gồm:
+- CPU Intel Xeon Platinum thế hệ mới, chịu tải tốt cho website có lượng truy cập lớn
+- Hệ điều hành CloudLinux kết hợp LiteSpeed Enterprise, tăng tốc độ xử lý website
+- Bảo vệ toàn diện với Imunify360 Anti-Virus (AI), ngăn chặn tấn công và rà soát mã độc
+- Tích hợp secureFolder phòng chống mã độc, dữ liệu website luôn an toàn
+- Quản lý hệ thống dễ dàng, trực quan thông qua Thế Giới Số Portal
+
+**Hỏi: Gói Premium Hosting Star có thông số và giá như thế nào?**
+Trả lời: Gói **Premium Hosting Star** có giá 160.000đ/tháng. Thông số kỹ thuật:
+- Dung lượng NVMe: 10 GB
+- CPU Intel Platinum: 02 vCores
+- RAM: 02 GB
+- IPv4: 1 — Domain: 1
+- Subdomain: Không giới hạn
+- Băng thông: Không giới hạn
+
+**Hỏi: Gói Premium Hosting Silver có thông số và giá như thế nào?**
+Trả lời: Gói **Premium Hosting Silver** có giá 345.000đ/tháng. Thông số kỹ thuật:
+- Dung lượng NVMe: 20 GB
+- CPU Intel Platinum: 03 vCores
+- RAM: 03 GB
+- IPv4: 1 — Domain: 2
+- Subdomain: Không giới hạn
+- Băng thông: Không giới hạn
+
+**Hỏi: Gói Premium Hosting Gold có thông số và giá như thế nào?**
+Trả lời: Gói **Premium Hosting Gold** có giá 567.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+- Dung lượng NVMe: 30 GB
+- CPU Intel Platinum: 04 vCores
+- RAM: 04 GB
+- IPv4: 1 — Domain: 3
+- Subdomain: Không giới hạn
+- Băng thông: Không giới hạn
+
+**Hỏi: Gói Premium Hosting Diamond có thông số và giá như thế nào?**
+Trả lời: Gói **Premium Hosting Diamond** có giá 789.000đ/tháng. Thông số kỹ thuật:
+- Dung lượng NVMe: 40 GB
+- CPU Intel Platinum: 04 vCores
+- RAM: 06 GB
+- IPv4: 1 — Domain: 8
+- Subdomain: Không giới hạn
+- Băng thông: Không giới hạn
+
+**Hỏi: Các gói Premium Hosting khác nhau như thế nào?**
+Trả lời: Cả 4 gói Premium Hosting Star, Silver, Gold, Diamond đều dùng chung nền tảng 100% ổ cứng NVMe, CPU Intel Xeon Platinum, Subdomain và băng thông không giới hạn. Điểm khác biệt chính là dung lượng NVMe, số vCores CPU, dung lượng RAM và số lượng Domain đi kèm tăng dần theo giá, từ gói Star (160.000đ/tháng, 10 GB NVMe, 02 vCores, 02 GB RAM, 1 Domain) đến gói Diamond (789.000đ/tháng, 40 GB NVMe, 04 vCores, 06 GB RAM, 8 Domain).
+
+**Hỏi: Premium Hosting khác gì so với hosting WordPress?**
+Trả lời: Premium Hosting là dòng hosting tổng quát dùng 100% ổ cứng NVMe và CPU Intel Xeon Platinum thế hệ mới, phù hợp cho nhiều loại mã nguồn website khác nhau. Trong khi đó, hosting WordPress được tối ưu chuyên biệt riêng cho mã nguồn WordPress với giải pháp SOS (Super Optimized & Secured), 1-Click Installation và Litespeed Webserver.
+
+**Hỏi: Premium Hosting có những tính năng nổi bật gì?**
+Trả lời: Premium Hosting có 6 tính năng nổi bật:
+- Tăng tốc siêu nhanh (25x nhanh hơn HDD): Tốc độ truy cập website vượt trội nhờ ổ cứng NVMe, công nghệ lưu trữ này giúp cải thiện hiệu năng tải trang, giảm độ trễ và hỗ trợ website vận hành ổn định.
+- Độ ổn định vượt trội (99.9% Uptime SLA): Premium Hosting được triển khai trên hạ tầng có độ ổn định cao, giảm bớt lo ngại về độ trễ, góp phần giúp website vận hành mượt mà.
+- Bảo mật hàng đầu (2 lớp tường lửa + AI): Được tích hợp tường lửa hai lớp và giải pháp bảo mật Imunify360 Anti-Virus (AI), hỗ trợ phát hiện, ngăn chặn nhiều hình thức tấn công phổ biến, rà soát mã độc.
+- Tăng cường SEO (1-Click cài đặt CMS): Tích hợp Softaculous, hỗ trợ triển khai và quản lý các nền tảng như WordPress, Joomla, Node.js cùng nhiều ứng dụng phổ biến khác.
+- Hỗ trợ đa nền tảng (10+ nền tảng hỗ trợ): Nhờ ứng dụng Softaculous, tương thích và quản lý nội dung đối với các website như WordPress, Joomla, Node.js... và nhiều ứng dụng khác.
+- Tối ưu hóa hình ảnh (định dạng WebP): Hỗ trợ định dạng ảnh WebP do Google phát triển, giúp giảm dung lượng hình ảnh, cải thiện tốc độ tải trang và tối ưu dung lượng lưu trữ trên hosting.
+
 ## Kỹ thuật và cấu hình
 
 **Hỏi: Hosting hỗ trợ những hệ quản trị nội dung (CMS) nào?**
