@@ -70,6 +70,5 @@ Trả lời: Không nhất thiết. Một số đuôi tên miền có chương t
 
 ## Tài liệu / liên kết liên quan
 
-- [Bảng giá các đuôi tên miền](đường-dẫn-hoặc-URL)
-- [Hướng dẫn trỏ DNS tên miền về hosting](đường-dẫn-hoặc-URL)
+- [Kiểm tra và đăng ký tên miền](https://tgs.com.vn/dang-ky-ten-mien)
 - [Câu hỏi thường gặp về Hosting](hosting.md)

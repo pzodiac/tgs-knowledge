@@ -129,6 +129,5 @@ Trả lời: Có. Công ty cam kết uptime tối thiểu 99.9% cho tất cả c
 
 ## Tài liệu / liên kết liên quan
 
-- [Bảng giá các gói hosting](đường-dẫn-hoặc-URL)
-- [Hướng dẫn sử dụng bảng điều khiển hosting](đường-dẫn-hoặc-URL)
+- [Bảng giá các gói hosting WordPress](https://tgs.com.vn/hosting-wordpress)
 - [Chính sách bảo hành sản phẩm](chinh-sach-bao-hanh.md)

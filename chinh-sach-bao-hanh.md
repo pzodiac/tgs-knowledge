@@ -50,8 +50,3 @@ Trả lời: Có. Chính sách bảo hành áp dụng thống nhất cho tất c
 
 **Hỏi: Thời gian sửa chữa bảo hành là bao lâu?**
 Trả lời: Thông thường từ 3-7 ngày làm việc kể từ khi nhận sản phẩm, tùy vào loại lỗi và tình trạng linh kiện thay thế.
-
-## Tài liệu / liên kết liên quan
-
-- [Hướng dẫn sử dụng sản phẩm](đường-dẫn-hoặc-URL)
-- [Danh sách trung tâm bảo hành](đường-dẫn-hoặc-URL)
