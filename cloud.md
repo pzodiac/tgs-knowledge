@@ -142,6 +142,7 @@ Trả lời: Gói **Cloud GPU Star** có giá 490.000đ/tháng (chưa bao gồm 
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Silver có thông số và giá như thế nào?**
 Trả lời: Gói **Cloud GPU Silver** có giá 690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
@@ -155,6 +156,7 @@ Trả lời: Gói **Cloud GPU Silver** có giá 690.000đ/tháng (chưa bao gồ
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Gold có thông số và giá như thế nào?**
 Trả lời: Gói **Cloud GPU Gold** có giá 1.590.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
@@ -168,6 +170,7 @@ Trả lời: Gói **Cloud GPU Gold** có giá 1.590.000đ/tháng (chưa bao gồ
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Diamond có thông số và giá như thế nào?**
 Trả lời: Gói **Cloud GPU Diamond** có giá 2.690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
