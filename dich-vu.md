@@ -9,14 +9,14 @@
 
 **Hỏi: Thế Giới Số hiện có những dịch vụ gì?**
 Trả lời:
-- Tên Miền: Đăng ký & quản lý tên miền .vn, .com, .net và hàng trăm đuôi quốc tế. Chuyển nhượng nhanh, giá cạnh tranh.
-- Web Hosting: Hosting tốc độ cao, ổ SSD NVMe, băng thông không giới hạn, cPanel trực quan, uptime 99.9%.
-- VPS / Cloud Server: Máy chủ ảo hiệu năng cao, khởi tạo trong 60 giây, root access toàn quyền, scale linh hoạt theo nhu cầu.
-- Máy Chủ Riêng: Dedicated server tại datacenter Tier III Việt Nam, cấu hình tuỳ chỉnh, cam kết SLA 99.99%.
-- Email Doanh Nghiệp: Email theo tên miền riêng, bảo mật chống spam, dung lượng lớn, tích hợp Outlook & Google Workspace.
-- SSL Certificate: Chứng chỉ SSL từ các tổ chức uy tín toàn cầu, cài đặt miễn phí, gia hạn tự động.
-- Cloud Backup: Sao lưu dữ liệu tự động hàng ngày, khôi phục 1 click, lưu trữ đa vùng an toàn tuyệt đối.
-- Thiết Kế Website: Website chuyên nghiệp, chuẩn SEO, tối ưu chuyển đổi — được xây dựng riêng cho từng doanh nghiệp.
+- Tên miền
+- Web hosting
+- VPS / Cloud Server
+- Máy Chủ Riêng
+- Email doanh nghiệp
+- SSL Certificate
+- Cloud Backup
+- Thiết kế Website
 
 ## Chi tiết từng dịch vụ
 
