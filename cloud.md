@@ -1,9 +1,9 @@
-# Câu hỏi thường gặp về Cloud VPS và Cloud Server
+# Câu hỏi thường gặp về Cloud VPS, Cloud Server và Cloud GPU
 
-> **Danh mục:** Dịch vụ Cloud VPS / Cloud Server
+> **Danh mục:** Dịch vụ Cloud VPS / Cloud Server / Cloud GPU
 > **Cập nhật lần cuối:** 2026-08-20
 > **Người phụ trách:** Phòng kỹ thuật
-> **Từ khóa:** cloud vps, cloud server, vps, máy chủ ảo, máy chủ, cpu platinum, plesk panel, true san
+> **Từ khóa:** cloud vps, cloud server, cloud gpu, vps, máy chủ ảo, máy chủ, gpu, cpu platinum, plesk panel, true san
 
 ## Tổng quan
 
@@ -129,6 +129,72 @@ Trả lời: Cả 4 gói Cloud Server Star, Silver, Gold, Diamond đều dùng c
 
 **Hỏi: Cloud Server khác gì so với Cloud VPS?**
 Trả lời: Cloud Server là dòng máy chủ cao cấp hơn Cloud VPS, dùng hệ thống lưu trữ True SAN và network uplink 40 Gbp/s (so với 10 Gbp/s của Cloud VPS), cấu hình CPU/RAM/SSD cũng lớn hơn nhiều (Cloud Server từ 6 Core/14 GB RAM trở lên, trong khi Cloud VPS từ 1 Core/1 GB RAM). Cloud Server phù hợp cho hệ thống có lượng truy cập lớn hoặc cần hiệu năng xử lý mạnh, trong khi Cloud VPS phù hợp cho website/ứng dụng vừa và nhỏ cần chủ động quản trị máy chủ ở mức chi phí thấp hơn.
+
+## Bảng giá các gói Cloud GPU
+
+Bảng giá các gói Cloud GPU dưới đây chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
+
+**Hỏi: Gói Cloud GPU Star có thông số và giá như thế nào?**
+Trả lời: Gói Cloud GPU Star có giá 490.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU: 01 vCore
+- RAM: 01 GB
+- GPU: 01 GB
+- SSD: 30 GB
+- Bandwidth: 100 Mbps
+- Network Uplink: 40 Gbp/s
+- Traffic: Unlimited
+- Backup dữ liệu hàng tuần
+- Free Plesk Panel
+- Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
+
+**Hỏi: Gói Cloud GPU Silver có thông số và giá như thế nào?**
+Trả lời: Gói Cloud GPU Silver có giá 690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU: 02 vCores
+- RAM: 02 GB
+- GPU: 01 GB
+- SSD: 60 GB
+- Bandwidth: 100 Mbps
+- Network Uplink: 40 Gbp/s
+- Traffic: Unlimited
+- Backup dữ liệu hàng tuần
+- Free Plesk Panel
+- Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
+
+**Hỏi: Gói Cloud GPU Gold có thông số và giá như thế nào?**
+Trả lời: Gói Cloud GPU Gold có giá 1.590.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+- CPU: 04 vCores
+- RAM: 06 GB
+- GPU: 02 GB
+- SSD: 100 GB
+- Bandwidth: 100 Mbps
+- Network Uplink: 40 Gbp/s
+- Traffic: Unlimited
+- Backup dữ liệu hàng tuần
+- Free Plesk Panel
+- Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
+
+**Hỏi: Gói Cloud GPU Diamond có thông số và giá như thế nào?**
+Trả lời: Gói Cloud GPU Diamond có giá 2.690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+- CPU: 06 vCores
+- RAM: 08 GB
+- GPU: 04 GB
+- SSD: 150 GB
+- Bandwidth: 100 Mbps
+- Network Uplink: 40 Gbp/s
+- Traffic: Unlimited
+- Backup dữ liệu hàng tuần
+- Free Plesk Panel
+- Free 01 IPv4
+- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
+
+**Hỏi: Các gói Cloud GPU khác nhau như thế nào?**
+Trả lời: Cả 4 gói Cloud GPU Star, Silver, Gold, Diamond đều dùng chung băng thông 100 Mbps, network uplink 40 Gbp/s, traffic không giới hạn, backup dữ liệu hàng tuần, Plesk Panel miễn phí và 01 IPv4 miễn phí. Điểm khác biệt chính là số vCore CPU, dung lượng RAM, GPU và SSD tăng dần theo giá, từ gói Star (490.000đ/tháng, 01 vCore, 01 GB RAM, 01 GB GPU, 30 GB SSD) đến gói Diamond (2.690.000đ/tháng, 06 vCores, 08 GB RAM, 04 GB GPU, 150 GB SSD).
+
+**Hỏi: Cloud GPU dùng để làm gì, khác gì so với Cloud VPS và Cloud Server?**
+Trả lời: Cloud GPU là dòng máy chủ ảo có tích hợp thêm tài nguyên GPU riêng bên cạnh CPU/RAM/SSD, phù hợp cho các tác vụ cần xử lý đồ họa, AI/machine learning, render hoặc tính toán song song mà Cloud VPS và Cloud Server (chỉ có CPU) không đáp ứng được. Cloud GPU vẫn có backup dữ liệu hàng tuần, Plesk Panel và IPv4 miễn phí như các dòng máy chủ khác.
 
 ## Tổng quan và so sánh
 
