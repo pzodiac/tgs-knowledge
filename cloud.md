@@ -67,3 +67,20 @@ Trả lời: Chưa. Bảng giá các gói Cloud VPS (Star, Silver, Gold, Diamond
 
 **Hỏi: Cloud VPS được khởi tạo trong bao lâu?**
 Trả lời: Cloud VPS được khởi tạo tự động chỉ trong khoảng 60 giây sau khi đăng ký và thanh toán thành công.
+
+## Tổng quan và so sánh
+
+**Hỏi: Sự khác biệt Cloud VPS với Shared Hosting?**
+Trả lời: Với shared hosting, trang web của bạn chia sẻ một máy chủ với hàng trăm đến hàng ngàn trang web khác, chia sẻ tài nguyên máy chủ như RAM và CPU. Ngược lại, Cloud VPS là một hệ thống khép kín được tạo ra bằng cách tách máy chủ vật lý với CPU riêng, dung lượng RAM riêng… và người dùng có toàn quyền quản trị.
+
+**Hỏi: Khi nào tôi nên chuyển đổi từ Hosting sang sử dụng VPS?**
+Trả lời: Cloud VPS được sử dụng khi bạn thấy rằng trang web của mình có nhiều lưu lượng truy cập mà các gói lưu trữ thông thường (Hosting) không thể theo kịp. Một số dấu hiệu: lưu lượng truy cập tăng lên rất nhiều, tỷ lệ thoát trên tất cả các trang tăng mạnh, tăng thời gian tải trang và thời gian downtime.
+
+**Hỏi: Cloud VPS tại Thế Giới Số có gì đặc biệt?**
+Trả lời: Cơ sở hạ tầng mạnh mẽ, cấu hình máy chủ cao cấp với chipset mới nhất để mang lại hiệu suất xử lý vượt trội. Công nghệ luôn được cập nhật bởi đội ngũ kỹ thuật viên giàu kinh nghiệm. Hỗ trợ phần mềm, quản lý dễ dàng, bảo mật cao với công nghệ CloudLinux. Nhiều gói dịch vụ, cho phép tuỳ chỉnh thông số theo nhu cầu thực tế của khách hàng.
+
+**Hỏi: Tôi có cần phải biết các kiến thức kỹ thuật chuyên sâu để sử dụng VPS không?**
+Trả lời: Để sử dụng Cloud VPS, bạn cần có một số kiến thức về quản trị máy chủ. Tuy nhiên, Thế Giới Số cung cấp cho bạn một số phần mềm quản lý máy chủ có thể dễ dàng giải quyết các vấn đề trên.
+
+**Hỏi: Tôi có thể chuyển dịch vụ từ nhà cung cấp khác về Thế Giới Số?**
+Trả lời: Vâng! Tất cả những gì bạn cần làm là cung cấp cho Thế Giới Số thông tin nhà cung cấp cũ của bạn bằng cách tạo email hoặc gọi đến hotline 028.7309.7379, chúng tôi sẽ kiểm tra, phân tích và chuyển dữ liệu của bạn sang Thế Giới Số hoàn toàn miễn phí.
