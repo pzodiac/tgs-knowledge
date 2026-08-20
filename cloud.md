@@ -70,8 +70,6 @@ Trả lời: Cloud VPS được khởi tạo tự động chỉ trong khoảng 6
 
 ## Bảng giá các gói Cloud Server
 
-Dịch vụ Cloud Server của chúng tôi sử dụng CPU Intel Xeon Platinum, hệ thống lưu trữ True SAN, băng thông 100 Mb/s và network uplink 40 Gbp/s. Bảng giá bên dưới chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
-
 **Hỏi: Gói Cloud Server Star có thông số và giá như thế nào?**
 Trả lời: Gói Cloud Server Star có giá 1.885.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 6 Core
@@ -132,8 +130,6 @@ Trả lời: Cloud Server là dòng máy chủ cao cấp hơn Cloud VPS, dùng h
 
 ## Bảng giá các gói Cloud GPU
 
-Bảng giá các gói Cloud GPU dưới đây chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
-
 **Hỏi: Gói Cloud GPU Star có thông số và giá như thế nào?**
 Trả lời: Gói Cloud GPU Star có giá 490.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU: 01 vCore
@@ -146,7 +142,6 @@ Trả lời: Gói Cloud GPU Star có giá 490.000đ/tháng (chưa bao gồm 10% 
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
-- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Silver có thông số và giá như thế nào?**
 Trả lời: Gói Cloud GPU Silver có giá 690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
@@ -160,7 +155,6 @@ Trả lời: Gói Cloud GPU Silver có giá 690.000đ/tháng (chưa bao gồm 10
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
-- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Gold có thông số và giá như thế nào?**
 Trả lời: Gói Cloud GPU Gold có giá 1.590.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
@@ -174,7 +168,6 @@ Trả lời: Gói Cloud GPU Gold có giá 1.590.000đ/tháng (chưa bao gồm 10
 - Backup dữ liệu hàng tuần
 - Free Plesk Panel
 - Free 01 IPv4
-- Tham khảo thêm các gói Cloud GPU khác tại: https://tgs.com.vn/cloud-gpu
 
 **Hỏi: Gói Cloud GPU Diamond có thông số và giá như thế nào?**
 Trả lời: Gói Cloud GPU Diamond có giá 2.690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
