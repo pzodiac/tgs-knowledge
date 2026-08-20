@@ -8,7 +8,7 @@
 ## Tổng quan
 
 **Hỏi: Thế Giới Số hiện có những dịch vụ gì?**
-Trả lời:
+Trả lời: Thế Giới Số cung cấp các dịch vụ:
 - Tên miền
 - Web hosting
 - VPS / Cloud Server
