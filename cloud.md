@@ -12,7 +12,7 @@ Dịch vụ Cloud VPS của chúng tôi sử dụng CPU Intel Xeon Platinum, ổ
 ## Bảng giá các gói Cloud VPS
 
 **Hỏi: Gói Cloud VPS Star có thông số và giá như thế nào?**
-Trả lời: Gói Cloud VPS Star có giá 228.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud VPS Star** có giá 228.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 1 Core
 - RAM: 1 GB
 - SSD: 20 GB
@@ -24,7 +24,7 @@ Trả lời: Gói Cloud VPS Star có giá 228.000đ/tháng (chưa bao gồm 10% 
 - Miễn phí 01 IPv4
 
 **Hỏi: Gói Cloud VPS Silver có thông số và giá như thế nào?**
-Trả lời: Gói Cloud VPS Silver có giá 635.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud VPS Silver** có giá 635.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 2 Core
 - RAM: 4 GB
 - SSD: 60 GB
@@ -36,7 +36,7 @@ Trả lời: Gói Cloud VPS Silver có giá 635.000đ/tháng (chưa bao gồm 10
 - Miễn phí 01 IPv4
 
 **Hỏi: Gói Cloud VPS Gold có thông số và giá như thế nào?**
-Trả lời: Gói Cloud VPS Gold có giá 920.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+Trả lời: Gói **Cloud VPS Gold** có giá 920.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
 - CPU Platinum: 3 Core
 - RAM: 6 GB
 - SSD: 80 GB
@@ -48,7 +48,7 @@ Trả lời: Gói Cloud VPS Gold có giá 920.000đ/tháng (chưa bao gồm 10% 
 - Miễn phí 01 IPv4
 
 **Hỏi: Gói Cloud VPS Diamond có thông số và giá như thế nào?**
-Trả lời: Gói Cloud VPS Diamond có giá 1.200.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud VPS Diamond** có giá 1.200.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 4 Core
 - RAM: 8 GB
 - SSD: 100 GB
@@ -71,7 +71,7 @@ Trả lời: Cloud VPS được khởi tạo tự động chỉ trong khoảng 6
 ## Bảng giá các gói Cloud Server
 
 **Hỏi: Gói Cloud Server Star có thông số và giá như thế nào?**
-Trả lời: Gói Cloud Server Star có giá 1.885.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud Server Star** có giá 1.885.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 6 Core
 - RAM: 14 GB
 - SSD: 150 GB
@@ -84,7 +84,7 @@ Trả lời: Gói Cloud Server Star có giá 1.885.000đ/tháng (chưa bao gồm
 - Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
 
 **Hỏi: Gói Cloud Server Silver có thông số và giá như thế nào?**
-Trả lời: Gói Cloud Server Silver có giá 2.480.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud Server Silver** có giá 2.480.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 8 Core
 - RAM: 18 GB
 - SSD: 200 GB
@@ -97,7 +97,7 @@ Trả lời: Gói Cloud Server Silver có giá 2.480.000đ/tháng (chưa bao g�
 - Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
 
 **Hỏi: Gói Cloud Server Gold có thông số và giá như thế nào?**
-Trả lời: Gói Cloud Server Gold có giá 3.075.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+Trả lời: Gói **Cloud Server Gold** có giá 3.075.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
 - CPU Platinum: 10 Core
 - RAM: 22 GB
 - SSD: 250 GB
@@ -110,7 +110,7 @@ Trả lời: Gói Cloud Server Gold có giá 3.075.000đ/tháng (chưa bao gồm
 - Tham khảo thêm các gói Cloud Server khác tại: https://tgs.com.vn/cloud-server
 
 **Hỏi: Gói Cloud Server Diamond có thông số và giá như thế nào?**
-Trả lời: Gói Cloud Server Diamond có giá 3.375.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud Server Diamond** có giá 3.375.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU Platinum: 12 Core
 - RAM: 24 GB
 - SSD: 300 GB
@@ -131,7 +131,7 @@ Trả lời: Cloud Server là dòng máy chủ cao cấp hơn Cloud VPS, dùng h
 ## Bảng giá các gói Cloud GPU
 
 **Hỏi: Gói Cloud GPU Star có thông số và giá như thế nào?**
-Trả lời: Gói Cloud GPU Star có giá 490.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud GPU Star** có giá 490.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU: 01 vCore
 - RAM: 01 GB
 - GPU: 01 GB
@@ -144,7 +144,7 @@ Trả lời: Gói Cloud GPU Star có giá 490.000đ/tháng (chưa bao gồm 10% 
 - Free 01 IPv4
 
 **Hỏi: Gói Cloud GPU Silver có thông số và giá như thế nào?**
-Trả lời: Gói Cloud GPU Silver có giá 690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud GPU Silver** có giá 690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU: 02 vCores
 - RAM: 02 GB
 - GPU: 01 GB
@@ -157,7 +157,7 @@ Trả lời: Gói Cloud GPU Silver có giá 690.000đ/tháng (chưa bao gồm 10
 - Free 01 IPv4
 
 **Hỏi: Gói Cloud GPU Gold có thông số và giá như thế nào?**
-Trả lời: Gói Cloud GPU Gold có giá 1.590.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+Trả lời: Gói **Cloud GPU Gold** có giá 1.590.000đ/tháng (chưa bao gồm 10% VAT), là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
 - CPU: 04 vCores
 - RAM: 06 GB
 - GPU: 02 GB
@@ -170,7 +170,7 @@ Trả lời: Gói Cloud GPU Gold có giá 1.590.000đ/tháng (chưa bao gồm 10
 - Free 01 IPv4
 
 **Hỏi: Gói Cloud GPU Diamond có thông số và giá như thế nào?**
-Trả lời: Gói Cloud GPU Diamond có giá 2.690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
+Trả lời: Gói **Cloud GPU Diamond** có giá 2.690.000đ/tháng (chưa bao gồm 10% VAT). Thông số kỹ thuật:
 - CPU: 06 vCores
 - RAM: 08 GB
 - GPU: 04 GB

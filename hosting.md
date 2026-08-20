@@ -30,7 +30,7 @@ Trả lời: Tên miền và hosting là hai dịch vụ riêng biệt. Một s�
 ## Bảng giá các gói hosting WordPress
 
 **Hỏi: Gói hosting WordPress Star có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Star có giá 100.000đ/tháng, phù hợp cho website nhỏ hoặc blog cá nhân. Thông số kỹ thuật:
+Trả lời: Gói **WordPress Star** có giá 100.000đ/tháng, phù hợp cho website nhỏ hoặc blog cá nhân. Thông số kỹ thuật:
 - Dung lượng: 2 GB SSD NVMe
 - Bandwidth: 50 GB
 - IPv4: 01 địa chỉ
@@ -42,7 +42,7 @@ Trả lời: Gói WordPress Star có giá 100.000đ/tháng, phù hợp cho websi
 - Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Silver có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
+Trả lời: Gói **WordPress Silver** có giá 150.000đ/tháng, là gói được sử dụng phổ biến nhất. Thông số kỹ thuật:
 - Dung lượng: 4 GB SSD NVMe
 - Bandwidth: 100 GB
 - IPv4: 01 địa chỉ
@@ -54,7 +54,7 @@ Trả lời: Gói WordPress Silver có giá 150.000đ/tháng, là gói được 
 - Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Gold có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho website doanh nghiệp có lượng truy cập vừa. Thông số kỹ thuật:
+Trả lời: Gói **WordPress Gold** có giá 200.000đ/tháng, phù hợp cho website doanh nghiệp có lượng truy cập vừa. Thông số kỹ thuật:
 - Dung lượng: 6 GB SSD NVMe
 - Bandwidth: 150 GB
 - IPv4: 02 địa chỉ
@@ -66,7 +66,7 @@ Trả lời: Gói WordPress Gold có giá 200.000đ/tháng, phù hợp cho websi
 - Tham khảo thêm các gói hosting WordPress khác tại: https://tgs.com.vn/hosting-wordpress
 
 **Hỏi: Gói hosting WordPress Diamond có thông số và giá như thế nào?**
-Trả lời: Gói WordPress Diamond có giá 500.000đ/tháng, phù hợp cho website có lượng truy cập lớn hoặc cần nhiều tài nguyên. Thông số kỹ thuật:
+Trả lời: Gói **WordPress Diamond** có giá 500.000đ/tháng, phù hợp cho website có lượng truy cập lớn hoặc cần nhiều tài nguyên. Thông số kỹ thuật:
 - Dung lượng: 10 GB SSD NVMe
 - Bandwidth: Unlimited (không giới hạn)
 - IPv4: 02 địa chỉ
