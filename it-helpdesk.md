@@ -8,7 +8,7 @@
 ## Tổng quan
 
 **Hỏi: Dịch vụ IT Helpdesk là gì?**
-Trả lời: IT Helpdesk là dịch vụ thuê ngoài đội ngũ IT chuyên trách, hỗ trợ bảo trì thiết bị, xử lý sự cố phần cứng/phần mềm, giám sát hạ tầng, tư vấn bảo mật và hỗ trợ tường lửa cho doanh nghiệp, tính phí theo số lượng máy (PC) sử dụng.
+Trả lời: Thế Giới Số cung cấp Dịch vụ IT Helpdesk, sẵn sàng hỗ trợ kỹ thuật cho khách hàng khi có sự cố xảy ra trong quá trình sử dụng. Dịch vụ hỗ trợ từ xa và hỗ trợ tại chỗ nếu không giải quyết được sự cố từ xa, không giới hạn số lần hỗ trợ. Khi sử dụng dịch vụ, máy móc thiết bị sẽ được bảo trì, bảo dưỡng định kỳ với chi phí cố định, giúp doanh nghiệp yên tâm về hệ thống CNTT của mình.
 
 **Hỏi: Thế Giới Số có những gói IT Helpdesk nào, giá bao nhiêu?**
 Trả lời: Thế Giới Số có 4 gói IT Helpdesk:
