@@ -14,6 +14,19 @@ Tài liệu này tổng hợp các câu hỏi thường gặp của khách hàng
 **Hỏi: Hosting là gì?**
 Trả lời: Web Hosting là dịch vụ lưu trữ dữ liệu website trên máy chủ, giúp website hoạt động và có thể truy cập qua Internet, cung cấp không gian lưu trữ và tài nguyên cần thiết để vận hành tệp tin, hình ảnh, video, cơ sở dữ liệu và mã nguồn của website.
 
+**Hỏi: Hosting có gì?**
+Trả lời:
+- Sử dụng 100% SSD NVMe
+- Backup dữ liệu hàng ngày
+- Install WordPress bằng 1 Click
+- Quản lý với Plesk Panel
+- Cloud Linux, Ubuntu, CentOS, Debian
+- Tốc độ tối ưu với Litespeed
+- Multi Version PHP (5.x - 8.x)
+- Quét mã độc với Imunify 360 Anti-Virus (AI)
+- Miễn phí SSL trọn đời
+- Uptime 99.9%
+
 **Hỏi: Công ty có những gói hosting nào?**
 Trả lời: Công ty cung cấp nhiều gói hosting phù hợp với từng nhu cầu: gói Cá nhân (website nhỏ, blog), gói Doanh nghiệp (website công ty, bán hàng vừa và nhỏ), và gói Cao cấp (website có lượng truy cập lớn, thương mại điện tử). Mỗi gói khác nhau về dung lượng lưu trữ, băng thông và số lượng website/email đi kèm.
 
