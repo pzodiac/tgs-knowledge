@@ -60,16 +60,16 @@ Trả lời: Gói **Cloud Email Diamond** giá 4.000.000 VND. Thông số: Dung 
 Giá các gói Email Doanh Nghiệp chưa bao gồm 8% VAT, đơn vị tính theo tháng, hợp đồng dịch vụ 12 tháng.
 
 **Hỏi: Giá gói Email Doanh Nghiệp Star là bao nhiêu?**
-Trả lời: Gói **Email Doanh Nghiệp Star** giá 100.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 5 Gb, Số lượng Email 5, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7.
+Trả lời: Gói **Email Doanh Nghiệp Star** giá 100.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 5 Gb, Số lượng Email 5, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7. Tham khảo thêm tại: https://cloudemail.vn/#pricing
 
 **Hỏi: Giá gói Email Doanh Nghiệp Silver là bao nhiêu?**
-Trả lời: Gói **Email Doanh Nghiệp Silver** giá 200.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng), là gói phổ biến nhất (Popular plan). Thông số: Dung lượng lưu trữ 10 Gb, Số lượng Email 10, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7.
+Trả lời: Gói **Email Doanh Nghiệp Silver** giá 200.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng), là gói phổ biến nhất (Popular plan). Thông số: Dung lượng lưu trữ 10 Gb, Số lượng Email 10, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7. Tham khảo thêm tại: https://cloudemail.vn/#pricing
 
 **Hỏi: Giá gói Email Doanh Nghiệp Gold là bao nhiêu?**
-Trả lời: Gói **Email Doanh Nghiệp Gold** giá 400.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 50 Gb, Số lượng Email 50, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7.
+Trả lời: Gói **Email Doanh Nghiệp Gold** giá 400.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 50 Gb, Số lượng Email 50, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7. Tham khảo thêm tại: https://cloudemail.vn/#pricing
 
 **Hỏi: Giá gói Email Doanh Nghiệp Diamond là bao nhiêu?**
-Trả lời: Gói **Email Doanh Nghiệp Diamond** giá 700.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 100 Gb, Số lượng Email 100, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7.
+Trả lời: Gói **Email Doanh Nghiệp Diamond** giá 700.000 VND/tháng (chưa bao gồm 8% VAT, hợp đồng 12 tháng). Thông số: Dung lượng lưu trữ 100 Gb, Số lượng Email 100, Sao lưu dữ liệu hàng ngày, Web-Basic-Email, Email theo tên miền, Webmail/Mobile/POP3 & IMAP, Hỗ trợ kỹ thuật 24/7. Tham khảo thêm tại: https://cloudemail.vn/#pricing
 
 ## Email Server Riêng
 
