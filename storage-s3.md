@@ -27,3 +27,22 @@ Trả lời: Chi phí được tính theo dung lượng lưu trữ thực tế s
 
 **Hỏi: Tôi có thể tích hợp S3 với ứng dụng hiện có không?**
 Trả lời: Có. S3 tương thích 100% chuẩn S3 API, dễ dàng tích hợp với các SDK quen thuộc (Boto3, AWS SDK), công cụ phổ biến (rclone, Cyberduck, MinIO) cũng như quy trình CI/CD và kiến trúc Microservices mà không cần sửa code, chỉ cần đổi endpoint.
+
+## Bảng giá tham khảo dịch vụ S3 (cam kết 1 năm)
+
+Giá đã bao gồm ưu đãi cam kết theo năm, chưa bao gồm 10% phí giá trị gia tăng (VAT) khi xuất hóa đơn.
+
+**Hỏi: Giá gói S3 Lite là bao nhiêu?**
+Trả lời: Gói **Lite** giá 45.000đ/tháng (giá gốc 50.000đ). Dung lượng: 50GB - 99GB. Đơn giá vượt mức: 100.000đ/100GB.
+
+**Hỏi: Giá gói S3 Basic là bao nhiêu?**
+Trả lời: Gói **Basic** giá 90.000đ/tháng (giá gốc 100.000đ). Dung lượng: 100GB - 499GB. Đơn giá vượt mức: 100.000đ/100GB.
+
+**Hỏi: Giá gói S3 Pro là bao nhiêu?**
+Trả lời: Gói **Pro** giá 427.500đ/tháng (giá gốc 475.000đ), là gói được sử dụng phổ biến nhất. Dung lượng: 500GB - 1023GB. Đơn giá vượt mức: 95.000đ/100GB.
+
+**Hỏi: Giá gói S3 Enterprise là bao nhiêu?**
+Trả lời: Gói **Enterprise** giá 829.000đ/tháng (giá gốc 921.600đ). Dung lượng: 1TB trở lên. Đơn giá vượt mức: 90.000đ/100GB.
+
+**Hỏi: Các gói S3 khác nhau như thế nào?**
+Trả lời: 4 gói S3 (Lite, Basic, Pro, Enterprise) khác nhau theo dung lượng lưu trữ và đơn giá vượt mức: Lite (50GB-99GB, 45.000đ/tháng, vượt mức 100.000đ/100GB), Basic (100GB-499GB, 90.000đ/tháng, vượt mức 100.000đ/100GB), Pro (500GB-1023GB, 427.500đ/tháng, vượt mức 95.000đ/100GB, phổ biến nhất), Enterprise (1TB trở lên, 829.000đ/tháng, vượt mức 90.000đ/100GB). Đơn giá vượt mức giảm dần khi dùng gói dung lượng lớn hơn.
