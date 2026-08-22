@@ -363,3 +363,10 @@ Trả lời: Toàn bộ log file của server được lưu trong thư mục `/v
 - wtmp: ghi nhận đăng nhập
 - yum.log: thao tác quản lý gói Yum
 Cách xem file log: `more -f /var/log/secure` hoặc `tail -n 30 /var/log/secure` (lệnh tail giúp xem các dòng gần nhất, ví dụ 30 dòng cuối). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cach-xem-file-log-tren-vps/
+
+**Hỏi: VPS bị lỗi do inodes bị full thì xử lý như thế nào?**
+Trả lời: Inode là tài nguyên hệ thống tệp dùng để theo dõi từng file; khi hệ thống đạt số lượng inode tối đa, các thao tác với file sẽ thất bại dù ổ đĩa vẫn còn dung lượng trống. Nguyên nhân thường gặp: lỗi ghi file của Apache dẫn đến VPS không hoạt động được do full inodes; số lượng file quá lớn (đặc biệt là email) vượt quá giới hạn của Linux; trên hệ thống DirectAdmin, thường do hàng đợi Mail Exim tích tụ quá nhiều. Cách kiểm tra:
+- Xem tổng quan hệ thống: `df -i`.
+- Xem chi tiết theo từng thư mục: `find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n` — lệnh này xếp hạng các thư mục theo mức tiêu thụ inode, thư mục tiêu thụ nhiều nhất hiển thị ở cuối kết quả.
+Cách khắc phục phổ biến: với DirectAdmin, thư mục hàng đợi Mail Exim tại `/var/spool/exim/input` thường là nguyên nhân gây cạn kiệt inode và có thể dọn dẹp an toàn để khắc phục.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/vps-bi-loi-do-inodes-bi-full-huong-dan-xem-disk-inodes-tren-tung-thu-muc-linux-how-to-disk-inode-on-folder-linux/

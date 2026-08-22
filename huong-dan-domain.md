@@ -74,6 +74,17 @@ Trả lời: Để thêm một domain mới vào VestaCP trên VPS:
 Sau khi hoàn thành, domain sẽ được thêm vào VestaCP thành công và sẵn sàng sử dụng.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/them-domain-moi-vao-trinh-quan-ly-vestacp/
 
+**Hỏi: Cách cài đặt SSL Let's Encrypt cho trang quản trị VestaCP như thế nào?**
+Trả lời: Các bước cài SSL Let's Encrypt cho trang quản trị VestaCP (thay `tenmien-cua-ban` bằng tên miền/hostname thực tế):
+- Bước 1 - Cài Let's Encrypt: `yum install -y git`, `cd /opt/`, `git clone https://github.com/letsencrypt/letsencrypt`, `cd letsencrypt/`.
+- Bước 2 - Dừng dịch vụ web trước khi tạo chứng chỉ: `service nginx stop` và `service httpd stop`.
+- Bước 3 - Tạo chứng chỉ SSL: chạy `./letsencrypt-auto certonly --standalone -d tenmien-cua-ban`, nhập email và đồng ý điều khoản dịch vụ khi được hỏi.
+- Bước 4 - Bật tự động gia hạn: `./letsencrypt-auto renew`.
+- Bước 5 - Tạo symbolic link thay thế chứng chỉ mặc định của VestaCP: xóa `/usr/local/vesta/ssl/certificate.crt` và `/usr/local/vesta/ssl/certificate.key`, sau đó tạo link tương ứng trỏ tới `/etc/letsencrypt/live/tenmien-cua-ban/cert.pem` và `privkey.pem`.
+- Bước 6 - Khởi động lại VestaCP: `service vesta restart`.
+Sau đó truy cập trang quản trị qua `hostname:8083` để xác nhận chứng chỉ SSL hợp lệ đã được áp dụng.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-ssl-lets-encrypt-cho-trang-quan-tri-vestacp/
+
 ## Đăng ký và chuyển tên miền
 
 **Hỏi: Khách hàng cần cung cấp thông tin gì khi đăng ký tên miền .VN?**
@@ -94,6 +105,53 @@ Trả lời: Quy trình chuyển tên miền quốc tế (.com, .net, .biz, .org
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/khach-hang-chuyen-ten-mien-quoc-te-ve-the-gioi-so-nhu-the-nao/
 
 ## Trạng thái tên miền
+
+## Khái niệm cơ bản và công cụ hỗ trợ
+
+**Hỏi: Tên miền (domain) là gì?**
+Trả lời: Tên miền là một cái tên hiển thị ngắn gọn bằng chữ cái và số, giúp thay thế địa chỉ IP — con người dễ nhớ tên (ví dụ google.com) hơn là các địa chỉ IP số (ví dụ 215.16.161.15). Một tên miền có thể trỏ tới nhiều địa chỉ IP khác nhau phục vụ các mục đích riêng biệt, bao gồm truy cập website hoặc sử dụng cho dịch vụ email.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/ten-mien-la-gi/
+
+**Hỏi: WHOIS là gì?**
+Trả lời: WHOIS (đọc là "who-is") là công cụ tra cứu thông tin về chủ sở hữu tên miền, cung cấp các thông tin: Registrar (nhà quản lý tên miền — tổ chức/tập đoàn phân phối tên miền), Registrant (người đăng ký/chủ sở hữu tên miền), Contacts (thông tin liên hệ chủ sở hữu, hỗ trợ kỹ thuật hoặc thanh toán), Name servers (địa chỉ DNS đang trỏ về của tên miền), Domain status (tình trạng hiện tại), Registration date (ngày đăng ký), Expiry date (ngày hết hạn), Updated date (lần cập nhật gần nhất).
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/179/
+
+**Hỏi: Cách tra cứu WHOIS cho tên miền quốc tế như thế nào?**
+Trả lời: Có 3 công cụ chính để tra cứu WHOIS tên miền quốc tế:
+- WHO.IS: truy cập `http://who.is/whois/domain.com`, thay `domain.com` bằng tên miền cần tra cứu.
+- WHOIS.COM: truy cập `http://whois.com/whois/domain.com`.
+- WHOIS.NET: truy cập `http://whois.net/whois/domain.com`.
+Lưu ý: thông tin WHOIS được cập nhật định kỳ (khoảng 45 phút/website), nên chỉ mang tính tham khảo — để có thông tin chính xác nhất, nên kiểm tra trực tiếp tại nhà cung cấp đăng ký tên miền (ví dụ www.tucowsdomains.com/whois/).
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tra-cuu-whois-ten-mien-quoc-te/
+
+**Hỏi: File hosts là gì và cách trỏ file hosts trên Windows như thế nào?**
+Trả lời: File hosts là tệp hệ thống cho phép ánh xạ tên miền đến một địa chỉ IP cụ thể ngay trên máy tính cá nhân, dùng để kiểm tra hoạt động của website trước khi trỏ IP chính thức hoặc trong lúc chờ DNS cập nhật. Các bước chỉnh sửa trên Windows:
+- Bước 1: Truy cập thư mục `C:\Windows\System32\drivers\etc`.
+- Bước 2: Dùng công cụ như Notepad++ hoặc Notepad để mở file hosts.
+- Bước 3: Thêm địa chỉ IP và tên miền cần trỏ vào file.
+- Bước 4: Lưu lại và kiểm tra bằng cách truy cập trang web.
+Lưu ý: sau khi kiểm tra xong nên xóa hoặc comment dòng vừa thêm để tránh vẫn thấy IP cũ khi đổi sang IP khác. Nếu không lưu được file trực tiếp, có thể sao chép ra desktop, chỉnh sửa rồi dán ngược lại.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-file-hosts/
+
+**Hỏi: Cách Flush DNS / xóa bộ nhớ cache DNS trên máy tính như thế nào?**
+Trả lời: Hệ điều hành tự động lưu cache địa chỉ IP và kết quả DNS để tăng tốc các truy vấn sau đến cùng hostname; đôi khi dữ liệu cache bị lỗi cần xóa để khôi phục kết nối. Cách flush DNS theo hệ điều hành:
+- Windows (98/NT/2000/XP đến 8.1): mở Command Prompt, chạy lệnh `ipconfig /flushdns`. Với Windows Vista/7 trở lên, cần chạy Command Prompt với quyền Administrator.
+- Mac OS X: tùy phiên bản — Yosemite (10.10) dùng `sudo discoveryutil udnsflushcaches`; Lion đến Mavericks (10.7-10.9) dùng `sudo killall -HUP mDNSResponder`; Snow Leopard (10.6) dùng `sudo dscacheutil -flushcache`; Leopard trở về trước (10.5.1-) dùng `sudo lookupd -flushcache`.
+- Linux: nếu chạy nscd, khởi động lại dịch vụ bằng `/etc/init.d/nscd restart` (với quyền root hoặc sudo).
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/flush-dns-xoa-bo-nho-cache-dns-tren-may-tinh/
+
+**Hỏi: Anycast DNS là gì?**
+Trả lời: Anycast DNS là công nghệ định tuyến cho phép một gói tin gửi tới một địa chỉ đơn bất kỳ sẽ được chuyển tới node gần nhất trong mạng, khác biệt với Unicast (một-một), Broadcast (một-tất cả) và Multicast (một-nhiều). Lợi ích khi áp dụng cho hệ thống DNS: cân bằng tải (phân tán yêu cầu truy vấn giữa nhiều máy chủ), giảm độ trễ (người dùng kết nối tới máy chủ DNS gần nhất về địa lý), tăng tính sẵn sàng (cơ chế phân tán giúp giảm nguy cơ bị tấn công DoS), không yêu cầu hạ tầng đặc biệt (hoạt động trên hạ tầng mạng hiện tại). Cách hoạt động: hệ thống dùng giao thức BGP để quảng bá một dải địa chỉ IP từ nhiều điểm trên Internet; khi client gửi truy vấn DNS, bộ định tuyến tự động chọn đường đi ngắn nhất đến instance máy chủ gần nhất, đảm bảo tốc độ và độ tin cậy cao.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/khai-niem-dich-vu-anycast-dns-mien-phi/
+
+**Hỏi: Cách khai báo sử dụng tên miền quốc tế như thế nào?**
+Trả lời: Quy trình khai báo tên miền quốc tế theo hướng dẫn của Thế Giới Số:
+- Bước 1: Sau khi đăng ký và kích hoạt tên miền, truy cập trang thông báo tên miền để tiến hành đăng ký chính thức.
+- Bước 2: Chọn "Thông báo sử dụng mới", nhập thông tin tên miền đã mua và kích hoạt, sau đó chọn tìm kiếm để xác nhận.
+- Bước 3: Lựa chọn hình thức khai báo phù hợp — nộp thông tin cho cá nhân nếu tên miền thuộc quyền sở hữu riêng, hoặc nộp thông tin cho tổ chức nếu tên miền thuộc tổ chức/công ty.
+- Bước 4: Điền đầy đủ thông tin theo mẫu được cung cấp, sau đó nhấn chấp nhận để lưu dữ liệu.
+Quy trình hoàn tất khi thông tin được hệ thống xác nhận và lưu trữ.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-khai-bao-su-dung-ten-mien-quoc-te/
 
 **Hỏi: Các trạng thái của tên miền .COM và .NET là gì?**
 Trả lời: Các trạng thái tên miền .COM và .NET do Verisign quản lý gồm:

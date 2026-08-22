@@ -38,6 +38,26 @@ Trả lời: CVE-2022-26809 là lỗ hổng thực thi mã từ xa (RCE) công b
 - SQL Server: đổi port mặc định 1433 nếu bật truy cập từ xa, tăng cường thông tin đăng nhập.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/lo-hong-cve-2022-26809-anh-huong-den-toan-bo-he-dieu-hanh-windows/
 
+## Quản trị từ xa qua KVM IP
+
+**Hỏi: KVM IP là gì và cách sử dụng như thế nào?**
+Trả lời: IPKVM (hay KVM over IP) là thiết bị hỗ trợ kết nối từ xa vào server thông qua đường truyền mạng riêng, cho phép quản trị viên truy cập máy chủ từ xa mà không cần tới trực tiếp địa điểm đặt server. Lợi ích chính: xử lý sự cố từ xa khi không thể dùng remote desktop hay SSH, quản lý nhiều server tại các trung tâm dữ liệu khác nhau đồng thời, tiết kiệm chi phí và loại bỏ hạn chế về khoảng cách địa lý, cấu hình BIOS/cài đặt hệ điều hành/truy cập server ngay cả khi server bị treo. Các bước sử dụng:
+- Bước 1: Cài đặt phiên bản Java mới nhất trên máy tính.
+- Bước 2: Cấu hình Security Java, thêm địa chỉ IP của IPKVM vào danh sách được phép.
+- Bước 3: Truy cập bằng trình duyệt (Firefox, Chrome, Safari) qua địa chỉ IP được cung cấp.
+- Bước 4: Đăng nhập bằng username và password.
+- Bước 5: Bấm nút kết nối hoặc tải file spider.jnlp (tùy loại KVM — phổ biến là Lantronix và Raritan, mỗi loại có giao diện quản lý khác nhau).
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-kvm-ip/
+
+**Hỏi: Cách dùng KVM để kiểm tra màn hình server như thế nào?**
+Trả lời: Các bước dùng KVM kiểm tra màn hình server:
+- Bước 1: Cài đặt Java phiên bản mới nhất từ java.com/en/download/.
+- Bước 2: Truy cập địa chỉ KVM được cung cấp (ví dụ https://103.74.123.254/) bằng username và password đã nhận.
+- Bước 3: Nhấn nút connect để tải tệp Java, sau đó chạy tệp này trên máy tính.
+- Bước 4: Sau khi chạy tệp Java, màn hình server xuất hiện để thao tác như bình thường.
+Mục đích sử dụng: cài đặt hệ điều hành, cấu hình BIOS, truy cập server khi mất kết nối internet hoặc bị treo do quá tải tài nguyên.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-kvm-kiem-tra-man-hinh-server/
+
 ## Giám sát và xử lý sự cố
 
 **Hỏi: Cách giám sát băng thông mạng trên CentOS bằng iperf như thế nào?**

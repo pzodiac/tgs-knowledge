@@ -108,3 +108,13 @@ Với proxy SOCKS5 hoặc HTTP, cần cung cấp: hostname/IP máy chủ, port t
 
 **Hỏi: Cách thiết lập SQL Server luôn sẵn sàng (High Availability) như thế nào?**
 Trả lời: SQL Server có 3 giải pháp High Availability chính: Failover Cluster (dùng shared storage/SAN với nhiều instance, một instance quản lý database tại một thời điểm), Log Shipping (duy trì bản sao bằng cách truyền transaction log sang server phụ), Replication (sao chép từng đối tượng database riêng lẻ thay vì toàn bộ database). Database Mirroring (DM) là giải pháp mới khắc phục nhược điểm của các phương pháp trên — không cần phần cứng chuyên dụng như SAN, failover tự động không cần can thiệp thủ công, bảo vệ toàn bộ database thay vì từng thành phần riêng lẻ. Kiến trúc DM cần 3 instance: Principal (server chính quản lý database), Mirror (server dự phòng), Witness (server giám sát đảm bảo khả năng failover). 2 chế độ hoạt động: High-Performance (cập nhật bất đồng bộ ưu tiên tốc độ) và High-Safety (replication đồng bộ đảm bảo bảo vệ dữ liệu toàn vẹn). Các bước cấu hình cơ bản: backup database ở Principal, restore sang Mirror, tạo endpoint để giao tiếp giữa các server, thiết lập phiên mirroring qua SQL Server Management Studio hoặc lệnh T-SQL. Ứng dụng cần chỉnh sửa connection string để thêm thông tin failover partner trỏ đến Mirror server nhằm hỗ trợ failover tự động. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/thiet-lap-sql-server-luon-san-sang/
+
+**Hỏi: Cách tăng giới hạn dung lượng import database trên phpMyAdmin như thế nào?**
+Trả lời: Các bước tăng giới hạn dung lượng import trên phpMyAdmin:
+- Bước 1: Truy cập SSH vào máy chủ với quyền root.
+- Bước 2: Xác định vị trí file `php.ini` bằng lệnh `php --ini`.
+- Bước 3: Mở và chỉnh sửa file `php.ini` vừa tìm được.
+- Bước 4: Tìm và sửa 2 thông số `upload_max_filesize` và `post_max_size` — 2 giá trị này phải bằng nhau — đổi từ mặc định (64M) thành kích thước mong muốn.
+- Bước 5: Lưu cấu hình và khởi động lại dịch vụ web bằng `/etc/init.d/httpd restart`.
+Sau đó kiểm tra lại chức năng import database qua phpMyAdmin.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tang-gioi-han-dung-luong-import-database-tren-phpmyadmin/

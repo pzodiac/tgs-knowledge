@@ -99,3 +99,14 @@ Trả lời: Lỗi này xuất hiện khi kết nối Remote Desktop Protocol (R
 - Cách 1 (khuyến nghị) - qua Group Policy: nhấn Windows + R, gõ `gpedit.msc` rồi Enter (lưu ý Windows Home không hỗ trợ sẵn công cụ này) → đi đến `Computer Configuration > Administrative Templates > System > Credentials Delegation > Encryption Oracle Remediation` → thay đổi Policy Setting để cho phép kết nối RDP an toàn hơn.
 - Cách 2 - với Windows Home: tải file hỗ trợ, giải nén và chạy với quyền Administrator để kích hoạt Group Policy.
 Phương pháp qua Group Policy là cách tiếp cận chính thức và an toàn nhất để giải quyết vấn đề mà không ảnh hưởng đến bảo mật hệ thống. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-khac-phuc-loi-credssp-encryption-oracle-remediation-khi-remote-desktop/
+
+**Hỏi: Cách fix lỗi bảo mật Windows để chặn virus/ransomware mã hóa dữ liệu như thế nào?**
+Trả lời: Các biện pháp bảo mật quan trọng để phòng chống ransomware trên Windows Server:
+- Đổi port Remote Desktop: quan trọng nhất là đổi port RDP sang port khác, không dùng port mặc định 3389.
+- Cập nhật Windows: luôn cài đặt bản vá mới nhất của hệ điều hành.
+- Cài bản vá bảo mật cụ thể: ví dụ Windows 2012 R2 dùng bản vá KB4012213; các phiên bản khác kiểm tra trang hỗ trợ của nhà sản xuất máy chủ (như Dell).
+- Tắt dịch vụ Server không cần thiết: vào Services.msc, dừng dịch vụ Server để giảm bề mặt tấn công.
+- Cấu hình Firewall chặn các port dễ bị khai thác: chặn cả TCP và UDP cho port 445 (SMB) và các port 135, 138, 139 (NetBIOS/RPC).
+- Cài phần mềm diệt virus: triển khai phần mềm bảo vệ chống mã độc đang hoạt động.
+Các biện pháp này nhắm trực tiếp vào các cổng thường bị khai thác bởi ransomware, đặc biệt là lỗ hổng SMB/NetBIOS mà các mã độc dạng sâu (worm) như WannaCry từng khai thác.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-fix-loi-bao-mat-windows-chan-virus-ransomeware-ma-hoa-du-lieu/
