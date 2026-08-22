@@ -335,3 +335,31 @@ Trả lời: IP tĩnh (IP Static) là địa chỉ IP cố định gán cho thi�
 - Bước 2: Khởi động lại dịch vụ mạng: `/etc/rc.d/init.d/network restart`.
 - Bước 3: Kiểm tra kết quả bằng `ifconfig eth0`.
 Các lỗi thường gặp: xung đột IP (địa chỉ trùng lặp trong mạng), cấu hình sai (lỗi ở IP/subnet mask/gateway/DNS), dịch vụ không khởi động lại (thay đổi chưa có hiệu lực), phân giải tên miền lỗi (cấu hình DNS không chính xác). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/dat-ip-tinh-trong-centos-6/
+
+**Hỏi: Cách cho phép đăng nhập (login) bằng root qua SSH trên Debian 9 như thế nào?**
+Trả lời: Mặc định Debian 9 không cho phép login bằng root. Cách bật lại:
+- Bước 1: Mở file cấu hình SSH bằng nano: `nano /etc/ssh/sshd_config`.
+- Bước 2: Tìm dòng "PermitRootLogin no" và đổi thành "PermitRootLogin yes".
+- Bước 3: Lưu file (Ctrl+X rồi nhấn Y), khởi động lại dịch vụ SSH: `systemctl restart sshd`.
+Sau đó có thể đăng nhập bằng tài khoản root qua SSH. Lưu ý: cho phép đăng nhập trực tiếp bằng root có thể ảnh hưởng đến bảo mật hệ thống, nên cân nhắc kỹ trước khi áp dụng. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cho-phep-login-root-tren-debian-9/
+
+**Hỏi: Cách xem cấu hình phần cứng máy chủ trên Linux bằng lshw như thế nào?**
+Trả lời: Các bước kiểm tra thông tin phần cứng bằng công cụ lshw trên CentOS:
+- Bước 1: Tải công cụ lshw, ví dụ: `wget https://ftp.tu-chemnitz.de/pub/linux/dag/redhat/el6/en/x86_64/rpmforge/RPMS/lshw-2.15-1.el6.rf.x86_64.rpm`.
+- Bước 2: Cài đặt: `rpm -ivh lshw-2.15-1.el6.rf.x86_64.rpm`.
+- Bước 3: Xem thông tin cấu hình bằng lệnh `lshw` hoặc `lshw |more`.
+Công cụ này cung cấp đầy đủ thông tin phần cứng gồm BIOS, RAM (loại RAM, số khe trống), ổ đĩa cứng (HDD) và CPU. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/xem-cau-hinh-may-tren-linux-2/
+
+**Hỏi: Cách xem file log trên VPS/Server Linux như thế nào?**
+Trả lời: Toàn bộ log file của server được lưu trong thư mục `/var/log`, truy cập bằng lệnh `cd /var/log/`. Các file log chính (xem danh sách bằng `ls -l`):
+- auth.log: thông tin xác thực người dùng
+- boot.log: hoạt động khởi động hệ thống
+- cron: các tác vụ tự động được lên lịch
+- dmesg: nhật ký bộ đệm hệ thống
+- message: thông tin chung của hệ thống
+- httpd/: thư mục chứa log Apache
+- maillog: hoạt động dịch vụ mail
+- secure: các sự kiện bảo mật
+- wtmp: ghi nhận đăng nhập
+- yum.log: thao tác quản lý gói Yum
+Cách xem file log: `more -f /var/log/secure` hoặc `tail -n 30 /var/log/secure` (lệnh tail giúp xem các dòng gần nhất, ví dụ 30 dòng cuối). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cach-xem-file-log-tren-vps/

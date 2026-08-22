@@ -140,3 +140,11 @@ Trả lời: Các bước cấu hình dịch vụ Cloudstorage của Thế Giớ
 - Bước 2: Cài đặt — chạy trình cài đặt và tiếp tục với các tùy chọn mặc định cho đến khi hoàn tất.
 - Bước 3: Cấu hình — mở ứng dụng OwnCloud từ Desktop hoặc Program Files, nhập `http://cloudstorage.tgs.com.vn` vào ô Server Address, nhập tên đăng nhập và mật khẩu, sau đó chọn thư mục lưu trữ cục bộ.
 Dữ liệu trong thư mục đã chọn sẽ tự động đồng bộ (sync) và upload lên hệ thống CloudStorage để backup, cho phép người dùng sao lưu và truy cập dữ liệu từ nhiều thiết bị qua nền tảng đám mây. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-cloudstorage-the-gioi-so/
+
+**Hỏi: Có những cách nào để phòng tránh mã độc tống tiền WannaCry?**
+Trả lời: 5 biện pháp bảo vệ máy tính Windows khỏi ransomware WannaCry:
+- Đóng các cổng 445, 135, 138, 139 qua Firewall, Command Line hoặc tinh chỉnh Registry để chặn các cuộc tấn công của malware, đặc biệt là WannaCry.
+- Vô hiệu hóa dịch vụ máy chủ: tắt Server Service qua Windows Services bằng cách đặt "Startup type" thành Disable, nhất là trên Windows 7.
+- Cài đặt bản vá bảo mật Windows: Microsoft đã phát hành các bản vá, bao gồm MS17-010 cho Windows 7 và các phiên bản cũ khác.
+- Tạo điểm sao lưu và phục hồi hệ thống: dùng các công cụ như Driver Talent để sao lưu dữ liệu quan trọng (tài liệu, hình ảnh...) thường xuyên.
+- Áp dụng thói quen sử dụng máy tính an toàn: tránh click vào email/link lạ, bật Windows Defender, kích hoạt Windows Update tự động và cài đặt phần mềm diệt virus. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/5-cach-giup-ngan-chan-wannacry-phong-tranh-ma-doc-wanna-cry/

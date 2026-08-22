@@ -88,6 +88,16 @@ Trả lời: Tổng hợp cách xử lý 7 lỗi MySQL thường gặp:
 - "Can't connect through socket" (không tìm thấy file `mysql.sock`): tìm vị trí file, cập nhật đường dẫn trong `my.cnf`, tạo liên kết tượng trưng (symlink) nếu cần.
 - "Got error 28 from table handler" (ổ cứng đã đầy): dừng MySQL, giải phóng dung lượng bằng cách xóa file tạm/log cũ, khởi động lại dịch vụ. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/xu-ly-cac-loi-pho-bien-trong-mysql/
 
+**Hỏi: Cách chuyển đổi default gateway khi kết nối VPN Host-to-LAN để không mất kết nối Internet như thế nào?**
+Trả lời: Khi kết nối VPN Host-to-LAN trên Windows bị mất kết nối Internet thông thường do toàn bộ lưu lượng mạng bị chuyển hướng qua VPN, khắc phục bằng cách:
+- Bước 1: Nhấn Start → Run, gõ `ncpa.cpl` để mở cài đặt kết nối mạng.
+- Bước 2: Nhấp chuột phải vào kết nối VPN đã tạo → chọn Properties.
+- Bước 3: Vào tab Networking, chọn giao thức TCP/IP → Properties.
+- Bước 4: Nhấn nút Advanced để mở cài đặt nâng cao.
+- Bước 5: Bỏ dấu check tại ô "Use default gateway on remote network".
+- Bước 6: Kết nối lại VPN sau khi thay đổi cài đặt.
+Giải pháp này giúp máy tính vẫn duy trì kết nối Internet thông thường khi đang kết nối VPN. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/chuyen-doi-default-gateway-cua-may-tinh-khi-ket-noi-vpn-host-to-lan/
+
 ## Khác
 
 **Hỏi: Cách thiết lập proxy Stocks5 (SOCKS5) trên Telegram như thế nào?**
@@ -95,3 +105,6 @@ Trả lời: Sau khi có thông tin từ nhà cung cấp proxy (địa chỉ IP,
 - Trên di động: mở menu (icon 3 gạch) → Settings → Data and Storage → cuộn xuống chọn "Proxy Settings" → bật công tắc proxy → nhập thông tin proxy và xác nhận bằng dấu tick.
 - Trên desktop: mở Settings → chọn "Advanced" → "Connection type" → chọn "Use Custom Proxy" → nhập hostname/IP máy chủ và port → thêm thông tin đăng nhập nếu được yêu cầu → nhấn Save.
 Với proxy SOCKS5 hoặc HTTP, cần cung cấp: hostname/IP máy chủ, port tương ứng, và thông tin đăng nhập (nếu quản trị viên yêu cầu). Để tắt proxy: chuyển "Use Proxy" về off trên di động hoặc chọn "Disable Proxy" trên desktop. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-thiet-lap-stocks5-tren-telegram/
+
+**Hỏi: Cách thiết lập SQL Server luôn sẵn sàng (High Availability) như thế nào?**
+Trả lời: SQL Server có 3 giải pháp High Availability chính: Failover Cluster (dùng shared storage/SAN với nhiều instance, một instance quản lý database tại một thời điểm), Log Shipping (duy trì bản sao bằng cách truyền transaction log sang server phụ), Replication (sao chép từng đối tượng database riêng lẻ thay vì toàn bộ database). Database Mirroring (DM) là giải pháp mới khắc phục nhược điểm của các phương pháp trên — không cần phần cứng chuyên dụng như SAN, failover tự động không cần can thiệp thủ công, bảo vệ toàn bộ database thay vì từng thành phần riêng lẻ. Kiến trúc DM cần 3 instance: Principal (server chính quản lý database), Mirror (server dự phòng), Witness (server giám sát đảm bảo khả năng failover). 2 chế độ hoạt động: High-Performance (cập nhật bất đồng bộ ưu tiên tốc độ) và High-Safety (replication đồng bộ đảm bảo bảo vệ dữ liệu toàn vẹn). Các bước cấu hình cơ bản: backup database ở Principal, restore sang Mirror, tạo endpoint để giao tiếp giữa các server, thiết lập phiên mirroring qua SQL Server Management Studio hoặc lệnh T-SQL. Ứng dụng cần chỉnh sửa connection string để thêm thông tin failover partner trỏ đến Mirror server nhằm hỗ trợ failover tự động. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/thiet-lap-sql-server-luon-san-sang/

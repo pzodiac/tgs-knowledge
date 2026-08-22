@@ -218,3 +218,21 @@ Trả lời: Máy chủ đám mây là một hệ thống máy chủ được l�
 - Hiệu suất cao: sử dụng công nghệ tiên tiến tại các trung tâm dữ liệu lớn
 - Tích hợp và tự động hóa: kết nối với các dịch vụ khác và hỗ trợ triển khai CI/CD
 Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/may-chu-dam-may-la-gi-cac-tinh-nang-noi-bat-cua-may-chu-dam-may/
+
+**Hỏi: Veeam Backup là gì và hoạt động như thế nào?**
+Trả lời: Veeam Backup là phần mềm của Veeam Software có khả năng sao lưu, khôi phục và sao chép dữ liệu trên VM (máy ảo), tương thích với Microsoft Hyper-V và VMware vSphere, cho phép phục hồi dưới 15 phút và tăng tốc độ truyền dữ liệu WAN gấp 50 lần so với truyền thô. Phần mềm còn hỗ trợ bảo vệ các ứng dụng như SharePoint, Exchange, cơ sở dữ liệu Oracle và Microsoft SQL. Cách hoạt động gồm 5 bước: Khởi tạo (Veeam Backup Manager bắt đầu quá trình trên máy chủ sao lưu, kiểm tra cài đặt công việc từ cơ sở dữ liệu) → Tạo danh sách (hệ thống tạo danh sách các tác vụ máy ảo cần xử lý) → Kết nối dịch vụ (dịch vụ sao lưu Veeam kết nối với trình quản lý và các Proxy dự phòng) → Xử lý dữ liệu (Veeam Data Mover lọc khối dữ liệu, nén và vận chuyển đến mục tiêu) → Snapshot (hệ thống yêu cầu ESXi Host hoặc vCenter tạo ảnh chụp nhanh máy ảo để bảo vệ dữ liệu). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/veeam-backup-la-gi-no-hoat-dong-nhu-the-nay/
+
+**Hỏi: Cách sử dụng Veeam Backup để sao lưu VPS như thế nào?**
+Trả lời: Hướng dẫn cài đặt và sử dụng Veeam Backup & Replication 7.0 để sao lưu máy ảo VPS:
+- Bước 1 - Thêm máy chủ: truy cập giao diện chính, chọn "Virtual machine" rồi nhấn "Add Server", nhập DNS hoặc địa chỉ IP của máy chủ, cung cấp tài khoản quản trị viên (username/password) để xác thực kết nối.
+- Bước 2 - Tạo công việc sao lưu: trong "Backup & Replication", chọn "Backup job", đặt tên công việc, thêm máy chủ chứa VPS cần bảo vệ và chọn các máy ảo cụ thể muốn sao lưu.
+- Bước 3 - Cấu hình lịch trình: thiết lập sao lưu hàng ngày vào giờ cụ thể, hàng tháng, hoặc định kỳ theo khoảng thời gian.
+- Bước 4 - Khởi động sao lưu: vào "Backup & replication", chọn công việc cần thiết, nhấp chuột phải và chọn "Start", kết thúc bằng cách nhấn "Finish". Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-veeam-backup-de-sao-luu-vps/
+
+**Hỏi: Cách kết nối và sử dụng Private Cloud của Thế Giới Số như thế nào?**
+Trả lời: 4 bước kết nối với hệ thống Private Cloud:
+- Bước 1: Truy cập Firewall tại địa chỉ https://171.244.18.186.
+- Bước 2: Tải VPN Client — vào phần "VPN → Open VPN → Client Export", chọn tùy chọn "Old Windows Installers (2.3.17-Ix01)" để download phần mềm.
+- Bước 3: Sau khi cài đặt, nhấp vào biểu tượng VPN ở góc phải màn hình, nhập User và Password để kết nối.
+- Bước 4: Truy cập vào vCenter qua link https://vcenter.tgs.local:9443 để quản lý cụm Private Cloud và tạo máy ảo theo nhu cầu.
+Sau khi hoàn thành, người dùng có quyền truy cập đầy đủ để quản lý và vận hành các máy ảo trong môi trường Private Cloud. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-private-cloud/

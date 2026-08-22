@@ -93,3 +93,9 @@ Quá trình restore:
 - Bước 5: Chờ quá trình khôi phục hoàn tất, không gián đoạn trình duyệt.
 Lưu ý: không đóng trình duyệt trong lúc backup hoặc restore; đảm bảo file backup được lưu ở nơi dễ truy cập; cách này áp dụng được cho cả môi trường phát triển local lẫn hosting production.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-sao-luu-khoi-phuc-du-lieu-tren-wordpress/
+
+**Hỏi: Cách khắc phục lỗi "CredSSP Encryption Oracle Remediation" khi Remote Desktop như thế nào?**
+Trả lời: Lỗi này xuất hiện khi kết nối Remote Desktop Protocol (RDP) giữa máy client và máy chủ Windows bị chặn do cài đặt chính sách bảo mật "Encryption Oracle Remediation" của Microsoft, thường gặp sau các bản cập nhật Windows từ tháng 3/2018. Nguyên nhân: hệ thống kiểm tra phiên RDP có an toàn hay không qua giao thức CredSSP, và chặn kết nối RDP không an toàn. Cách khắc phục:
+- Cách 1 (khuyến nghị) - qua Group Policy: nhấn Windows + R, gõ `gpedit.msc` rồi Enter (lưu ý Windows Home không hỗ trợ sẵn công cụ này) → đi đến `Computer Configuration > Administrative Templates > System > Credentials Delegation > Encryption Oracle Remediation` → thay đổi Policy Setting để cho phép kết nối RDP an toàn hơn.
+- Cách 2 - với Windows Home: tải file hỗ trợ, giải nén và chạy với quyền Administrator để kích hoạt Group Policy.
+Phương pháp qua Group Policy là cách tiếp cận chính thức và an toàn nhất để giải quyết vấn đề mà không ảnh hưởng đến bảo mật hệ thống. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-khac-phuc-loi-credssp-encryption-oracle-remediation-khi-remote-desktop/

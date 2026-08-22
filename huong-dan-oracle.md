@@ -78,3 +78,10 @@ Trả lời: Hướng dẫn cung cấp script tự động giám sát tình tr�
 Kiểm tra Ping:
 - Cấu hình: mở file `ping.ps1`, sửa đổi dòng 5, 6, 7 để nhập địa chỉ IP của ứng dụng và cơ sở dữ liệu cần kiểm tra, tạo tác vụ trong Task Scheduler, đặt lịch chạy lúc 3 giờ sáng, cộng thêm tùy chọn chạy lại mỗi 10 phút.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tu-dong-check-disk-down-server-oracle-windows/
+
+**Hỏi: Cách xử lý check disk, giám sát down server và xóa archive log trên Oracle Linux như thế nào?**
+Trả lời: 3 tác vụ quản trị máy chủ Oracle Linux:
+- Xóa Archive Log: tạo file archive.rman (chứa lệnh RMAN xóa archive log cũ hơn 7 ngày) và archive.sh (script shell gọi file RMAN), đặt lịch cron chạy lúc 22:00 hàng ngày: `0 22 * * * sh /home/oracle/scripts/archive.sh`.
+- Kiểm tra dung lượng Disk: script checkdisk.sh (chạy quyền root) giám sát sử dụng ổ đĩa với ngưỡng cảnh báo 80%, gửi thông báo Telegram nếu vượt ngưỡng, chạy lúc 03:00 mỗi ngày qua cron: `0 3 * * * sh /u01/script/checkdisk.sh`.
+- Kiểm tra máy chủ Down: script checkdown.sh ping các IP máy chủ (Standby, App chính, App phụ), gửi cảnh báo Telegram khi mất kết nối, chạy mỗi 15 phút: `*/15 * * * * sh /u01/script/checkdown.sh`.
+Lưu ý: sau mỗi thay đổi cron, cần khởi động lại dịch vụ bằng lệnh `systemctl restart crond`. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-xu-ly-check-disk-down-xoa-log-tren-oracle-linux/

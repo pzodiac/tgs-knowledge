@@ -195,3 +195,167 @@ Người nhận có thể truy cập tệp thông qua liên kết được cung 
 **Hỏi: Email offline là gì? Lợi ích của email offline là gì?**
 Trả lời: Email offline là dịch vụ cho phép người dùng gửi và nhận email mà không cần kết nối Internet trực tiếp tại thời điểm thực hiện — thư được lưu trữ tại máy chủ mail cục bộ của công ty. Các lợi ích chính: Tiết kiệm chi phí — giảm chi phí Internet và điện thoại khi nhiều nhân viên chia sẻ một đường truyền duy nhất, gửi thư nội bộ trực tiếp mà không cần Internet. Hiệu suất hoạt động — khi mạng Internet không hoạt động, việc gửi email nội bộ trong công ty vẫn diễn ra bình thường, tăng năng suất khi không phụ thuộc vào kết nối mạng. Bảo mật và quản lý — kiểm soát toàn bộ nội dung email gửi đến/đi trong công ty, hạn chế rò rỉ thông tin nội bộ, máy chủ kiểm tra virus tự động trước khi gửi/nhận. Thương hiệu — email chính thức theo tên miền công ty (tennhanvien@tencongty.com) giúp nâng cao hình ảnh doanh nghiệp.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/email-offline-loi-ich-cua-email-offline-la-gi/
+
+**Hỏi: Cách cấu hình thư tự động trả lời (Autoresponder) trên Webmail như thế nào?**
+Trả lời: Truy cập menu Options → Mail → Autoresponder, sau đó điều chỉnh các tùy chọn tự động trả lời theo nhu cầu (bật/tắt, nội dung thư trả lời tự động). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-thu-tu-dong-tra-loi/
+
+**Hỏi: Cách backup (sao lưu) email trong Outlook đơn giản và an toàn như thế nào?**
+Trả lời: Nên backup Outlook khi chuyển email sang tài khoản khác, đổi thiết bị (PC mới, chuyển sang Mac), hoặc sao lưu định kỳ dữ liệu (email, danh bạ, lịch). Với Outlook 2013 trở lên:
+- Bước 1: Vào File → Open & Export → Import/Export.
+- Bước 2: Chọn "Export to a file".
+- Bước 3: Chọn định dạng file .pst.
+- Bước 4: Chọn tài khoản email cần backup và tick "Include subfolders".
+- Bước 5: Chọn vị trí lưu file (mặc định ổ C).
+- Bước 6: Thiết lập mật khẩu bảo vệ cho file backup (tuỳ chọn).
+Ngoài ra có thể dùng các công cụ hỗ trợ miễn phí như Microsoft Outlook Personal Folders Backup, Safe PST Backup, hoặc Outlook 2016/2013 Backup Add-in. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tien-hanh-backup-outlook-emails-don-gian-va-an-toan-nhat/
+
+**Hỏi: Cách cài đặt địa chỉ Email vào ứng dụng Outlook trên MacBook như thế nào?**
+Trả lời: Các bước cài đặt:
+- Bước 1: Mở Outlook → chọn Tools → Accounts → Add Email Accounts.
+- Bước 2: Nhập địa chỉ email và chọn Continue.
+- Bước 3: Chọn "Choose the Provider".
+- Bước 4: Chọn IMAP/POP.
+- Bước 5: Nhập thông tin máy chủ email — Incoming mail server và Outgoing mail server đều là mail.tenmiencuaban.x (x là đuôi tên miền như .com hoặc .vn), tuỳ theo cấu hình của nhà cung cấp dịch vụ. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-dia-chi-email-vao-ung-dung-outlook-tren-may-macbook/
+
+**Hỏi: Cách xử lý khi IP bị liệt kê vào Blacklist của SORBS như thế nào?**
+Trả lời: Khi ISP đánh dấu một địa chỉ IP hoặc dải IP cố định là "IP động" trong cơ sở dữ liệu SORBS, email gửi từ IP đó có thể bị đánh dấu là SPAM. Cách xử lý:
+- Bước 1: Yêu cầu ISP tạo reverseDNS với giá trị TTL lớn hơn 43200 giây.
+- Bước 2: Đăng ký tài khoản trên trang web của SORBS tại http://www.sorbs.net/.
+- Bước 3: Kích hoạt tài khoản, đăng nhập vào trang hỗ trợ và tạo ticket yêu cầu delist dải IP của mình ra khỏi cơ sở dữ liệu DUHL.
+- Bước 4: Gửi yêu cầu delist qua hệ thống ticket của SORBS kèm thông tin reverseDNS đã cấu hình.
+Sau khi hoàn thành, SORBS sẽ xử lý yêu cầu loại bỏ IP khỏi danh sách đen. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/xu-ly-ip-bi-liet-ke-vao-blacklist-cua-sorbs/
+
+**Hỏi: Làm sao để nhận biết Email lừa đảo có chứa mã độc?**
+Trả lời: 5 dấu hiệu nhận biết Email lừa đảo chứa mã độc:
+- Email từ dịch vụ bạn chưa đăng ký: 99,9% là email lừa đảo nếu được gửi từ dịch vụ mà bạn không hề đăng ký; doanh nghiệp hợp pháp dùng tên miền riêng, còn kẻ lừa đảo thường đổi domain để qua mắt người nhận.
+- Có lỗi ngữ pháp và chính tả: email giả mạo thường chứa lỗi cơ bản do không được biên tập chuyên nghiệp.
+- Không có tên cá nhân của bạn: doanh nghiệp hợp pháp thường gọi đúng tên khách hàng, còn email lừa đảo hay dùng lời chào chung chung.
+- Chứa liên kết đáng ngờ: yêu cầu nhấp vào link để xác nhận thông tin hoặc tải file; doanh nghiệp thật sẽ yêu cầu truy cập website chính thức để tải tập tin thay vì bắt buộc bấm link trong mail.
+- Yêu cầu thông tin nhạy cảm: nếu email yêu cầu cung cấp mật khẩu, số thẻ tín dụng hay thông tin cá nhân mà trước đó không có liên lạc, đó là dấu hiệu lừa đảo. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/5-cach-nhan-biet-email-lua-dao-co-chua-ma-doc/
+
+**Hỏi: Cách sao lưu mail Outlook từ IMAP sang POP3 như thế nào?**
+Trả lời: Các bước chuyển đổi:
+- Chuẩn bị: xác định tài khoản POP3 hiện tại qua File → Account Settings, lưu ý đường dẫn file .pst.
+- Xóa tài khoản cũ: tại tab Email, nhấn Remove để xóa tài khoản POP3 (dữ liệu vẫn giữ dưới dạng Data File).
+- Thêm tài khoản IMAP: điền Email, tích chọn theo hướng dẫn, chọn giao thức IMAP, nhập mật khẩu và kết nối.
+- Sao chép email: dùng Ctrl+C để copy từ Inbox của IMAP, sau đó Ctrl+V để dán vào Inbox của POP3.
+- Sao chép thư mục: nhấp chuột phải vào folder, chọn Copy Folder, chọn Inbox của POP3 làm điểm đích.
+- Lưu ý: nếu không muốn dữ liệu liên tục sinh ra ở Server thì bắt buộc phải Remove tài khoản Email dạng IMAP sau khi hoàn tất sao lưu. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-sao-luu-mail-outlook-tu-imap-sang-pop3/
+
+**Hỏi: Các bản ghi DNS cần trỏ để trỏ tên miền về Email Server (Cloud Email) là gì?**
+Trả lời: Các bản ghi DNS tiêu chuẩn cần cấu hình để trỏ tên miền về hệ thống Email Server của Thế Giới Số:
+- Mail CNAME: host "mail" trỏ về "login.cloudemail.vn".
+- SPF Record: "v=spf1 ip4:202.143.110.226/24 ip4:103.42.58.139/24 include:gw.cloudemail.vn -all".
+- DMARC Record: "v=DMARC1; p=none".
+- DKIM Record: 2 bản ghi TXT giống nhau chứa public key cho host `key1._domainkey` và `_domainkey`.
+- MX Record: bản ghi MX chính (priority 10) trỏ về "mail.tenmiencuaquykhach.com" (thay bằng tên miền thực tế của khách hàng).
+Khách hàng cần thay tên miền và IP máy chủ email tương ứng bằng giá trị thực tế của mình khi áp dụng các cấu hình này. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-ten-mien-ve-email-server/
+
+**Hỏi: Cách thiết lập tài khoản Email trên iPhone/iPad (iOS) như thế nào?**
+Trả lời: Các bước thiết lập:
+- Bước 1: Mở ứng dụng Settings trên thiết bị.
+- Bước 2: Chọn "Mail, Contacts, Calendars".
+- Bước 3: Nhấn "Add Account".
+- Bước 4: Chọn "Other" để cấu hình thủ công, sau đó chọn "Add Mail Account".
+- Bước 5: Nhập Name (tên hiển thị), Address (địa chỉ email đầy đủ), Description (mô tả phân biệt tài khoản), Password (mật khẩu).
+- Bước 6: Chọn giao thức IMAP hoặc POP3, nhập Username (địa chỉ email), Password, Host Name (thường là "mail.tên_miền.com").
+- Bước 7: Vào Advanced để cấu hình cổng kết nối: IMAP cổng 993 (SSL) hoặc 143 (không SSL); POP3 cổng 995 (SSL) hoặc 110 (không SSL); SMTP (gửi mail) cổng 465 (SSL) hoặc 25 (không SSL).
+- Bước 8: Nhấn Save và chờ hệ thống xác nhận kết nối. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-thiet-lap-tai-khoan-email-tren-iphone-ipad-ios/
+
+**Hỏi: Cách cấu hình nhận và gửi Email trên Android như thế nào?**
+Trả lời: Một địa chỉ email gồm 2 phần: tên hộp thư trước ký tự @ và tên miền sau đó (ví dụ: name@example.com.vn). Máy chủ mặc định thường là mail.tên miền, pop.tên miền, hoặc imap.tên miền. Các bước cấu hình:
+- Bước 1: Mở ứng dụng Email từ menu Apps.
+- Bước 2: Vào Settings, chọn "Add account".
+- Bước 3: Nhập địa chỉ email và mật khẩu.
+- Bước 4: Chọn giao thức POP3 hoặc IMAP.
+- Bước 5: Cấu hình máy chủ nhận — POP3: mail.domain.com cổng 110; IMAP: mail.domain.com cổng 143.
+- Bước 6: Cấu hình máy chủ gửi (SMTP): mail.domain.com cổng 25.
+- Bước 7: Bấm Next để hoàn tất.
+Lưu ý nhập chính xác địa chỉ email đầy đủ vào trường Username để đăng nhập thành công. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cau-hinh-nhan-va-gui-email-android/
+
+**Hỏi: Cách cài đặt SSL cho MDaemon mail server như thế nào?**
+Trả lời: Các bước cài đặt SSL cho MDaemon:
+- Bước 1 - Chuẩn bị file chứng chỉ: tải 2 file certificate.crt và intermediate.cer lên server, đặt trong thư mục C:\.
+- Bước 2 - Cài đặt Intermediate CA: mở MMC, import file intermediate.cer vào "Intermediate Certification Authorities" qua File → Add/Remove Snap-in → Certificates.
+- Bước 3 - Cài đặt chứng thư số: chạy lệnh `certreq -accept C:\certificate.crt` từ command prompt.
+- Bước 4 - Kích hoạt SSL trong MDaemon: vào Security → SSL/TLS/Certificates. Tab Email SSL: bật SSL/STARTTLS, chọn chứng thư số, Apply rồi Restart servers. Tab WorldClient: bật Enable SSL, chọn port 443, cập nhật chứng thư số. Tab WebAdmin: bật Enable SSL, chọn port 8443, cập nhật chứng thư số.
+Mỗi thay đổi đều cần nhấn Apply và Restart servers để MDaemon tải lại cấu hình mới. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-ssl-cho-mdaemon/
+
+**Hỏi: Cách tạo tài khoản email trên IceWarp như thế nào?**
+Trả lời: 3 bước tạo tài khoản email trên IceWarp:
+- Bước 1: Đăng nhập vào giao diện admin tại địa chỉ mail của hệ thống (ví dụ: http://mail.giaiphapemaildoanhnghiep.com/).
+- Bước 2: Chọn dấu + và chọn "New user" để mở biểu mẫu tạo tài khoản mới.
+- Bước 3: Điền thông tin (tên người dùng, địa chỉ email, mật khẩu) rồi nhấn Save để hoàn tất. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tao-tai-khoan-email-tren-icewarp/
+
+**Hỏi: Có những phần mềm nào hỗ trợ gửi Email Marketing hàng loạt hiệu quả?**
+Trả lời: 5 phần mềm gửi Email Marketing hàng loạt hiệu quả:
+- Top Email Marketing: gửi tối đa lên tới 1 triệu Email/ngày, tỷ lệ vào hộp thư cao, thống kê chi tiết lượt mở email, có sẵn template, cập nhật thường xuyên.
+- Free Bulk Email Software: miễn phí, có trình biên tập HTML, tích hợp Google Analytics, xử lý tới 20.000 tin nhắn/giờ.
+- Email Marketing Pro: gửi email hàng loạt chỉ trong 1 giây bằng xác thực máy chủ SMTP, tự động loại bỏ email không hợp lệ, báo cáo số lượng gửi/mở/người đọc.
+- UltraMailer: giao diện đơn giản, có 340 mẫu Email Marketing sẵn (định dạng HTM, HTML, TPL), tùy chỉnh bố cục, tự động lọc email chết trước khi gửi.
+- Automatic Mail Sender: tích hợp máy chủ SMTP, hỗ trợ nhiều định dạng file (Word, Excel, CSV, Access), gửi Email không giới hạn, quản lý dữ liệu khách hàng. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/5-phan-mem-gui-email-marketing-hang-loat-hieu-qua-nhat/
+
+**Hỏi: Mailing list là gì?**
+Trả lời: Mailing List là một danh sách các địa chỉ email được tập hợp theo một chủ đề nào đó, có thể bao gồm địa chỉ từ câu lạc bộ, công ty hoặc nhóm người có cùng mối quan tâm. Khi tham gia mailing list, thành viên có thể gửi email tới toàn bộ thành viên trong danh sách và nhận email từ tất cả những người khác trong nhóm. Ví dụ: công ty có 3 địa chỉ (user1, user2, user3@domain.com) có thể dùng một địa chỉ duy nhất như "everyone@domain.com" để liên lạc với toàn bộ nhóm cùng lúc thay vì gửi riêng cho từng người, giúp hợp lý hóa giao tiếp nhóm. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/mailing-list-la-gi/
+
+**Hỏi: Cách cấu hình Rule mail trên IceWarp WebAdmin như thế nào?**
+Trả lời: Các bước cấu hình:
+- Bước 1: Đăng nhập vào http://mail.domain.com/admin hoặc http://IP/admin bằng tài khoản Admin Mail.
+- Bước 2: Vào mục Setting trong giao diện quản trị.
+- Bước 3: Sử dụng các tùy chọn quản lý Rule: "Create new" (tạo mới), "Edit" (sửa), "Delete" (xóa), "UP/Down" (điều chỉnh mức ưu tiên, rule ở trên có ưu tiên cao hơn), "Edit File" (chỉnh sửa qua file text).
+- Bước 4: Thiết lập chi tiết Rule — chọn loại quy tắc, chọn hành động áp dụng, mô tả chi tiết (quan trọng để rule hoạt động), nhập từ khóa liên quan, chọn logic kết nối (and/or), áp dụng hành động cuối (Reject, Delete, Accept, Spam...). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/thao-tac-nhu-the-nao-de-cau-hinh-rule-mail-tren-icewarp-webadmin/
+
+**Hỏi: Cách sử dụng Webmail với đầy đủ các tính năng như thế nào?**
+Trả lời: Đăng nhập Webmail qua link http://mail.your-domain.com. Các chức năng cơ bản: tạo email mới (New Email Message), quản lý danh bạ (New Contact), tổ chức thư mục (New Folder), tạo danh sách phân phối, sự kiện, công việc. Cấu hình nâng cao gồm các tab: General (tự động kiểm tra và download mail mới sau khoảng thời gian quy định), Default (chọn định dạng tin nhắn Text hoặc HTML để tránh nhận file winmail.dat), Autoresponder (bật tự động trả lời — chỉ trả lời một lần hoặc mỗi lần nhận mail), Forwarder (chuyển tiếp email đến địa chỉ khác), Signature (thêm chữ ký và thông tin công ty vào email). Ngoài ra có Rules (tạo quy tắc tự động, ví dụ chuyển SPAM vào thư mục riêng) và Change Password (đổi mật khẩu qua Tools → Accounts). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-webmail/
+
+**Hỏi: Cách tạo email hàng loạt bằng file CSV như thế nào?**
+Trả lời: Áp dụng cho MDaemon mail server. Trước tiên tạo file Account.csv theo định dạng: 'Mailbox', 'FullName', 'MailDir', 'AllowAccess' — ví dụ: 'arvel', 'Arvel Hathcock', 'C:\MDaemon\Users\ten-mien\Arvel\', Y. Các bước import:
+- Bước 1: Chọn "Accounts" trong menu chính.
+- Bước 2: Chọn "Importing".
+- Bước 3: Chọn "Import accounts from a comma delimited text file".
+- Bước 4: Duyệt đến vị trí file CSV.
+- Bước 5: Chọn Open.
+- Bước 6: Chọn Yes khi được yêu cầu xác nhận.
+- Bước 7: Chọn domain để import tài khoản vào.
+- Bước 8: Chọn OK để bắt đầu import.
+- Bước 9: Chọn OK sau khi hoàn tất.
+Kiểm tra chi tiết quá trình import trong file TXIMPORT.LOG tại thư mục \MDaemon\APP. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tao-email-bang-file-csv/
+
+**Hỏi: Cách chặn thư rác trên Gmail như thế nào?**
+Trả lời: Các bước lọc và chặn thư rác trên Gmail:
+- Bước 1: Đăng nhập Gmail, bấm biểu tượng Settings góc trên bên phải, chọn "Settings".
+- Bước 2: Vào mục "Filters", chọn "Create a new filter".
+- Bước 3: Điền tiêu chí nhận diện (địa chỉ email nguồn gửi thư rác, tiêu đề email, từ khóa), rồi bấm "Create filter with this search".
+- Bước 4: Tích chọn "Delete it" để xóa thư bị phát hiện, rồi bấm "Create filter".
+- Bước 5: Gmail lưu bộ lọc, có thể tạo thêm bằng cách nhấn "Create a new filter" lại.
+Ngoài ra, Gmail có tùy chọn "Unsubscribe" ngay bên cạnh địa chỉ gửi trong mục Promotions để chặn nhanh các nguồn quảng cáo. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-gmail-cach-chan-thu-rac/
+
+**Hỏi: Cách chuyển Theme (giao diện) Webmail như thế nào?**
+Trả lời: 3 bước thay đổi giao diện Webmail:
+- Bước 1: Truy cập email tại http://mail.tenmiencuaban.com.
+- Bước 2: Vào "Options" → "Personalize".
+- Bước 3: Trong mục Theme, chọn tùy chọn "LookOut" để áp dụng giao diện mới. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-chuyen-theme-giao-dien-webmail/
+
+**Hỏi: Email Hosting khác gì so với các dịch vụ email miễn phí khác?**
+Trả lời: Email miễn phí như Google, Yahoo không phù hợp cho doanh nghiệp vì không có đuôi tên miền riêng, làm mất giá trị thương hiệu và sự chuyên nghiệp. Email Hosting được xây dựng trên các cụm máy chủ chuyên dụng cho tính ổn định và sẵn sàng cao — ưu điểm: gửi tới 7.200 email/ngày, dung lượng lớn, hỗ trợ SPF/DKIM chống virus/spam, không giới hạn băng thông; nhược điểm: giới hạn 500-1.000 email/ngày do chia sẻ máy chủ, dễ vào mục spam, có thể gián đoạn khi bảo trì, tiêu tốn băng thông hosting. So sánh Email Business và Email miễn phí: Email Business mất phí, không giới hạn tài khoản @domain riêng, bảo vệ quyền riêng tư, tốc độ gửi lên đến 1 triệu/ngày (gói Marketing) hoặc 4.800/ngày (gói Business), hỗ trợ tiếng Việt tại Việt Nam; Email miễn phí thì miễn phí, tối đa 10 tài khoản, nội dung bị quét/chèn quảng cáo, tốc độ gửi khoảng 2.000/ngày và rất chậm, khó hỗ trợ tiếng Việt. Email Hosting rẻ hơn Gmail nhưng phù hợp hơn cho doanh nghiệp so với email miễn phí. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/so-sanh-dich-vu-email-hosting-va-cac-dich-vu-email-khac/
+
+**Hỏi: Cách tạo thêm tài khoản email trên MDaemon (Admin) như thế nào?**
+Trả lời: Các bước tạo thêm tài khoản:
+- Bước 1: Truy cập liên kết do nhà cung cấp cấp, thường là http://mail.tencongty.com:1000.
+- Bước 2: Đăng nhập bằng thông tin admin email và mật khẩu được cung cấp.
+- Bước 3: Vào mục "Users" để tạo thêm Users, bấm biểu tượng New (dấu cộng xanh) để thêm email mới.
+- Bước 4: Nhập họ và tên (First and Last name), địa chỉ email, mật khẩu email, rồi nhấn Save góc trên bên trái để hoàn tất.
+Lưu ý: Webmail MDaemon chỉ duyệt tốt trên trình duyệt Internet Explorer hoặc Firefox. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tao-them-tai-khoan-email-su-dung-mdaemon/
+
+**Hỏi: Cách cài đặt và cấu hình Windows Live Mail trên Windows 10 như thế nào?**
+Trả lời: Windows Live Mail là giải pháp thay thế cho ứng dụng Mail mặc định của Windows 10. Các bước cài đặt:
+- Bước 1: Tải Windows Live Essentials 2012 (khoảng 2MB, tương thích cả Windows 32-bit và 64-bit).
+- Bước 2: Chạy file cài đặt, chọn "Choose the programs you want to install".
+- Bước 3: Chỉ đánh dấu mục Mail, bỏ chọn các chương trình khác.
+- Bước 4: Chờ quá trình tải và cài đặt hoàn thành, nhấn Close để kết thúc.
+Các bước cấu hình sau khi cài:
+- Bước 1: Tìm biểu tượng Windows Live Mail từ Start Menu để khởi chạy.
+- Bước 2: Nhấn Accept tại cửa sổ điều khoản.
+- Bước 3: Hộp thoại thêm email tự động hiển thị, nhập thông tin email và nhấn Next.
+- Bước 4: Nhận thông báo "Your email account was added" là hoàn tất.
+- Bước 5: Để thêm tài khoản khác, vào tab Accounts và nhấn biểu tượng email. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-va-cau-hinh-windows-live-mail-tren-windows-10/

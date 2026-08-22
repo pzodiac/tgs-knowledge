@@ -58,3 +58,15 @@ Trả lời: So sánh theo 4 tiêu chí: Chi phí — Dedicated Server có giá 
 **Hỏi: Tiêu chí chọn cấu hình mua server máy chủ phù hợp là gì?**
 Trả lời: Khi lựa chọn máy server, cần xem xét các yếu tố quan trọng: số lượng CPU hỗ trợ gắn vào cùng lúc; dung lượng RAM đủ lớn để đảm bảo hiệu suất xử lý; khả năng nâng cấp (máy server tốt cho phép thay thế linh kiện mà không cần tắt máy); hệ thống lưu trữ an toàn với RAID để bảo vệ dữ liệu; hỗ trợ kỹ thuật (cân nhắc phí dịch vụ cài đặt và hỗ trợ kỹ thuật khi mua để đảm bảo thiết lập tối ưu); tính phù hợp nhu cầu (chọn cấu hình dựa trên nhu cầu thực tế và ngân sách doanh nghiệp để đạt hiệu suất ổn định và nhanh chóng).
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/chon-cau-hinh-mua-server-may-chu-phu-hop/
+
+**Hỏi: VPN là gì? Ưu và nhược điểm của mạng riêng ảo VPN?**
+Trả lời: VPN (Virtual Private Network) là công nghệ mạng giúp tạo kết nối mạng an toàn khi tham gia vào mạng công cộng như Internet, cho phép người dùng truy cập tài nguyên nội bộ từ xa và duyệt web bảo mật. Ưu điểm: tiết kiệm chi phí (dùng Internet làm cầu nối thay vì xây dựng đường kết nối riêng tốn kém); tính linh hoạt (truy cập mạng doanh nghiệp, mạng gia đình hoặc tài nguyên nội bộ từ bất kỳ vị trí nào); bảo mật dữ liệu (mọi thông tin truyền qua mạng được mã hóa, bảo vệ thông tin trên WiFi công cộng); vượt giới hạn địa lý (truy cập các trang web bị chặn theo vùng). Nhược điểm: quản lý chất lượng hạn chế (VPN không có khả năng quản lý Quality of Service qua môi trường Internet, dẫn đến nguy cơ mất mát dữ liệu); rủi ro bảo mật (có khả năng bị hack hoặc tấn công từ bên ngoài). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/vpn-la-gi-uu-nhuoc-diem-cua-mang-rieng-ao-vpn/
+
+**Hỏi: Cách cấu hình Proxy của Thế Giới Số trên trình duyệt như thế nào?**
+Trả lời: Các bước thiết lập proxy server (ví dụ trên Chrome):
+- Bước 1: Mở trình duyệt Chrome, truy cập menu chính.
+- Bước 2: Chọn Options → Setting → Advanced.
+- Bước 3: Tìm mục proxy settings, chọn "Open your computer's proxy settings".
+- Bước 4: Nhập thông tin proxy — địa chỉ IP của proxy server, Port: 8080.
+- Bước 5: Lưu cấu hình bằng cách chọn Save.
+Sau khi hoàn thành, proxy server của Thế Giới Số được kích hoạt thành công. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-proxy-cua-the-gioi-so/

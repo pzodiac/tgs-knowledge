@@ -34,3 +34,39 @@ Trả lời: Để cài đặt lại Cloud VPS từ Thế Giới Số:
 - Bước 3: Trong giao diện quản lý dịch vụ, chọn "Reinstall" để cài đặt lại Cloud VPS.
 - Bước 4: Sau khi cài đặt lại, có thể chọn tùy chọn khởi động lại (restart) trong bảng điều khiển nếu cần.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-lai-cloud-vps/
+
+**Hỏi: Portal.tgs.com.vn có những tính năng quản lý gì?**
+Trả lời: Portal.tgs.com.vn cung cấp các tính năng quản lý chính:
+- Khởi tạo Cloud VPS: khởi tạo và chọn cấu hình tương ứng Cloud VPS Linux, Cloud VPS Windows.
+- Tùy chọn cấu hình: linh hoạt lựa chọn cấu hình riêng hoặc theo gói dịch vụ có sẵn.
+- Quản lý hóa đơn: theo dõi Invoice tương ứng với các dịch vụ Cloud VPS đã khởi tạo.
+- Điều khiển VPS: khởi động lại, tắt, dừng, tạo snapshot và xem lịch sử.
+- Cài đặt lại hệ thống (reinstall VPS).
+- Quản lý Console: giám sát màn hình Cloud VPS trực tiếp.
+- Nâng cấp dịch vụ: tùy chỉnh gói theo nhu cầu.
+- Backup tự động: hàng tuần (mặc định) hoặc hàng ngày (lựa chọn thêm).
+- Private Network và Load Balancing: hỗ trợ bổ sung từ đội kỹ thuật.
+Liên hệ hỗ trợ qua email: support@tgs.com.vn. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cac-tinh-nang-quan-ly-portal/
+
+**Hỏi: Cách khởi tạo Cloud VPS Windows trên portal.tgs.com.vn như thế nào?**
+Trả lời: Các bước đăng ký Cloud VPS Windows qua Portal:
+- Bước 1: Truy cập mục "Dịch vụ" → "Cloud VPS – Windows", chọn gói cấu hình mong muốn, nhấn "Đăng ký ngay".
+- Bước 2: Lựa chọn thời hạn thanh toán (1, 3, 6 tháng hoặc 1 năm).
+- Bước 3: Chỉ định hệ điều hành và tạo mật khẩu cho máy chủ — có thể đặt hostname tùy chọn hoặc để hệ thống tự động gán; các DNS server (Ns1, Ns2) có thể giữ mặc định hoặc nhập tên miền riêng.
+- Bước 4: Chuyển sang giao diện thanh toán.
+- Bước 5: Chọn phương thức thanh toán và xác nhận. Sau khi hoàn tất, hệ thống tự động khởi tạo dịch vụ và gửi thông tin chi tiết qua email. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-dang-ky-cloud-vps-linux-tren-portal-tgs-com-vn/
+
+**Hỏi: Cách snapshot (sao lưu trạng thái) Cloud VPS trên Portal như thế nào?**
+Trả lời: Các bước tạo và khôi phục snapshot Cloud VPS:
+- Bước 1-2: Truy cập portal.tgs.com.vn, đăng nhập tài khoản, vào "Dịch Vụ → Quản lý dịch vụ" và chọn Cloud VPS cần sao lưu.
+- Bước 3-4: Tìm tab "Snapshot" và nhấn nút "Take Snapshot" để bắt đầu.
+- Bước 5: Điền tên file snapshot và mô tả để dễ quản lý.
+- Bước 6: Để khôi phục trạng thái trước đó, dùng tính năng "Rollback" để phục hồi Cloud VPS từ một snapshot đã lưu. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-snapshot-lai-cloud-vps/
+
+**Hỏi: Cách quản lý tổng quan Cloud VPS trên Portal như thế nào?**
+Trả lời: Quy trình 5 bước quản lý Cloud VPS trên Portal:
+- Bước 1: Đăng nhập vào trang quản lý sản phẩm tại portal.tgs.com.vn.
+- Bước 2: Vào Dịch Vụ → Quản lý dịch vụ, chọn Cloud VPS cần quản lý.
+- Bước 3: Nhấn vào "no VNC Console" để truy cập giao diện điều khiển VPS.
+- Bước 4: Chọn "Reinstall" để cài đặt lại hệ thống Cloud VPS nếu cần.
+- Bước 5: Sử dụng tùy chọn Restart để khởi động lại máy chủ ảo. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-quan-ly-cloud-vps/
