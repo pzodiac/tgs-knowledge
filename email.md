@@ -39,6 +39,26 @@ Trả lời: Để chuyển dữ liệu từ nhà cung cấp khác về Thế Gi
 **Hỏi: Tôi muốn sử dụng Cloud Email Server trên di động, máy tính bảng có được không?**
 Trả lời: Được. Với dịch vụ Cloud Email Server của Thế Giới Số, bạn có thể cài đặt và đồng bộ trên các thiết bị như máy tính, di động, máy tính bảng và một số thiết bị thông minh khác.
 
+**Hỏi: Cấu hình email Outlook trên điện thoại như thế nào?**
+Trả lời: Quý khách vui lòng xem tài liệu hướng dẫn tại link: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-mail-ms-outlook-tren-dien-thoai/
+
+**Hỏi: Cấu hình email trên Outlook như thế nào?**
+Trả lời: Quý khách vui lòng xem tài liệu hướng dẫn tại link: https://tailieu.tgs.com.vn/huong-dan-cai-dat-email-tren-outlook-2010/
+
+**Hỏi: Backup và Restore Outlook như thế nào?**
+Trả lời: Quý khách vui lòng xem tài liệu hướng dẫn tại link: https://tailieu.tgs.com.vn/huong-dan-backup-va-restore-outlook-pop3/
+
+**Hỏi: Cách tạo thư mục trong Outlook, tự động di chuyển email và phân loại như thế nào?**
+Trả lời: Quý khách vui lòng xem tài liệu hướng dẫn tại link: https://tailieu.tgs.com.vn/cach-tao-thu-muc-trong-outlook-tu-dong-di-chuyen-email-va-phan-loai/
+
+**Hỏi: Cách trỏ tên miền về Email Server Kerio 150 như thế nào?**
+Trả lời: Để trỏ tên miền về Email Server Kerio 150, cần cấu hình các bản ghi DNS sau tại trang quản lý tên miền (thay thế tên miền và IP máy chủ email tương ứng của quý khách):
+- Bản ghi A: tạo subdomain "mail" trỏ về IP 103.42.58.150.
+- Bản ghi MX: thiết lập mail exchange trỏ về mail.tenmiencuaquykhach.com, mức ưu tiên (priority) 5.
+- Bản ghi SPF (TXT): cho phép các dải IP ip4:103.42.58.0/22, ip4:103.157.217.0/24, ip4:123.30.132.0/24 và gateway cloudemail.vn được gửi email thay mặt tên miền.
+- Bản ghi DMARC (TXT): tạo bản ghi "_dmarc" với nội dung "v=DMARC1; p=none".
+- Bản ghi DKIM: tạo key DKIM dưới subdomain "mail._domainkey", khóa bắt đầu bằng "v=DKIM1;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...". Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-ten-mien-ve-email-server-kerio-150/
+
 ## Bảng giá Cloud Email
 
 Cloud Email là giải pháp Email theo tên miền riêng (Hello@tenmien.com), hiệu quả với chi phí thấp nhất.
@@ -100,3 +120,78 @@ Trả lời: Gói **Google Workspace Diamond** không niêm yết giá cố đ�
 
 **Hỏi: Các gói Google Workspace khác nhau như thế nào?**
 Trả lời: 4 gói Google Workspace (Star, Silver, Gold, Diamond) khác nhau chủ yếu ở dung lượng lưu trữ mỗi user (30 GB, 2 TB, 5 TB, Unlimited), số người tham dự họp video tối đa (100, 150, 500, không giới hạn) và mức độ tính năng bảo mật/quản trị nâng cao (Vault, eDiscovery, DLP, mã hóa S/MIME, BigQuery chỉ có từ gói Gold trở lên). Giá tăng dần từ Star (219.000đ/user/tháng) đến Gold (739.000đ/user/tháng); gói Diamond dành cho doanh nghiệp cần tùy chỉnh riêng, liên hệ để báo giá.
+
+## Hướng dẫn kỹ thuật Email
+
+**Hỏi: SPF là gì và vai trò của SPF trong bảo mật email?**
+Trả lời: SPF (Sender Policy Framework) là phương thức xác thực email dựa vào tên miền, cho phép chủ sở hữu chỉ định máy chủ nào được phép gửi email thay mặt tên miền, hoạt động thông qua bản ghi TXT trong DNS. Cơ chế hoạt động gồm 4 bước: email được gửi đi; máy chủ nhận kiểm tra DNS của domain gửi; hệ thống đối chiếu thông tin người gửi với SPF record; cuối cùng đánh giá mức độ tin cậy dựa trên chính sách (ví dụ -all, ~all, ?all). Lợi ích chính: bảo vệ thương hiệu bằng cách ngăn chặn giả mạo email, giảm đáng kể nguy cơ giả mạo và bảo vệ trước các cuộc tấn công phishing và BEC (Business Email Compromise). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/spf-la-gi-vai-tro-cua-spf-trong-bao-mat-email/
+
+**Hỏi: Cách thiết lập SMTP của Gmail cho WordPress như thế nào?**
+Trả lời: Để cấu hình gửi mail trong WordPress qua SMTP của Gmail, dùng plugin WP Mail SMTP:
+- Cài đặt: vào WP Admin → Plugins → Add New, tìm "WP Mail SMTP" và cài đặt, hoặc tải từ WordPress.org rồi upload qua FTP vào thư mục wp-content/plugins.
+- Cấu hình: SMTP Host là smtp.gmail.com; Port 465 (dùng SSL) hoặc 587 (không dùng SSL); Encryption SSL hoặc TLS; bật Authentication; Username là địa chỉ Gmail dùng để gửi; Password là mật khẩu ứng dụng (app password).
+- Kiểm tra: cuộn xuống mục "Send a Test Email" để xác nhận cấu hình hoạt động đúng.
+Lưu ý: cách dùng app password này không ổn định bằng phương thức API. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/thiet-lap-smtp-cua-gmail-cho-wordpress/
+
+**Hỏi: Cách trỏ DNS cho Google Mail (Gmail) như thế nào?**
+Trả lời: Để cấu hình DNS sử dụng Gmail cho tên miền:
+- Bước 1: Đăng nhập vào trung tâm quản lý khách hàng, tìm phần quản lý tên miền đã đăng ký.
+- Bước 2: Chọn tên miền muốn cấu hình cho Gmail.
+- Bước 3: Tạo 5 bản ghi MX với các thông số: ASPMX.L.GOOGLE.COM. (ưu tiên 1), ALT1.ASPMX.L.GOOGLE.COM. (ưu tiên 5), ALT2.ASPMX.L.GOOGLE.COM. (ưu tiên 5), ALT3.ASPMX.L.GOOGLE.COM. (ưu tiên 10), ALT4.ASPMX.L.GOOGLE.COM. (ưu tiên 10).
+- Bước 4: Chờ khoảng 1-2 phút để DNS cập nhật, sau đó kiểm tra hoạt động gửi/nhận email. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-dns-cho-google-mail/
+
+**Hỏi: Cách sử dụng tài khoản Admin để quản trị Cloud Email như thế nào?**
+Trả lời: Để quản trị hệ thống Cloud Email bằng tài khoản Admin:
+- Tạo tài khoản email mới: vào phần "Accounts", nhấn nút "+", chọn "New user", nhập thông tin (họ, tên, alias/địa chỉ email, mật khẩu) rồi lưu.
+- Cấu hình tài khoản gồm 5 tab: Info (quản lý ảnh đại diện, mật khẩu, trạng thái tài khoản, thêm alias), Card (thông tin cá nhân: tên, chức danh, ngày sinh, điện thoại, địa chỉ), Email (cấu hình forwarding, tự động trả lời, cài đặt chống spam), Limits (thiết lập dung lượng, ngày hết hạn, kích thước tin nhắn tối đa), Rules (thiết lập bộ lọc điều kiện cho email đến).
+- Xóa tài khoản: chọn tài khoản trong phần Accounts, chọn "Select action", sau đó "Delete". Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-tai-khoan-admin-de-quan-tri-cloud-email/
+
+**Hỏi: Mail Server là gì? Lợi ích và phân loại như thế nào?**
+Trả lời: Mail Server là một hệ thống máy tính chịu trách nhiệm gửi, nhận và lưu trữ email, đóng vai trò trung gian giữa người gửi và người nhận, đảm bảo thông điệp được chuyển đến đúng địa chỉ. Lợi ích chính: cho phép gửi/nhận email qua giao thức SMTP và POP3/IMAP; quản lý, tìm kiếm, sắp xếp thư điện tử dễ dàng; bảo mật dữ liệu bằng mã hóa SSL/TLS; lọc spam và quét virus ngăn chặn email độc hại; lập lịch gửi email theo thời gian mong muốn; tích hợp với các ứng dụng email client (Outlook, Thunderbird); sao lưu và khôi phục dữ liệu email. Phân loại: Mail Server Microsoft/Google — nền tảng quy mô lớn với bảo mật chặt chẽ, cung cấp tiện ích như Email 365 hoặc G Suite; Mail Server độc lập — phát triển cho tổ chức hoặc ISP xử lý khối lượng thư lớn, tích hợp thêm tính năng hợp tác, đồng bộ Outlook, quản trị từ xa và Webmail. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/mail-server-la-gi/
+
+**Hỏi: Cách trỏ record Mail về IP Server Email như thế nào?**
+Trả lời: Để cấu hình DNS kết nối tên miền với email server của Thế Giới Số, cần thiết lập các bản ghi sau (thay thế tên miền và IP email server tương ứng):
+- Record A cho Mail Server: Host `mail`, Type A, giá trị là IP email được cung cấp (ví dụ 103.42.56.54).
+- Record SPF: Host `@`, Type TXT, xác định các IP được phép gửi email thay mặt tên miền.
+- Record DKIM: Host `key1_domainkey`, Type TXT, chứa khóa công khai để xác thực email.
+- Record Domain Key: Host `_domainkey`, Type TXT, giá trị `o=-`.
+- Record A cho Webmail: Host `webmail`, Type A, giá trị là IP email server tương ứng.
+- Record DMARC: Host `_dmarc`, Type TXT, giá trị `v=DMARC1; p=none`.
+- Record MX: Host `@`, Type MX, giá trị `mail.domain.com` với ưu tiên (priority) 10.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-record-mail-ve-ip-server-email/
+
+**Hỏi: Cách trỏ tên miền về Email Server 137 như thế nào?**
+Trả lời: Để cấu hình DNS kết nối tên miền với Email Server 137 của Thế Giới Số, thiết lập các bản ghi sau (thay thế tên miền tương ứng):
+- Bản ghi A (Mail Server): Host `mail`, Type A, Value `103.42.58.137`.
+- Bản ghi SPF: Host `@`, Type TXT, Value `v=spf1 ip4:103.157.217.0/24 ip4:103.42.58.0/24 include:gw.cloudemail.vn -all`.
+- Bản ghi DKIM (key1): Host `key1._domainkey`, Type TXT, Value là khóa RSA công khai được cung cấp.
+- Bản ghi DKIM (mặc định): Host `_domainkey`, Type TXT, Value là khóa RSA công khai được cung cấp.
+- Bản ghi DMARC: Host `_dmarc`, Type TXT, Value `v=DMARC1; p=none`.
+- Bản ghi MX: Host `@`, Type MX, Priority 5, Value `mail.tenmiencuaquykhach.com`.
+Các bản ghi này giúp xác thực email, ngăn chặn giả mạo và đảm bảo khả năng gửi/nhận thư đúng cách. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-ten-mien-ve-email-server-137/
+
+**Hỏi: Cách đổi mật khẩu Webmail như thế nào?**
+Trả lời: Để thay đổi mật khẩu email qua giao diện webmail:
+- Bước 1: Truy cập webmail tại `http://mail.domain.com/` (thay "domain" bằng tên miền của bạn).
+- Bước 2: Vào Options → Accounts → My Account → Change Password.
+- Bước 3: Nhập Old Password (mật khẩu hiện tại), New Password (mật khẩu mới tối thiểu 6 ký tự, có ít nhất 1 ký tự số và 1 ký tự chữ, không được trùng tên tài khoản email), và Confirm Password để xác nhận lại.
+- Bước 4: Nhấn OK để hoàn tất.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-doi-mat-khau-webmail/
+
+**Hỏi: Cách cấu hình chữ ký cho Webmail như thế nào?**
+Trả lời: Để thiết lập chữ ký cá nhân tự động thêm vào email gửi đi:
+- Bước 1: Đăng nhập vào webmail, vào Account → chọn Options.
+- Bước 2: Vào Mail → Signature → Add, sau đó nhập nội dung chữ ký mong muốn.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-chu-ky-cho-webmail/
+
+**Hỏi: Cách gửi file dung lượng lớn trên Cloud Email như thế nào?**
+Trả lời: Để gửi file vượt quá giới hạn dung lượng đính kèm email thông thường (khoảng 15-30MB), tải file lên hệ thống và chia sẻ liên kết thay vì đính kèm trực tiếp:
+- Bước 1: Truy cập Webmail, chuyển đến mục "Document".
+- Bước 2: Chọn "Upload file" để tải tệp cần gửi lên nền tảng.
+- Bước 3: Nhấp chuột phải vào tệp đã tải, chọn "Share Link".
+- Bước 4: Sao chép liên kết chia sẻ và dán vào nội dung email trước khi gửi.
+Người nhận có thể truy cập tệp thông qua liên kết được cung cấp, tránh hạn chế kích thước tệp đính kèm. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-gui-file-dung-luong-lon-tren-cloud-email/
+
+**Hỏi: Email offline là gì? Lợi ích của email offline là gì?**
+Trả lời: Email offline là dịch vụ cho phép người dùng gửi và nhận email mà không cần kết nối Internet trực tiếp tại thời điểm thực hiện — thư được lưu trữ tại máy chủ mail cục bộ của công ty. Các lợi ích chính: Tiết kiệm chi phí — giảm chi phí Internet và điện thoại khi nhiều nhân viên chia sẻ một đường truyền duy nhất, gửi thư nội bộ trực tiếp mà không cần Internet. Hiệu suất hoạt động — khi mạng Internet không hoạt động, việc gửi email nội bộ trong công ty vẫn diễn ra bình thường, tăng năng suất khi không phụ thuộc vào kết nối mạng. Bảo mật và quản lý — kiểm soát toàn bộ nội dung email gửi đến/đi trong công ty, hạn chế rò rỉ thông tin nội bộ, máy chủ kiểm tra virus tự động trước khi gửi/nhận. Thương hiệu — email chính thức theo tên miền công ty (tennhanvien@tencongty.com) giúp nâng cao hình ảnh doanh nghiệp.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/email-offline-loi-ich-cua-email-offline-la-gi/

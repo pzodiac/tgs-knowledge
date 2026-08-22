@@ -216,6 +216,92 @@ Trả lời: Khách hàng liên hệ bộ phận hỗ trợ kỹ thuật qua hot
 **Hỏi: Hosting có cam kết thời gian hoạt động (uptime) không?**
 Trả lời: Có. Công ty cam kết uptime tối thiểu 99.9% cho tất cả các gói hosting. Nếu không đạt mức cam kết, khách hàng có thể được bồi hoàn theo chính sách SLA tương ứng.
 
+## Hướng dẫn kỹ thuật Hosting
+
+**Hỏi: Cách cấu hình sử dụng Redis Cache trên Hosting WordPress và Hosting Linux như thế nào?**
+Trả lời: Redis (hay Redis Cache) là một mã nguồn mở lưu trữ dữ liệu có cấu trúc trên bộ nhớ, vừa đóng vai trò cơ sở dữ liệu vừa làm cơ chế cache. Lợi ích chính: tăng tốc đáng kể tốc độ tải website, giảm tải tài nguyên máy chủ, tương thích với các plugin cache khác như WP-Super-Cache. Lưu ý: không hỗ trợ PHP 5.6 trở về trước. Các bước cấu hình:
+- Bước 1: Cài đặt plugin Redis Object Cache qua WordPress dashboard (Plugins → Add New Plugin → tìm "Redis Object Cache" → Install và Activate).
+- Bước 2: Bật kết nối bằng cách nhấn "Enable Object Cache" — kết nối thành công sẽ hiển thị trạng thái "Connected".
+Lưu ý: khách truy cập mới có thể chưa thấy cải thiện tốc độ ngay vì hệ thống cần thời gian thu thập dữ liệu cache; kết quả rõ rệt hơn sau khi tích lũy dữ liệu và truy cập lại site. Có thể xóa cache (flush) hoặc tắt tính năng này qua các nút riêng trong giao diện plugin. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cau-hinh-su-dung-redis-cache-tren-hosting-wordpress-va-hosting-linux/
+
+**Hỏi: Những lý do nào khiến website bị nhiễm mã độc?**
+Trả lời: Dấu hiệu nhận biết website bị nhiễm mã độc: công cụ tìm kiếm đưa ra cảnh báo, số trang được index giảm mạnh, xuất hiện link lạ được chèn vào nội dung, quảng cáo spam tràn ngập trang, hoặc nhận thông báo từ Google Webmaster. Nguyên nhân chính gồm:
+- Mật khẩu quản trị yếu, dễ đoán (ví dụ "123456")
+- Phần mềm/CMS chưa cập nhật bản vá (WordPress, Joomla phiên bản cũ)
+- Copy file từ các website đã bị nhiễm mã độc
+- Phân quyền thư mục/file không an toàn (chmod 750/755 chưa đúng)
+- Máy tính cá nhân bị nhiễm trojan/virus khi thao tác với website
+- Upload file chứa mã độc lên website
+Giải pháp: đổi lại toàn bộ mật khẩu liên quan, tải file về máy để rà soát cục bộ, cập nhật các bản vá bảo mật thường xuyên, và liên hệ đội ngũ hỗ trợ kỹ thuật chuyên nghiệp với các trường hợp nghiêm trọng. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cac-ly-do-khien-website-bi-nhiem-ma-doc/
+
+**Hỏi: Cách xử lý khi website bị cảnh báo chứa phần mềm độc hại (malware) như thế nào?**
+Trả lời: Khi trình duyệt hiển thị cảnh báo như "The site ahead contains malware" hoặc "Deceptive Site Ahead", nguyên nhân chính là website bị hacker tấn công hoặc nhiễm mã độc — ngoài ra quảng cáo chất lượng thấp hoặc đoạn mã nhúng rủi ro cao cũng có thể khiến Google gắn cờ cảnh báo khi phát hiện mã đáng ngờ. Cách khắc phục:
+- Xác định và loại bỏ mã độc: dùng plugin bảo mật như WordFence hoặc iTheme Security (với WordPress), hoặc công cụ quét online như Sucuri để tìm file bị nhiễm; xóa thủ công đoạn mã độc chèn vào file bị xâm nhập; sao lưu website trước khi thao tác.
+- Yêu cầu Google xem xét lại: truy cập Google Search Console → vào mục Security Issues (Vấn đề bảo mật) → gửi yêu cầu xem xét lại, giải thích đã loại bỏ toàn bộ mã độc → chờ vài ngày để Google đánh giá lại.
+- Giải pháp tạm thời ở trình duyệt (không khuyến khích dùng lâu dài): tắt Safe Browsing trong cài đặt Chrome, hoặc tắt cảnh báo deceptive site trong phần Privacy & Security của Firefox.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-sua-loi-website-bi-canh-bao-chua-phan-mem-doc-hai/
+
+**Hỏi: Những câu hỏi thường gặp khi sử dụng Hosting Linux là gì?**
+Trả lời: Tổng hợp các vấn đề thường gặp khi dùng Hosting Linux:
+- Không thể kết nối tới website: kiểm tra thông báo bảo trì máy chủ trên trang chủ Thế Giới Số, thử kết nối qua mạng khác, và xác nhận với người khác xem có cùng gặp lỗi không.
+- IP bị khóa: xảy ra khi IP vượt quá 400 kết nối tới máy chủ, hoặc đăng nhập cPanel sai quá 5 lần, hoặc nằm trong dải IP tấn công từ chối dịch vụ.
+- Gián đoạn khi upload/download mã nguồn: dùng tính năng nén file trong cPanel; chmod (phân quyền) theo chuẩn 755 cho folder và 644 cho file để tránh gián đoạn.
+- File .htaccess không hiển thị: trong File Manager, chọn "Show Hidden Files (dotfiles)" để hiển thị file ẩn.
+- chmod 777 không hoạt động: áp dụng chuẩn 644 cho file và 755 cho thư mục trên Shared Hosting.
+- Trỏ tên miền không hoạt động: cần chờ khoảng 2-48 giờ để các máy chủ phân giải tên miền (DNS Server) cập nhật.
+- Lấy bản backup: đăng nhập cPanel, chọn mục backup để xem phiên bản weekly hoặc monthly.
+- Dung lượng tăng đột biến: kiểm tra Disk Space Usage trong cPanel, nguyên nhân có thể do upload ảnh hoặc cache tự động.
+- Website chưa cập nhật sau khi sửa: hệ thống dùng bộ nhớ đệm (cache), mở ticket để yêu cầu chuyển sang máy chủ không hỗ trợ cache nếu cần.
+- Thay đổi mật khẩu hosting: đăng nhập clients.tgs.com.vn, chọn Tài khoản hosting, nhập mật khẩu mới và lưu.
+- Thay đổi tên miền chính: Thế Giới Số chỉ hỗ trợ thay đổi tên miền chính một lần duy nhất cho 01 gói hosting, cần mở ticket kỹ thuật.
+- Restore dữ liệu từ backup: mở ticket kỹ thuật — dung lượng dưới 500MB xử lý trong 10-20 phút, trên 500MB xử lý sau 22h.
+- Di chuyển tài khoản từ nhà cung cấp khác: mở ticket kỹ thuật, cung cấp thông tin tài khoản cũ và yêu cầu chuyển dữ liệu.
+- Remote SQL: Thế Giới Số không hỗ trợ remote SQL vì lý do bảo mật.
+- Thêm băng thông: hỗ trợ tăng tối đa 10GB vào cuối tháng, mở ticket kỹ thuật để yêu cầu.
+- Website bị hack: chỉ hỗ trợ restore backup tuần/tháng; liên hệ nhà thiết kế website để khắc phục lỗ hổng bảo mật.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/nhung-cau-hoi-thuong-gap-khi-su-dung-hosting-linux/
+
+**Hỏi: Các loại hosting phổ biến hiện nay là gì?**
+Trả lời: Hosting là dịch vụ lưu trữ dữ liệu và chia sẻ dữ liệu trực tuyến — nếu ví website là ngôi nhà và domain là địa chỉ, thì hosting chính là mảnh đất xây dựng. Một dịch vụ hosting chất lượng được đánh giá qua: tốc độ (thời gian tải trang lý tưởng 3-5 giây), dung lượng lưu trữ, băng thông, khả năng chịu tải (số người truy cập đồng thời), và hỗ trợ khách hàng. Các loại hosting phổ biến:
+- Shared Hosting: rẻ nhất, phù hợp blog cá nhân, nhưng chia sẻ tài nguyên và bảo mật kém hơn.
+- VPS Hosting: nằm giữa Shared và Dedicated, cung cấp tài nguyên riêng với giá vừa phải.
+- Dedicated Server: máy chủ riêng, kiểm soát toàn bộ nhưng giá cao và cần kiến thức kỹ thuật.
+- Colocation: thuê chỗ đặt máy chủ vật lý tại trung tâm dữ liệu.
+Các thông số kỹ thuật quan trọng cần lưu ý khi chọn hosting: hệ điều hành, dung lượng, băng thông, phiên bản PHP, số lượng domain/email tối đa, và RAM cấp phát. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/web-hosting-la-gi-kien-thuc-cna-biet-ve-hosting/
+
+**Hỏi: Cách gửi mail trong PHP với PHPMailer như thế nào?**
+Trả lời: Hàm mail() mặc định của PHP thường gặp vấn đề về độ tin cậy; PHPMailer hỗ trợ giao thức SMTP, cải thiện khả năng gửi thành công và có thêm tính năng CC/BCC, đính kèm file. Cài đặt với PHPMailer bản 6x:
+- Import thư viện: `include APPPATH . "../storage/PHPMailer-master/src/PHPMailer.php";`, `include APPPATH . "../storage/PHPMailer-master/src/SMTP.php";`, `use PHPMailer\\PHPMailer\\PHPMailer;`
+- Cấu hình và gửi: bật `isSMTP()` để dùng SMTP; cấu hình host, port (587), username, password; dùng `setFrom()` cho người gửi, `addAddress()` cho người nhận; đặt `isHTML(true)` nếu gửi nội dung HTML; gọi `send()` để gửi.
+Với PHPMailer bản 5x: tải thư viện, copy 2 file `class.smtp.php` và `class.phpmailer.php`, cấu hình thông tin đăng nhập Gmail, đặt `SMTPSecure = "ssl"` và `Port = 465`, gọi `Send()`. Nên tạo sẵn hàm `sendMail()` và `sendMailAttachment()` để tái sử dụng, tránh lặp code. Nếu dùng Gmail làm SMTP: cần tắt xác thực 2 lớp (nếu đang bật), bật "Less secure apps", và mở khóa Captcha cho ứng dụng bên thứ ba. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-gui-mail-trong-php-voi-phpmailer/
+
+**Hỏi: Cách đặt lại mật khẩu quản trị OpenCart (reset admin password) như thế nào?**
+Trả lời: Để reset mật khẩu quản trị viên OpenCart khi bị quên:
+- Bước 1: Tải file `ocreset.zip` và giải nén để có file `ocreset.php`.
+- Bước 2: Upload file `ocreset.php` lên thư mục gốc OpenCart — nơi chứa file `.htaccess`/`.htaccess.txt`.
+- Bước 3: Truy cập file qua trình duyệt tại `http://tên-miền-của-bạn/ocreset.php` (hoặc `http://localhost/shop/ocreset.php` nếu chạy local).
+- Bước 4: Chọn tên quản trị viên từ danh sách thả xuống, nhập mật khẩu mới vào ô mật khẩu.
+- Bước 5: Nhấn nút "Change Password" để hoàn tất — hệ thống hiển thị thông báo cập nhật thành công.
+Sau đó dùng tên đăng nhập và mật khẩu mới để truy cập quản trị OpenCart. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/dat-lai-mat-khau-quan-tri-opencart-reset-admin-password/
+
+**Hỏi: Cách xử lý lỗi 500 Internal Server Error liên quan đến .htaccess như thế nào?**
+Trả lời: Lỗi 500 Internal Server Error trên hosting cPanel thường xuất phát từ 4 nguyên nhân chính:
+- Vấn đề .htaccess: cú pháp sai hoặc máy chủ thiếu module cần thiết (ví dụ modRewrite).
+- Phân quyền thư mục không chính xác.
+- Bị tấn công DoS/DDoS.
+- Time-out: script thực thi quá lâu, vượt giới hạn thời gian cho phép.
+Các bước xác định lỗi: kiểm tra error log qua giao diện cPanel, hoặc xem chi tiết từ server log tại `/usr/local/apache/logs/error_log`. Cách khắc phục:
+- Khôi phục .htaccess mặc định: dựng lại file theo cấu hình gốc của nền tảng đang dùng (WordPress, Joomla, Drupal...).
+- Kiểm tra cú pháp: đảm bảo các quy tắc trong .htaccess có cấu trúc đúng.
+- Kiểm tra từng dòng: đổi tên file thành .htaccess.bak rồi thêm lại từng dòng một để xác định chính xác dòng gây lỗi.
+Lưu ý: cần xác minh kỹ cấu trúc quy tắc và đường dẫn file liên quan. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/xu-ly-loi-500-internal-sever-error-voi-hatccess/
+
+**Hỏi: Cách sửa cấu hình PHP trên Host như thế nào?**
+Trả lời: Có 3 cách chính để điều chỉnh cấu hình PHP trên hosting qua cPanel:
+- Đổi phiên bản PHP: hỗ trợ các phiên bản 5.3, 5.4, 5.5, 5.6 và 7.0 (mặc định 5.6) — vào "Select PHP Version" trong cPanel, chọn phiên bản phù hợp, nhấn "Set as current".
+- Bật/tắt phần mở rộng PHP (extensions): trong mục "Select PHP Version", chọn các extension cần dùng rồi nhấn "Save" — lưu ý dùng càng nhiều extension thì tài nguyên hosting tiêu tốn càng nhiều.
+- Tùy chỉnh cấu hình PHP mặc định: vào "Select PHP Version" → "Switch to PHP Options" để điều chỉnh các thông số: bộ nhớ & thời gian (memory_limit, max_execution_time, max_input_time), upload (file_uploads, upload_max_filesize, post_max_size), hiển thị lỗi (display_errors, error_reporting), và các tùy chọn khác (allow_url_fopen, date.timezone, short_open_tag, session.save_path, open_basedir). Nhấn "Save" sau khi thiết lập xong. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-sua-cau-hinh-php-tren-host/
+
 ## Tài liệu / liên kết liên quan
 
 - [Bảng giá các gói hosting WordPress](https://tgs.com.vn/hosting-wordpress)

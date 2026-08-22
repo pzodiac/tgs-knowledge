@@ -94,3 +94,36 @@ Trả lời: **Site with EV** (Symantec) giá 19.000.000 VNĐ/năm. Thông số:
 
 **Hỏi: Giá chứng chỉ Site Pro with EV (Symantec) là bao nhiêu?**
 Trả lời: **Site Pro with EV** (Symantec) giá 33.000.000 VNĐ/năm. Thông số: thời gian cấp 5-10 ngày, phí cài đặt 1.000.000 VNĐ, chứng thực Mở rộng (EV), có thanh trình duyệt màu xanh, bảo mật Single domain, đăng ký 1 năm, mã hóa up to 256 bit, tương thích mọi trình duyệt và thiết bị di động, chính sách bảo hiểm $1.500.000, có Trust logo, hỗ trợ cấp phát lại miễn phí, hỗ trợ kỹ thuật 24/7/365.
+
+## Hướng dẫn kỹ thuật cài đặt SSL
+
+**Hỏi: Cách cài đặt chứng chỉ SSL trên Nginx như thế nào?**
+Trả lời: Để cài đặt SSL certificate trên máy chủ Nginx:
+- Bước 1: Giải nén tập tin đính kèm từ email nhà cung cấp chứng chỉ để lấy file certificate của domain và file CA bundle.
+- Bước 2: Upload các file certificate lên thư mục private key trên server, ví dụ `/usr/local/ssl/certificate`.
+- Bước 3: Đăng nhập SSH bằng tài khoản root, di chuyển đến thư mục chứa certificate.
+- Bước 4: Nếu cần, gộp file bằng lệnh `cat tenmien.crt tenmien.ca-bundle > tenmien-ca.crt` (bỏ qua nếu đã tải bản dành riêng cho Nginx).
+- Bước 5: Chỉnh sửa file cấu hình Nginx, thêm các directive SSL trỏ đến đường dẫn certificate và private key.
+- Bước 6: Kiểm tra cấu hình bằng `nginx -t`, sau đó khởi động lại bằng `service nginx restart`. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-chung-chi-ssl-tren-nginx/
+
+**Hỏi: Cách cài đặt SSL trên máy chủ Ubuntu với Apache2 như thế nào?**
+Trả lời: Để cài đặt SSL certificate trên Ubuntu chạy Apache2:
+- Bước 1: Tải về chứng chỉ Trung Gian (Intermediate) và SSL của domain, sau đó chuyển lên server với quyền chỉ đọc (read-only) cho ROOT.
+- Bước 2: Mở file cấu hình Apache tại `/etc/apache2/sites-enabled/<tên_domain>`. Có thể cần cấu hình riêng cho HTTP (port 80) và HTTPS (port 443).
+- Bước 3: Trong khối SSL, cập nhật 3 đường dẫn file chứng chỉ: `SSLCertificateKeyFile` (private key), `SSLCertificateChainFile` (root bundle certificate), `SSLCertificateFile` (certificate domain, định dạng .crt).
+- Bước 4: Kiểm tra cấu hình bằng `apachectl configtest` trước khi khởi động lại.
+- Bước 5: Khởi động lại Apache bằng `apachectl stop` rồi `apachectl start`. Nếu module SSL chưa được bật, dùng `a2enmod ssl` hoặc cài OpenSSL qua `apt install openssl`. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-ssl-tren-may-chu-ubuntu-voi-apache2/
+
+**Hỏi: Quy trình triển khai chứng thư số SSL như thế nào?**
+Trả lời: Quy trình triển khai chứng chỉ SSL gồm 5 bước chính:
+- Bước 1 - Chọn chứng chỉ SSL phù hợp: so sánh các loại chứng chỉ SSL hiện có để tìm loại phù hợp với yêu cầu hệ thống và ngân sách.
+- Bước 2 - Tạo CSR (Certificate Signing Request): CSR là tập tin mã hóa được tạo ra bởi máy chủ web cần triển khai SSL, chứa thông tin công ty, quốc gia, tên miền và public key tương ứng với private key.
+- Bước 3 - Đặt hàng mua: hoàn tất đặt hàng bằng cách nhấn nút mua sau khi xác nhận yêu cầu hệ thống.
+- Bước 4 - Xác thực doanh nghiệp: nhà cung cấp (ví dụ Symantec) xác thực doanh nghiệp có giấy phép kinh doanh hợp lệ, địa chỉ cố định, số điện thoại và sở hữu các tên miền được liệt kê trong chứng chỉ.
+- Bước 5 - Nhận và cài đặt chứng chỉ: sau khi xác thực, nhà cung cấp gửi chứng chỉ SSL qua email kèm hướng dẫn cài đặt; cách cài đặt khác nhau tùy loại máy chủ, có hỗ trợ kỹ thuật từ xa nếu cần.
+Toàn bộ quy trình đảm bảo an toàn vì private key luôn nằm trên server của bạn, không ai khác có thể truy cập ngoài chính bạn.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/quy-trinh-trien-khai-chung-thu-so-ssl/
+
+**Hỏi: Cách cài đặt SSL cho MDaemon Mail Server trên Windows như thế nào?**
+Trả lời: Để bảo mật giao tiếp email bằng cách cấu hình chứng chỉ SSL/TLS cho máy chủ MDaemon trên Windows. Bước 1 - Lựa chọn và tải certificate: MDaemon chỉ hỗ trợ định dạng PKCS#12/PFX, tải SSL ở định dạng này từ nhà cung cấp, chuẩn bị Private Key (thường được gửi qua email), lưu ý mật khẩu không được chứa ký tự đặc biệt, copy file *.pfx vào thư mục `C:\Mdaemon\Certificate\`. Bước 2 - Cài đặt SSL qua MMC Console: mở MMC Console → File → Add/Remove Snap-in, chọn Certificates → Add, chọn Computer Account → Next, chọn Local computer → Finish, truy cập Certificate (Local Computer) → Personal → All Tasks → Import, định vị file *.pfx trong `C:\Mdaemon\Certificate\`, nhập mật khẩu để hoàn tất import. Bước 3 - Cấu hình SSL trong MDaemon: từ giao diện quản trị MDaemon vào Security → Security setting, chuyển đến phần "SSL & TLS", chọn SSL vừa import, cấu hình tương tự cho các phần Mdaemon, WorldClient, WebAdmin.
+- Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cai-dat-ssl-cho-mdaemon-mail-server-windows/

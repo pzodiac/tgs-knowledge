@@ -22,6 +22,9 @@ Trả lời: Có. CDN hỗ trợ cơ chế bảo mật dựa trên vị trí đ�
 **Hỏi: Doanh nghiệp nào nên sử dụng dịch vụ CDN?**
 Trả lời: Phù hợp với các website thương mại điện tử, báo điện tử, nền tảng video/live-stream, ứng dụng di động và bất kỳ doanh nghiệp nào cần phân phối nội dung ổn định đến người dùng ở nhiều khu vực.
 
+**Hỏi: CDN hoạt động như thế nào và khi nào nên/không nên dùng CDN cho website?**
+Trả lời: CDN là một hệ thống máy chủ trên toàn cầu lưu bản sao các nội dung tĩnh bên trong website và phân tán qua các điểm hiện diện (PoP) toàn cầu. Thay vì người dùng yêu cầu trực tiếp từ máy chủ chính, CDN định tuyến yêu cầu đến PoP gần nhất về mặt địa lý — ví dụ tải một tập tin 300KB có thể giảm thời gian từ 500ms xuống còn 10ms. Nên dùng CDN khi: máy chủ website ở xa người dùng, lưu lượng truy cập cao tiêu tốn nhiều băng thông, người dùng phân tán ở nhiều quốc gia, hoặc cần áp dụng kỹ thuật cân bằng tải (Load Balancing). Không cần CDN (thậm chí có thể làm chậm hơn) khi máy chủ đã đặt gần người dùng — ví dụ website phục vụ chủ yếu khách Việt Nam sẽ không được lợi nếu dùng CDN thiếu PoP tại Việt Nam. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cdn-la-gi-va-khi-nao-nen-dung-cdn-cho-website/
+
 ## Dịch vụ CDN mang lại những gì cho doanh nghiệp
 
 **Hỏi: Dịch vụ CDN mang lại những lợi ích gì cho doanh nghiệp?**
@@ -42,3 +45,15 @@ Trả lời: Giá dịch vụ CDN tính theo băng thông trong nước sử d�
 - 10 - 50 TB: 850đ/GB
 - 50 - 100 TB: 500đ/GB
 - 100 - 200 TB: 450đ/GB
+
+## Hướng dẫn kỹ thuật CDN
+
+**Hỏi: Cách khởi tạo web chạy qua CDN như thế nào?**
+Trả lời: Để đưa website chạy trên dịch vụ CDN thông qua portal Swift Federation:
+- Bước 1: Truy cập https://portal.swiftfederation.com/ và đăng nhập tài khoản.
+- Bước 2: Chọn tên tương ứng trên thanh menu bên trái.
+- Bước 3: Chọn "Solutions" rồi "CDN" và "Add Service".
+- Bước 4: Nhập thông tin bắt buộc — Domain Name: tên miền CDN (ví dụ: cdn.tgs.com.vn); Origin URL: tên miền gốc chứa source (ví dụ: tgs.com.vn hoặc www.tgs.com.vn). Lưu cấu hình.
+- Bước 5: Vào trang quản lý tên miền, tạo 1 bản ghi CNAME tên là "cdn.tgs.com.vn" trỏ về "edge.vncdn.vn".
+- Bước 6: Chỉnh sửa website để trỏ các tài nguyên (hình ảnh, file) về CDN (cdn.tgs.com.vn).
+Sau khi hoàn tất, người dùng sẽ tải nội dung từ server CDN thay vì máy chủ gốc. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-khoi-tao-web-chay-qua-cdn-2/

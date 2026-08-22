@@ -208,3 +208,13 @@ Trả lời: Để sử dụng Cloud VPS, bạn cần có một số kiến th�
 
 **Hỏi: Tôi có thể chuyển dịch vụ từ nhà cung cấp khác về Thế Giới Số?**
 Trả lời: Vâng! Tất cả những gì bạn cần làm là cung cấp cho Thế Giới Số thông tin nhà cung cấp cũ của bạn bằng cách tạo email hoặc gọi đến hotline 028.7309.7379, chúng tôi sẽ kiểm tra, phân tích và chuyển dữ liệu của bạn sang Thế Giới Số hoàn toàn miễn phí.
+
+**Hỏi: Máy chủ đám mây là gì? Các tính năng nổi bật của máy chủ đám mây?**
+Trả lời: Máy chủ đám mây là một hệ thống máy chủ được lưu trữ, quản lý và vận hành trên một nền tảng đám mây của bên thứ ba như AWS, Microsoft Azure, hoặc GCP. Người dùng có thể triển khai ứng dụng mà không cần quản lý phần cứng vật lý. 6 tính năng nổi bật:
+- Khả năng mở rộng: điều chỉnh tài nguyên (CPU, RAM, lưu trữ) theo nhu cầu mà không cần đầu tư phần cứng bổ sung
+- Truy cập linh hoạt: tiếp cận dữ liệu từ bất kỳ vị trí nào có kết nối Internet
+- Bảo mật và sao lưu: cung cấp mã hóa, xác thực đa yếu tố, và phục hồi dữ liệu tự động
+- Tiết kiệm chi phí: mô hình "trả tiền theo nhu cầu" giúp giảm chi phí vận hành
+- Hiệu suất cao: sử dụng công nghệ tiên tiến tại các trung tâm dữ liệu lớn
+- Tích hợp và tự động hóa: kết nối với các dịch vụ khác và hỗ trợ triển khai CI/CD
+Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/may-chu-dam-may-la-gi-cac-tinh-nang-noi-bat-cua-may-chu-dam-may/

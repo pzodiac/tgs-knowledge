@@ -46,3 +46,20 @@ Trả lời: Gói **Enterprise** giá 829.000đ/tháng (giá gốc 921.600đ). D
 
 **Hỏi: Các gói S3 khác nhau như thế nào?**
 Trả lời: 4 gói S3 (Lite, Basic, Pro, Enterprise) khác nhau theo dung lượng lưu trữ và đơn giá vượt mức: Lite (50GB-99GB, 45.000đ/tháng, vượt mức 100.000đ/100GB), Basic (100GB-499GB, 90.000đ/tháng, vượt mức 100.000đ/100GB), Pro (500GB-1023GB, 427.500đ/tháng, vượt mức 95.000đ/100GB, phổ biến nhất), Enterprise (1TB trở lên, 829.000đ/tháng, vượt mức 90.000đ/100GB). Đơn giá vượt mức giảm dần khi dùng gói dung lượng lớn hơn.
+
+## Hướng dẫn kỹ thuật kết nối S3
+
+**Hỏi: Cách kết nối và quản lý S3 bằng Cyberduck và S3 Browser như thế nào?**
+Trả lời: Để kết nối S3 Thế Giới Số (s3.tgs.com.vn, cổng 9000) qua 2 công cụ phổ biến:
+Cách 1 - Cyberduck: tải ứng dụng tại https://cyberduck.io/download/. Khi cấu hình kết nối, chọn kiểu S3 (HTTP, Deprecated path style requests), nhập Access Key là username và Secret Access Key là password. Nếu không chỉnh được cổng, vào Edit → Preferences → Profile → Deprecated. Cyberduck hỗ trợ upload file, download file, xóa file, đổi tên file, tạo thư mục mới, di chuyển file.
+Cách 2 - S3 Browser: tải tại https://s3browser.com/download.aspx. Khi thiết lập tài khoản, chọn Account type là S3 Compatible Storage, nhập API Endpoint là địa chỉ server, Access ID là username, Secret Access Key là password, rồi chọn "Add new account" để hoàn tất thêm tài khoản. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cach-su-dung-cyberduck-ket-noi-voi-minio/
+
+**Hỏi: Cách cài đặt MinIO trên Ubuntu 22.04 như thế nào?**
+Trả lời: Các bước cài đặt và cấu hình MinIO object storage trên Ubuntu 22.04:
+- Chuẩn bị hệ thống: cập nhật các gói hệ thống, tạo tài khoản riêng minio-user (không dùng root), tạo thư mục lưu trữ dữ liệu tại /data/minio.
+- Cài đặt MinIO Server: tải và cài binary MinIO vào /usr/local/bin, cấu hình thông tin đăng nhập và đường dẫn lưu trữ trong /etc/minio/minio.conf, tạo systemd service để tự khởi động cùng hệ thống, bật và chạy service.
+- Cấu hình mạng: mở firewall cho port 9000 (API) và 9001 (Web UI).
+- Truy cập giao diện web: truy cập http://IP_SERVER:9001 với thông tin đăng nhập đã cấu hình.
+- Cài đặt MinIO Client: cài công cụ `mc` và thiết lập alias kết nối đến server.
+- Quản lý Bucket & File: tạo bucket và upload file thử nghiệm.
+- Quản lý người dùng & quyền: tạo user, thiết lập quota cho bucket, định nghĩa policy dạng JSON, và gán quyền cho từng tài khoản. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-minio-tren-ubuntu-22-04/
