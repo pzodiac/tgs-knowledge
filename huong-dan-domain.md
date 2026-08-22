@@ -116,6 +116,9 @@ Trả lời: Tên miền là một cái tên hiển thị ngắn gọn bằng ch
 Trả lời: WHOIS (đọc là "who-is") là công cụ tra cứu thông tin về chủ sở hữu tên miền, cung cấp các thông tin: Registrar (nhà quản lý tên miền — tổ chức/tập đoàn phân phối tên miền), Registrant (người đăng ký/chủ sở hữu tên miền), Contacts (thông tin liên hệ chủ sở hữu, hỗ trợ kỹ thuật hoặc thanh toán), Name servers (địa chỉ DNS đang trỏ về của tên miền), Domain status (tình trạng hiện tại), Registration date (ngày đăng ký), Expiry date (ngày hết hạn), Updated date (lần cập nhật gần nhất).
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/179/
 
+**Hỏi: SPF, DKIM và DMARC là gì? Vai trò trong việc chống giả mạo email ra sao?**
+Trả lời: SPF, DKIM, DMARC là 3 loại bản ghi DNS phối hợp bảo vệ email khỏi giả mạo và spam. SPF (Sender Policy Framework): xác nhận một email server có được phép gửi email dưới tên một domain hay không — ví dụ chỉ cho phép email từ domain gửi đi từ IP cụ thể, SPF sẽ từ chối tin nhắn từ các IP khác, coi là giả mạo. DKIM (DomainKeys Identified Mail): xác thực tính hợp lệ của email bằng mã hóa khóa công khai — mỗi email được ký bằng khóa riêng, máy chủ nhận xác minh bằng khóa công khai lưu trong DNS, ngăn chặn việc email bị can thiệp/thay đổi nội dung trên đường truyền. DMARC (Domain-based Message Authentication, Reporting & Conformance): đi xa hơn bằng cách cho phép thiết lập policy để loại bỏ (reject) hoặc cách ly (quarantine) email từ nguồn không rõ ràng, xác định cách xử lý email khi SPF hoặc DKIM thất bại, tạo thêm một lớp bảo vệ chống giả mạo. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/gioi-thieu-ve-spf-dkim-dmarc/
+
 **Hỏi: Cách tra cứu WHOIS cho tên miền quốc tế như thế nào?**
 Trả lời: Có 3 công cụ chính để tra cứu WHOIS tên miền quốc tế:
 - WHO.IS: truy cập `http://who.is/whois/domain.com`, thay `domain.com` bằng tên miền cần tra cứu.

@@ -64,6 +64,30 @@ Mục đích sử dụng: cài đặt hệ điều hành, cấu hình BIOS, truy
 Trả lời: Iperf là công cụ miễn phí dùng để đo lường lượng dữ liệu mạng (throughput) tối đa mà một server có thể xử lý, giúp phát hiện vấn đề hệ thống mạng bằng cách xác định máy chủ không đáp ứng lưu lượng dữ liệu mong đợi. Cài đặt trên Debian/Ubuntu: `apt-get install iperf`. Cài đặt trên CentOS/Fedora: `yum install epel-release -y` sau đó `yum install iperf -y`. Các tùy chọn chính: `-c` kết nối đến máy chủ theo địa chỉ IP; `-p` định cổng (mặc định 5001); `-t` thời lượng kết nối (giây); `-u` sử dụng giao thức UDP; `-P` số kết nối song song. Công cụ này hữu ích để đo lường throughput giữa hai máy chủ có sự khác biệt về vị trí địa lý.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-iptraf-tren-centos-de-giam-sat-bang-thong/
 
+**Hỏi: IPv6 là gì và có ưu điểm gì so với IPv4?**
+Trả lời: IPv6 (Internet Protocol version 6) là phiên bản giao thức Internet thế hệ thứ 6, được nâng cấp từ IPv4 để giải quyết tình trạng cạn kiệt địa chỉ IPv4. IPv6 dùng địa chỉ 128-bit dạng các nhóm số hexa phân cách bằng dấu hai chấm (ví dụ: 2001:df3:5c00:552:f000:0:5:123), cung cấp 2^128 địa chỉ khả dụng so với 2^32 của IPv4. Mục tiêu thiết kế: không gian địa chỉ mở rộng và dễ quản lý, loại bỏ công nghệ NAT để khôi phục kết nối end-to-end, đơn giản hóa quản trị TCP/IP qua tự động cấu hình, cấu trúc định tuyến phân cấp, hỗ trợ multicast tốt hơn, tích hợp sẵn bảo mật, hỗ trợ thiết bị di động tốt hơn. Ưu điểm chính so với IPv4: gần như không giới hạn địa chỉ; tự động cấu hình IP và DNS khi kết nối mà không cần thiết lập thủ công; tích hợp sẵn mã hóa end-to-end; quản lý định tuyến tốt hơn nhờ cấu trúc phân cấp, tránh quá tải bảng định tuyến toàn cầu; hỗ trợ multicast và QoS tốt hơn. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/gioi-thieu-ve-ipv6/
+
+**Hỏi: So sánh net-tools với iproute2 trên Linux như thế nào?**
+Trả lời: net-tools và iproute2 là hai bộ công cụ quản lý mạng cho Linux. net-tools là bộ công cụ cũ (ifconfig, route, netstat), truy cập cấu hình qua procfs (/proc) và ioctl. iproute2 được thiết kế thay thế net-tools, dùng netlink socket hiệu quả hơn và giao diện trực quan hơn. Bảng lệnh tương ứng:
+- Hiển thị giao diện mạng: `ifconfig -a` (net-tools) tương đương `ip link show` (iproute2).
+- Bật/tắt giao diện: `ifconfig eth0 up` tương đương `ip link set up eth0`.
+- Gán IP: `ifconfig eth0 [IP]` tương đương `ip addr add [IP] dev eth0`.
+- Xem bảng định tuyến: `route -n` tương đương `ip route show`.
+- Kiểm tra cổng nghe: `netstat -l` tương đương `ss -l`.
+Nhiều distro Linux hiện đại như Arch và CentOS/RHEL 7 đã chuyển sang dùng iproute2. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/so-sanh-net-tools-voi-iproute2/
+
+**Hỏi: Cách tạo VPN Server trên VPS Linux như thế nào?**
+Trả lời: VPN là mạng dành riêng để kết nối các máy tính lại với nhau thông qua mạng Internet công cộng, mục đích chính: che giấu địa chỉ IP thực khi truy cập internet, truy cập các trang web đã chặn IP của bạn, sử dụng đường truyền quốc tế của VPS khi đường truyền hiện tại gặp sự cố. Yêu cầu: VPS phải hỗ trợ chức năng TUN/TAP (liên hệ bộ phận kỹ thuật để cấu hình thêm nếu chưa có). Các bước cài đặt OpenVPN:
+- Bước 1: Kết nối VPS qua SSH.
+- Bước 2: Cài đặt wget bằng lệnh `yum install wget -y`.
+- Bước 3: Cài đặt OpenVPN bằng script tự động: `wget https://git.io/vpn -O openvpn-install.sh && bash openvpn-install.sh`.
+- Bước 4: Nhập thông tin (giao thức, port, DNS, tên chứng chỉ) khi được yêu cầu.
+- Bước 5: Hệ thống tự động tạo file cấu hình `.ovpn`.
+Tải file `.ovpn` về máy tính và dùng OpenVPN Client (Windows) hoặc Tunnelblick (macOS) để kết nối. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tao-vpn-tren-vps-linux/
+
+**Hỏi: Cách sử dụng lệnh TOP để theo dõi hiệu năng máy chủ Linux như thế nào?**
+Trả lời: Kết nối SSH vào server/VPS và nhập lệnh `top`. Ý nghĩa các thông số hiển thị: dòng đầu tiên gồm thời gian hiện tại, uptime, số user đang đăng nhập, load average của server trong 1/5/15 phút; dòng Task hiển thị số lượng tiến trình đang chạy; dòng CPU gồm các chỉ số phần trăm `%us` (CPU cho tiến trình User), `%sy` (CPU cho tiến trình hệ thống), `%ni` (CPU cho tiến trình ưu tiên thấp), `%id` (CPU nghỉ), `%wa` (CPU chờ I/O), `%hi`/`%si` (CPU xử lý gián đoạn), `%st` (CPU ảo chờ CPU thực); dòng RAM & SWAP hiển thị tình trạng bộ nhớ. Thông số từng tiến trình: PID (Process ID), User (chủ sở hữu tiến trình), %CPU/%RAM (tài nguyên sử dụng), VIRT/RES/SHR (bộ nhớ ảo/thực/chia sẻ), COMMAND (tên tiến trình). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-lenh-top-de-theo-doi-hieu-nang-may-chu-linux/
+
 **Hỏi: Cách xử lý lỗi Apache "No Space Left On Device" khi start như thế nào?**
 Trả lời: Lỗi này xảy ra khi máy chủ hết semaphores, thể hiện qua thông báo "AH02478: failed to create proxy mutex" — hệ thống không thể tạo semaphore mới cho Apache. Các bước xử lý:
 - Bước 1: Kiểm tra lỗi hiện tại bằng lệnh `tail /var/log/httpd/error_log`.
