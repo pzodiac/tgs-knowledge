@@ -370,3 +370,36 @@ Trả lời: Inode là tài nguyên hệ thống tệp dùng để theo dõi t�
 - Xem chi tiết theo từng thư mục: `find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n` — lệnh này xếp hạng các thư mục theo mức tiêu thụ inode, thư mục tiêu thụ nhiều nhất hiển thị ở cuối kết quả.
 Cách khắc phục phổ biến: với DirectAdmin, thư mục hàng đợi Mail Exim tại `/var/spool/exim/input` thường là nguyên nhân gây cạn kiệt inode và có thể dọn dẹp an toàn để khắc phục.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/vps-bi-loi-do-inodes-bi-full-huong-dan-xem-disk-inodes-tren-tung-thu-muc-linux-how-to-disk-inode-on-folder-linux/
+
+**Hỏi: Cách redirect www sang non-www và ngược lại trên Nginx như thế nào?**
+Trả lời: Để chuyển hướng Non-WWW sang WWW (đưa domain.com về www.domain.com), thêm cấu hình vào block server: `server_name "~^(?!www\.).*" ; return 301 $scheme://www.$host$request_uri;` — dùng biểu thức chính quy để bắt các tên miền không có www. Để chuyển WWW sang Non-WWW (đưa www.domain.com về domain.com), dùng: `server_name "~^www\.(.*)" ; return 301 $scheme://$1$request_uri ;`. Nên cấu hình trực tiếp trên Nginx thay vì dùng plugin WordPress hoặc mã PHP vì hiệu quả hơn. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/redirect-www-sang-non-www-va-nguoc-lai-tren-nginx/
+
+**Hỏi: Cách chuyển hướng HTTP sang HTTPS trên Nginx như thế nào?**
+Trả lời: Các bước cấu hình:
+- Bước 1: Mở tệp cấu hình Nginx của site — Ubuntu: `/etc/nginx/sites-enabled/example.com.conf`; CentOS: `/etc/nginx/conf.d/example.com.conf`.
+- Bước 2: Thêm 2 khối server — khối đầu xử lý traffic HTTP (`listen 80;`) và redirect 301 sang HTTPS bằng `return 301 https://www.example.com$request_uri;`; khối thứ hai cấu hình server bảo mật (`listen 443 ssl;`) với `ssl_certificate` và `ssl_certificate_key` trỏ đến file chứng chỉ SSL.
+- Bước 3: Khởi động lại Nginx bằng `sudo service nginx restart`, sau đó truy cập lại website để xác nhận chuyển hướng hoạt động đúng. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/chuyen-huong-http-sang-https-tren-nginx/
+
+**Hỏi: Cách chuyển hướng HTTP sang HTTPS trên Apache như thế nào?**
+Trả lời: Có 2 cách thực hiện:
+- Cách 1 - Cấu hình Virtualhost: sửa file virtualhost của site, thêm dòng `Redirect permanent / https://www.example.com/`, sau đó khởi động lại Apache bằng `service httpd restart` (CentOS) hoặc `service apache2 restart` (Ubuntu).
+- Cách 2 - Dùng file .htaccess: thêm rule rewrite, ví dụ chuyển hướng toàn bộ trang: `RewriteEngine On` + `RewriteCond %{HTTPS} off` + `RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]`; hoặc chuyển hướng 1 URL cụ thể bằng `RewriteRule ^always-secure.html$ https://www.example.com/always-secure.html [R=301,L]`. Nhớ thay `www.example.com` bằng tên miền thực tế trước khi áp dụng. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/chuyen-huong-http-sang-https-tren-apache/
+
+**Hỏi: Cách cài đặt Let's Encrypt trên CentOS 7 như thế nào?**
+Trả lời: Let's Encrypt là cơ quan cấp chứng chỉ SSL nguồn mở và miễn phí. Các bước cài đặt trên CentOS 7 với Apache:
+- Bước 1: Cập nhật hệ điều hành bằng `yum update`.
+- Bước 2: Cài đặt LAMP stack (Linux, Apache, MySQL, PHP).
+- Bước 3: Cấu hình Apache — tạo file virtual host tại `/etc/httpd/conf.d/domain.com` với ServerName và DocumentRoot.
+- Bước 4: Cài Certbot và mod_ssl — bật EPEL repository bằng `yum install epel-release`, sau đó `yum install certbot python2-certbot-apache mod_ssl`.
+- Bước 5: Lấy và cài chứng chỉ SSL bằng lệnh `certbot --apache -d domain.com`, chọn chuyển hướng HTTPS tự động khi được hỏi.
+- Bước 6: Kiểm tra bằng cách truy cập `https://domain.com` và xem biểu tượng khóa trên trình duyệt.
+Chứng chỉ được lưu tại `/etc/letsencrypt/live/domain.com/` (gồm `fullchain.pem`, `privkey.pem`); dùng lệnh `certbot renew` để gia hạn tự động trước khi hết hạn. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-lets-encrypt-tren-centos-7/
+
+**Hỏi: Cách thêm website mới trên VPS dùng Apache CentOS như thế nào?**
+Trả lời: Virtual Hosts giúp một VPS chạy được nhiều website khác nhau. Các bước thêm website (yêu cầu đã cài Apache):
+- Bước 1: Tạo thư mục cho website, ví dụ `/var/www/example.com/public_html`.
+- Bước 2: Gán quyền truy cập — đặt chủ sở hữu bằng `sudo chown -R apache:apache /var/www/example.com/public_html` và cấp quyền bằng `sudo chmod 755 /var/www`.
+- Bước 3: Cấu hình Virtual Hosts — chỉnh sửa file `/etc/httpd/conf/httpd.conf`, thêm block VirtualHost với DocumentRoot, ServerName, ServerAlias và thông tin log.
+- Bước 4: Dừng và khởi động lại Apache để áp dụng cấu hình mới.
+- Bước 5: Tạo file `index.html` thử nghiệm và truy cập domain để xác nhận hoạt động.
+Để thêm nhiều website khác, lặp lại quy trình bằng cách thêm các block VirtualHost mới vào file cấu hình. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/them-website-tren-vps-apache-centos/

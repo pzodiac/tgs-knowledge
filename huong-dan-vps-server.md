@@ -110,24 +110,11 @@ Trả lời: Để ngăn ngừa virus ransomware mã hóa dữ liệu trên Wind
 - Bước 5: Cài đặt và sử dụng phần mềm diệt virus để bảo vệ hệ thống.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-fix-loi-bao-mat-windows-chan-virus-ransomeware-ma-hoa-du-lieu/
 
-**Hỏi: Cách mở port trên Windows Firewall như thế nào?**
-Trả lời: Các bước mở port trên Windows Firewall:
-- Bước 1: Nhấn Windows + R, gõ `wf.msc` và Enter để mở "Windows Firewall with Advanced Security".
-- Bước 2: Chuột phải vào "Inbound Rules" → "New Rule", chọn "Custom" → Next, chọn "All Programs" → Next.
-- Bước 3: Cấu hình giao thức và port — chọn Protocol type (TCP/UDP), chọn "Specific Ports" ở Remote port và nhập port cần mở.
-- Bước 4: Cấu hình IP — Local IP để "Any", Remote IP để "Any" (cho phép tất cả) hoặc chỉ định IP cụ thể.
-- Bước 5: Chọn "Allow the connection" để mở port.
-- Bước 6: Chọn phạm vi áp dụng: Domain, Private, Public (hoặc kết hợp).
-- Bước 7: Đặt tên và mô tả cho rule, nhấn Finish. Rule mới sẽ xuất hiện trong danh sách Inbound Rules và port được mở thành công. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-mo-port-windows-firewall/
-
-**Hỏi: Cách ngăn chặn virus ransomware mã hóa dữ liệu trên Windows Server như thế nào?**
-Trả lời: Các bước phòng ngừa ransomware trên Windows Server (áp dụng cho Windows 2012 R2 và các phiên bản khác):
-- Bước quan trọng nhất: đổi cổng Remote Desktop từ mặc định 3389 sang cổng khác để tránh truy cập trái phép.
-- Bước 1: Cập nhật Windows với các bản vá mới nhất.
-- Bước 2: Cài các gói vá lỗi mà ransomware thường khai thác (ví dụ KB4012213 cho Windows 2012 R2, các bản vá tương ứng cho phiên bản Windows khác).
-- Bước 3: Dừng dịch vụ Server — vào Start → Run → gõ `services.msc`, tìm dịch vụ "Server" và tắt.
-- Bước 4: Dùng tường lửa chặn các cổng 445, 135, 138, 139 (tạo rule cho cả TCP và UDP).
-- Bước 5: Cài đặt và sử dụng phần mềm diệt virus để bảo vệ hệ thống liên tục. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-fix-loi-bao-mat-windows-chan-virus-ransomeware-ma-hoa-du-lieu/
+**Hỏi: Cách thêm dãy IP vào tường lửa Windows như thế nào?**
+Trả lời: Các bước thêm nhiều dải IP (CIDR) vào rule tường lửa Windows bằng dòng lệnh:
+- Bước 1: Mở Command Prompt với quyền Admin — nhấn Windows + X, chọn "Command Prompt (Admin)".
+- Bước 2: Chạy lệnh `netsh advfirewall firewall set rule name="*" new remoteip=[danh sách dải IP]` với các dải IP dạng CIDR (ví dụ `218.100.14.0/24`, `103.252.0.0/22`...) phân tách bằng dấu phẩy, có thể liệt kê hàng trăm dải IP trong 1 lệnh.
+Cách này giúp kiểm soát truy cập từ xa, chỉ cho phép hoặc quản lý các khối địa chỉ IP cụ thể kết nối vào server qua rule tường lửa Windows. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-them-day-ip-vao-tuong-lua-windows/
 
 ## Kết nối và quản lý tài khoản VPS
 
@@ -202,3 +189,29 @@ Trả lời: ZOC Terminal là phần mềm SSH client nặng hơn PuTTY và có 
 - Bước 3: Nhấn nút "Connect" ở góc phải cửa sổ.
 - Bước 4: Xác nhận kết nối thành công khi giao diện terminal hiển thị.
 Đây là kỹ năng cơ bản mà quản trị viên server nào cũng nên biết. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-zoc-terminal-dang-nhap-vao-server-qua-ssh/
+
+**Hỏi: Cách sử dụng VPS n8n Host của Thế Giới Số như thế nào?**
+Trả lời: `n8n-host` là công cụ dòng lệnh giúp quản lý các instance N8N trên VPS. Yêu cầu hệ thống: Linux (Ubuntu 20.04 LTS trở lên), quyền root, và tên miền/subdomain đã trỏ DNS về IP công khai của server. Các tính năng chính:
+- Cài đặt: khởi tạo instance N8N mới, tự động cấu hình SSL qua Let's Encrypt.
+- Quản lý tên miền: đổi tên miền cho instance N8N đang chạy, giữ nguyên toàn bộ workflow và credentials trong quá trình chuyển đổi.
+- Cập nhật phiên bản: cập nhật N8N lên bản mới nhất kèm bản vá bảo mật.
+- Quản lý dữ liệu: export workflow/credentials để backup, hoặc import workflow mẫu để bắt đầu nhanh.
+- Khôi phục tài khoản: tắt xác thực 2 lớp (2FA) nếu bị khóa, hoặc reset thông tin đăng nhập chủ sở hữu.
+- Tùy chọn nâng cao: xem thông tin kết nối Redis, hoặc cài đặt lại toàn bộ N8N (lưu ý: thao tác này xóa vĩnh viễn dữ liệu N8N hiện có — nên backup thường xuyên trước khi thực hiện các thao tác lớn).
+Giao diện yêu cầu truy cập qua SSH, hiển thị dạng menu để chọn thao tác. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-su-dung-vps-n8n-host/
+
+**Hỏi: Cách trỏ tên miền trên VPS n8n như thế nào?**
+Trả lời: 4 bước kết nối tên miền với N8N:
+- Bước 1: Cấu hình DNS — tại nhà cung cấp tên miền, tạo A record với subdomain (ví dụ `n8n`) trỏ đến IP của VPS.
+- Bước 2: Chỉnh sửa Docker Compose — mở file `docker-compose.yml`, thêm `N8N_HOST=n8n.example.com` vào phần `environment` của dịch vụ n8n.
+- Bước 3: Khởi động lại container bằng lệnh `docker-compose down` rồi `docker-compose up -d` để áp dụng cấu hình mới.
+- Bước 4: Xác minh hoạt động bằng lệnh `docker ps` để kiểm tra container n8n đang chạy ở cổng 5678.
+Sau khi hoàn tất, truy cập N8N tại `http://n8n.example.com` (nên cấu hình thêm SSL Let's Encrypt để dùng HTTPS). Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tro-ten-mien-tren-vps-n8n/
+
+**Hỏi: Cách thiết lập SSL bảo mật cho n8n với Let's Encrypt như thế nào?**
+Trả lời: Cài đặt chứng chỉ SSL cho n8n trên Ubuntu bằng Certbot:
+- Bước 1: Cài đặt Certbot — `sudo apt update` rồi `sudo apt install certbot python3-certbot-nginx`.
+- Bước 2: Lấy chứng chỉ tự động bằng Certbot: `sudo certbot --nginx -d domain.com`, nhập email và đồng ý điều khoản dịch vụ khi được hỏi — Certbot sẽ tự cấu hình Nginx.
+- Bước 3: Kiểm tra cấu hình tại `/etc/nginx/sites-available/domain.com` để xác nhận SSL đã được thiết lập đúng, gồm cả rule chuyển hướng từ HTTP sang HTTPS. Block Nginx cần trỏ đến đường dẫn chứng chỉ tại `/etc/letsencrypt/live/domain.com/` và proxy request về localhost:5678 kèm header forwarding phù hợp.
+- Bước 4: Khởi động lại Nginx bằng `sudo systemctl restart nginx`, sau đó truy cập domain qua HTTPS để xác nhận.
+Chứng chỉ sẽ được tự động gia hạn, không cần can thiệp thủ công. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/thiet-lap-ssl-bao-mat-cho-n8n-voi-lets-encrypt/

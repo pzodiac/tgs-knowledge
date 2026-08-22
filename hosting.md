@@ -302,6 +302,11 @@ Trả lời: Có 3 cách chính để điều chỉnh cấu hình PHP trên host
 - Bật/tắt phần mở rộng PHP (extensions): trong mục "Select PHP Version", chọn các extension cần dùng rồi nhấn "Save" — lưu ý dùng càng nhiều extension thì tài nguyên hosting tiêu tốn càng nhiều.
 - Tùy chỉnh cấu hình PHP mặc định: vào "Select PHP Version" → "Switch to PHP Options" để điều chỉnh các thông số: bộ nhớ & thời gian (memory_limit, max_execution_time, max_input_time), upload (file_uploads, upload_max_filesize, post_max_size), hiển thị lỗi (display_errors, error_reporting), và các tùy chọn khác (allow_url_fopen, date.timezone, short_open_tag, session.save_path, open_basedir). Nhấn "Save" sau khi thiết lập xong. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-sua-cau-hinh-php-tren-host/
 
+**Hỏi: Cách kiểm tra đánh giá website chậm là do mã nguồn hay do dịch vụ hosting?**
+Trả lời: 2 phương pháp kiểm tra:
+- Kiểm tra dịch vụ hosting: dùng lệnh ping đo thời gian phản hồi từ máy chủ — Windows: `ping -n 200 domain_website.com`; Linux: `ping -c 200 domain_website.com`; macOS: dùng Network Utility, tab Ping, gửi 200 gói. Nếu giá trị lớn hơn 200ms và tỷ lệ Lost > 2 thì khả năng do dịch vụ hosting.
+- Kiểm tra mã nguồn: Bước 1 - vào cPanel → Metric → CPU and Concurrent Connection Usage, nếu CPU vượt 90% hoặc bộ nhớ gần hết thì website đang tiêu tốn quá nhiều tài nguyên; Bước 2 - vô hiệu hóa plugin để kiểm tra (WordPress: đổi tên thư mục `public_html/wp-content/plugins` thành `plugins_org`; Joomla: đổi tên thư mục `public_html/plugins` thành `plugins_org`); Bước 3 - nếu tốc độ truy cập nhanh hơn sau khi tắt plugin thì kết luận website chậm do mã nguồn. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-kiem-tra-danh-gia-toc-do-truy-cap-website-cham-do-ma-nguon-hay-dich-vu-hosting/
+
 ## Tài liệu / liên kết liên quan
 
 - [Bảng giá các gói hosting WordPress](https://tgs.com.vn/hosting-wordpress)

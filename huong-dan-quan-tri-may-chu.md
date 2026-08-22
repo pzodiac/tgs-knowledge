@@ -118,3 +118,20 @@ Trả lời: Các bước tăng giới hạn dung lượng import trên phpMyAdm
 - Bước 5: Lưu cấu hình và khởi động lại dịch vụ web bằng `/etc/init.d/httpd restart`.
 Sau đó kiểm tra lại chức năng import database qua phpMyAdmin.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tang-gioi-han-dung-luong-import-database-tren-phpmyadmin/
+
+**Hỏi: Cách giám sát máy chủ Windows từ xa bằng PRTG như thế nào?**
+Trả lời: Để giám sát máy chủ Windows bằng PRTG Network Monitor qua SNMP:
+- Bước 1: Cài đặt PRTG Network Monitor.
+- Bước 2: Cấu hình SNMP trên Windows Server — mở Server Manager, chọn "Add Roles and Features", tìm và chọn SNMP Service trong danh sách Features, tick chọn SNMP WMI Provider để mở rộng khả năng quản lý, nhấn Next và Install để hoàn tất.
+- Bước 3: Cấu hình dịch vụ SNMP — nhấn Windows + R, nhập `services.msc`, tìm SNMP Service, chuột phải chọn Properties; trong tab Agent điền Contact, Location và chọn các ô Service; trong tab Security thêm Community String (chuỗi xác thực) và chọn "Accept SNMP packets from any host".
+- Bước 4: Thêm thiết bị Windows vào PRTG — trong tab Device, nháy phải Local Probe, chọn Add Group, trong Group mới chọn Add Device, khai báo Device Name và IP máy chủ, nhập Community String đã tạo ở phần Credentials.
+- Bước 5: Chọn sensor phù hợp — thêm các sensor cần thiết như SNMP CPU Load, SNMP Memory, SNMP Disk Free để theo dõi hiệu suất hệ thống. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-giam-sat-may-chu-windows-bang-prtg/
+
+**Hỏi: Cách kết nối VPN và truy cập Cloud Server trên MacBook như thế nào?**
+Trả lời: Cần chuẩn bị thông tin từ nhà cung cấp VPN: loại VPN (L2TP hoặc PPTP), địa chỉ máy chủ, tên người dùng và mật khẩu. Các bước cài đặt VPN trên MacBook:
+- Vào System Preferences (menu Apple) → chọn Network → nhấn dấu Cộng (+) ở dưới cùng bên trái.
+- Chọn giao diện VPN, nhập tên dịch vụ, chọn Create.
+- Nhập địa chỉ máy chủ và tên tài khoản.
+- Chọn Authentication Settings để nhập mật khẩu và Shared Secret.
+- Chọn Apply để hoàn tất.
+Sau khi kết nối VPN, truy cập file chia sẻ từ Cloud Server: chọn Go → Connect to Server, nhập địa chỉ IP máy Windows (ví dụ: 192.168.1.68), nhập thông tin xác thực nếu cần, rồi sao chép file cần thiết về ổ cứng Mac. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-ket-noi-vpn-va-truy-cap-cloud-server-tren-macbook/

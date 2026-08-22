@@ -266,3 +266,19 @@ Trả lời: 5 bước thiết lập email trên DirectAdmin:
 - Bước 4: Điền thông tin cần thiết theo hướng dẫn trên màn hình để tạo tài khoản.
 - Bước 5: Cấu hình DNS — trỏ bản ghi "mail" loại A đến IP hosting, và bản ghi "@" loại MX trỏ đến "mail.tên-miền-của-bạn" với độ ưu tiên 1.
 Sau khoảng 15 phút, hệ thống cập nhật và có thể truy cập webmail qua địa chỉ email vừa tạo. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-tao-email-theo-ten-mien-tren-direct-admin/
+
+**Hỏi: Cách cài đặt SSL Let's Encrypt trên Plesk Panel như thế nào?**
+Trả lời: Let's Encrypt là nhà cung cấp chứng chỉ SSL miễn phí loại Domain Validation, hiển thị biểu tượng khóa xanh trên trình duyệt. Các bước cài đặt trên Plesk Panel:
+- Bước 1: Đăng nhập vào Plesk Panel bằng thông tin quản trị hosting.
+- Bước 2: Chọn tab "Website & Domain", nhấn "show more" để hiển thị thêm tính năng.
+- Bước 3: Nhấn vào biểu tượng Let's Encrypt để bắt đầu quá trình cài đặt.
+- Bước 4: Điền thông tin cần thiết — sau khi hoàn tất, hệ thống thông báo SSL đã cài đặt nhưng chưa kích hoạt.
+- Bước 5: Vào "Hosting settings" → chọn "SSL/TLS support" → chọn Let's Encrypt làm Certificate.
+Kiểm tra bằng cách truy cập website qua https:// — nếu không lỗi và có biểu tượng khóa xanh, chứng chỉ đã được cấp phát thành công. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-ssl-lets-encrypt-tren-plesk-panel/
+
+**Hỏi: Cách thay đổi ngày hết hạn (Expiration date) trong Plesk Panel như thế nào?**
+Trả lời: Các bước cập nhật ngày hết hạn subscription trong Plesk:
+- Bước 1-2: Truy cập Plesk, vào "Subscription → example.com", nhấn biểu tượng mở rộng thanh bên phải.
+- Bước 3: Trong phần "Account" của thanh bên, chọn "Customize".
+- Bước 4: Vào tab "Resources", đặt "Expiration date" theo nhu cầu.
+- Bước 5: Nhấn "Update & Lock" để hoàn tất (hoặc "Apply" nếu subscription đã bị khóa). Lưu ý: subscription sẽ bị khóa nếu có thay đổi tiếp theo trong Service Plan. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/cach-thay-doi-ngay-het-han-trong-plesk-panel/

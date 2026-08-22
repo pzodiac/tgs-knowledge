@@ -43,3 +43,6 @@ Trả lời: Có. Sao lưu dữ liệu tự động hàng ngày, khôi phục 1 
 
 **Hỏi: Thế Giới Số có nhận Thiết Kế Website không?**
 Trả lời: Có. Website chuyên nghiệp, chuẩn SEO, tối ưu chuyển đổi — được xây dựng riêng cho từng doanh nghiệp.
+
+**Hỏi: Dịch vụ cài đặt và cấu hình phần mềm của Thế Giới Số bao gồm những gì?**
+Trả lời: Thế Giới Số hỗ trợ kỹ thuật cho khách hàng hosting, VPS và dedicated server, bao gồm cài đặt phần mềm, cấu hình hệ thống và quản lý máy chủ. Miễn phí: khách hàng shared hosting được hỗ trợ các vấn đề liên quan hệ thống thanh toán, lỗi kỹ thuật máy chủ, cấu hình tên miền và hệ thống quản lý file/email; khách hàng VPS/dedicated được hỗ trợ cài đặt mặc định và cập nhật hệ thống. Có thu phí: cài đặt mã phức tạp hoặc số lượng lớn, phần mềm ứng dụng không mặc định, thiết kế website, phát triển module tùy chỉnh, khắc phục lỗi và kiểm tra bảo mật. Không có giá cố định công bố sẵn cho các hạng mục có thu phí — khách hàng cần liên hệ trực tiếp Thế Giới Số để được báo giá và thời gian thực hiện cụ thể. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/dich-vu-cai-dat-va-cau-hinh-phan-mem-tron-goi/

@@ -359,3 +359,17 @@ Các bước cấu hình sau khi cài:
 - Bước 3: Hộp thoại thêm email tự động hiển thị, nhập thông tin email và nhấn Next.
 - Bước 4: Nhận thông báo "Your email account was added" là hoàn tất.
 - Bước 5: Để thêm tài khoản khác, vào tab Accounts và nhấn biểu tượng email. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-cai-dat-va-cau-hinh-windows-live-mail-tren-windows-10/
+
+**Hỏi: Email bị đánh giá là SPAM dựa vào nội dung như thế nào?**
+Trả lời: Bộ lọc email đánh giá tin nhắn dựa trên nhiều tiêu chí, mỗi tiêu chí có điểm số riêng, tổng điểm tích lũy quyết định email có bị coi là spam không. Bộ lọc kiểm tra header, nội dung, tiêu đề, bản ghi DNS, danh sách blacklist URL, từ khóa và blacklist IP. Các dấu hiệu nội dung dễ bị đánh giá spam:
+- Cụm từ bị cấm: "100% free", "Guarantee", "Make money fast", "FREE", "Money", "Opportunity", "Limited time offer", "Click here", "Order Now", "Risk free", "Urgent"...
+- Lỗi định dạng: viết TOÀN BỘ CHỮ HOA, dùng màu chữ đỏ/xanh lá nổi bật, email chỉ có 1 ảnh lớn mà ít chữ, dùng từ "test"/"check" trong tiêu đề.
+- Thực hành rủi ro khác: gửi đồng thời đến nhiều người nhận trong cùng công ty, chỉ có ảnh không kèm chữ, copy trực tiếp từ Word/Excel/PowerPoint giữ nguyên định dạng lỗi, dùng cùng cụm từ ở cả tiêu đề và nội dung.
+Khuyến nghị giảm rủi ro bị đánh giá spam: dùng công cụ kiểm tra chất lượng tin nhắn trước khi gửi, tránh rút gọn URL che giấu đích đến, dùng mã HTML đúng chuẩn, cấu hình bản ghi SPF/DKIM/DomainKeys, không gửi email đến chính địa chỉ của mình, không chèn JavaScript/mã nhúng/video vào email. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/email-duoc-danh-gia-la-spam-dua-vao-noi-dung-nhu-the-nao/
+
+**Hỏi: Cách truy cập tài khoản quản lý Email Server của Thế Giới Số như thế nào?**
+Trả lời: Các bước truy cập và quản lý:
+- Bước 1: Đăng nhập trang quản lý Email Admin tại `http://103.42.56.53:8880/` bằng username và password được Thế Giới Số cấp.
+- Bước 2: Sau khi đăng nhập, chọn mục "Mail" để vào dashboard quản lý tài khoản email.
+- Bước 3: Để tạo tài khoản email mới, chọn "Create Email Address", nhập tên người dùng, đặt mật khẩu rồi nhấn OK để hoàn tất.
+Người dùng đăng nhập webmail tại `https://webmail.tenmiencuaban.com/` bằng tài khoản đã được cấp. Để đổi mật khẩu, vào mục "Setting → Password" từ dashboard. Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/huong-dan-truy-cap-tai-khoan-quan-ly-email-server-the-gioi-so/
