@@ -8,9 +8,6 @@
 ## Tổng quan
 
 **Hỏi: CDN là gì?**
-Trả lời: CDN là xương sống của Internet trong việc luân chuyển nội dung. Dù bạn có biết đến sự tồn tại của nó hay không, bạn vẫn đang tương tác với CDN mỗi ngày — khi mua sắm online, đọc báo, xem video hay đọc bài viết này. Hệ thống CDN với nhiều server đặt tại các Data Center giúp doanh nghiệp giảm thiểu độ trễ (latency), nâng cao trải nghiệm người dùng đáng kể, đồng thời hỗ trợ ABR để chuyển mã nội dung phù hợp với hầu hết thiết bị, dù là PC hay mobile.
-
-**Hỏi: Dịch vụ CDN là gì?**
 Trả lời: CDN (Content Delivery Network) là mạng lưới gồm nhiều Server được triển khai tại nhiều Data Center khác nhau, giúp phân phối nội dung (Web, media, ứng dụng, live-stream...) đến End-user nhanh chóng, ổn định với độ trễ thấp nhất.
 
 **Hỏi: Chi phí sử dụng CDN được tính như thế nào?**
