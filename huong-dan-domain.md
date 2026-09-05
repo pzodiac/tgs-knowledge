@@ -88,7 +88,7 @@ Sau đó truy cập trang quản trị qua `hostname:8083` để xác nhận ch�
 ## Đăng ký và chuyển tên miền
 
 **Hỏi: Khách hàng cần cung cấp thông tin gì khi đăng ký tên miền .VN?**
-Trả lời: Khách hàng cần cung cấp các thông tin chủ thể tên miền cơ bản: Tên chủ thể (tên công ty, tổ chức hoặc cá nhân — nếu là cá nhân cần kèm số Chứng minh nhân dân hoặc Hộ chiếu), địa chỉ liên hệ, số điện thoại, địa chỉ email. Không yêu cầu khách hàng cung cấp quá nhiều thông tin chi tiết; các yêu cầu có thể khác nhau tùy loại tên miền (cấp 2, cấp 3, hoặc cấp 3 dành cho tổ chức giáo dục/địa phương). Để được tư vấn thêm, khách hàng có thể liên hệ hotline 1900.6119 hoặc 08.7309.7379 (Ext 1).
+Trả lời: Khách hàng cần cung cấp các thông tin chủ thể tên miền cơ bản: Tên chủ thể (tên công ty, tổ chức hoặc cá nhân — nếu là cá nhân cần kèm số Chứng minh nhân dân hoặc Hộ chiếu), địa chỉ liên hệ, số điện thoại, địa chỉ email. Không yêu cầu khách hàng cung cấp quá nhiều thông tin chi tiết; các yêu cầu có thể khác nhau tùy loại tên miền (cấp 2, cấp 3, hoặc cấp 3 dành cho tổ chức giáo dục/địa phương). Để được tư vấn thêm, khách hàng có thể liên hệ hotline 1900.6119 hoặc 028.7309.7379.
 - Xem chi tiết đầy đủ (kèm hình ảnh minh họa) tại: https://tailieu.tgs.com.vn/khach-hang-can-cung-cap-thong-tin-gi-khi-dang-ki-ten-mien-vn/
 
 **Hỏi: Khách hàng cần cung cấp thông tin gì khi đăng ký tên miền quốc tế?**
