@@ -12,3 +12,10 @@ Trả lời: Giá trị cốt lõi của Thế Giới Số là "Lấy Sự Thàn
 - Tận Tâm: Tỉ mỉ trong mọi trải nghiệm – không chỉ cung cấp dịch vụ, mà mang lại sự hài lòng & an tâm cho khách hàng.
 - Tin Cậy: Tử tế - Trung thực – Minh bạch – giữ vững mọi cam kết. Xây dựng lòng tin bằng kết quả thực tế và sự ổn định lâu dài.
 - Khác Biệt: Luôn tìm kiếm giải pháp đột phá, đổi mới không ngừng để tạo ra giá trị độc đáo & vượt trội cho từng khách hàng.
+
+**Hỏi: Các dịch vụ tiêu biểu của Thế Giới Số là gì?**
+Trả lời: Thế Giới Số đồng hành cùng doanh nghiệp chuyển đổi số cùng các giải pháp sáng tạo, hiệu quả và thành công, với 4 dịch vụ tiêu biểu:
+- Hosting: Hosting tốc độ cao, bảo mật tối đa, uptime 99.9% – Giải pháp lưu trữ ổn định cho doanh nghiệp với công nghệ SSD/NVMe, hỗ trợ 24/7.
+- Cloud: Cloud Server công nghệ ảo hóa Proxmox/KVM hiện đại, uptime 99.99% – Tài nguyên riêng biệt, mở rộng tức thì, bảo mật toàn diện cho hệ thống ERP, CRM, Web App.
+- Server: Máy chủ vật lý, ảo hoá hiệu năng cao – Toàn quyền root, uptime 99.99%, hỗ trợ Managed Server trọn gói cho doanh nghiệp chuyển đổi số.
+- IT Support: Dịch vụ IT Support 24/7 – Khắc phục sự cố tức thì, bảo trì định kỳ, tối ưu hóa hạ tầng IT cho doanh nghiệp.
