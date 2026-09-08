@@ -21,10 +21,9 @@ Trả lời: Thế Giới Số đồng hành cùng doanh nghiệp chuyển đổ
 - IT Support: Dịch vụ IT Support 24/7 – Khắc phục sự cố tức thì, bảo trì định kỳ, tối ưu hóa hạ tầng IT cho doanh nghiệp.
 
 **Hỏi: Địa chỉ công ty Thế Giới Số ở đâu?**
-Trả lời: CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ THẾ GIỚI SỐ
+Trả lời: **CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ THẾ GIỚI SỐ**
 - Địa chỉ: 128/38 Tân Hương, Phường Phú Thọ Hòa, Thành Phố Hồ Chí Minh, Việt Nam.
 - MST: 0318443116 – Tel: (028) 7309.7379
 - Hotline: 0919 768 789 (Call, Zalo, Telegram)
 - Website: www.tgs.com.vn & www.thegioiso.cloud & www.thegioiserver.com
-
 🥇Thế Giới Số🥇- Premium HOSTING • CLOUD • SERVER & WEBSITE | 15+ năm Phụng Sự 🚀
