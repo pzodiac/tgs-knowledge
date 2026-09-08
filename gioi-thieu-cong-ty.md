@@ -19,3 +19,12 @@ Trả lời: Thế Giới Số đồng hành cùng doanh nghiệp chuyển đổ
 - Cloud: Cloud Server công nghệ ảo hóa Proxmox/KVM hiện đại, uptime 99.99% – Tài nguyên riêng biệt, mở rộng tức thì, bảo mật toàn diện cho hệ thống ERP, CRM, Web App.
 - Server: Máy chủ vật lý, ảo hoá hiệu năng cao – Toàn quyền root, uptime 99.99%, hỗ trợ Managed Server trọn gói cho doanh nghiệp chuyển đổi số.
 - IT Support: Dịch vụ IT Support 24/7 – Khắc phục sự cố tức thì, bảo trì định kỳ, tối ưu hóa hạ tầng IT cho doanh nghiệp.
+
+**Hỏi: Địa chỉ công ty Thế Giới Số ở đâu?**
+Trả lời: CÔNG TY CỔ PHẦN GIẢI PHÁP CÔNG NGHỆ THẾ GIỚI SỐ
+- Địa chỉ: 128/38 Tân Hương, Phường Phú Thọ Hòa, Thành Phố Hồ Chí Minh, Việt Nam.
+- MST: 0318443116 – Tel: (028) 7309.7379
+- Hotline: 0919 768 789 (Call, Zalo, Telegram)
+- Website: www.tgs.com.vn & www.thegioiso.cloud & www.thegioiserver.com
+
+🥇Thế Giới Số🥇- Premium HOSTING • CLOUD • SERVER & WEBSITE | 15+ năm Phụng Sự 🚀
